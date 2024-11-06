@@ -10,8 +10,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        tertiary500: "rgba(117, 52, 255, 1)",
+        tertiary800: "#2F1566",
+        tertiary50: "#F1EBFF",
+        manatee: "#838E9E",
+        tertiary400: "#915DFF",
+        lavenderGray: "#F3F3F6",
+        softedWhite: "rgba(255, 255, 255, 0.24)",
+        gray700: "#42526B",
+        lightMist: "#E6E8EC",
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        Inter: "var(--font-inter)", //inter fontun static olaraq font-inter olaraq cagiriyoruz
       },
     },
   },

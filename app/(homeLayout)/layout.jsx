@@ -1,3 +1,5 @@
+import Header from "@/components/layout/navigation-header";
+
 export default function HomeLayout({ children }) {
   // Layout Will be inside this component:
   // return (
@@ -9,5 +11,10 @@ export default function HomeLayout({ children }) {
   //   </>
   // );
 
-  return <>{children}</>;
+  return (
+    <>
+      <Header />
+      {children}
+    </>
+  );
 }
