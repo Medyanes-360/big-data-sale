@@ -21,9 +21,13 @@ module.exports = {
         lightMist: "#E6E8EC",
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customPink: "rgba(254, 237, 250, 1)",
+        tertiary900: "rgba(23, 10, 51, 1)",
+        footerLink: "rgba(244, 241, 253, 1)",
       },
       fontFamily: {
         Inter: "var(--font-inter)", //inter fontun static olaraq font-inter olaraq cagiriyoruz
+        lexend: ["var(--font-lexend)", "sans-serif"],
       },
     },
   },
