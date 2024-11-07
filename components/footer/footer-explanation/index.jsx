@@ -1,8 +1,6 @@
 import Logo from "@/globalElements/Logo";
-import FacebookIcon from "@/components/icons/FacebookIcon";
-import InstagramIcon from "@/components/icons/InstagramIcon";
-import LinkedinIcon from "@/components/icons/LinkedinIcon";
-import WhatsappIcon from "@/components/icons/WhatsappIcon";
+import Icons from "@/public/assets/icons/Icons";
+
 import Link from "next/link";
 const FooterExplanation = () => {
   return (
@@ -18,16 +16,16 @@ const FooterExplanation = () => {
       </p>
       <div className="ml-4 mt-10 flex items-center  space-x-10">
         <Link href="/">
-          <FacebookIcon />
+          <Icons.Facebook />
         </Link>
         <Link href="/">
-          <LinkedinIcon />
+          <Icons.Linkedin />
         </Link>
         <Link href="/">
-          <InstagramIcon />
+          <Icons.Instagram />
         </Link>
         <Link href="/">
-          <WhatsappIcon />
+          <Icons.Whatsapp />
         </Link>
       </div>
     </div>

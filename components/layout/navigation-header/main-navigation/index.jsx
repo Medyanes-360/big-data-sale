@@ -45,7 +45,7 @@ const NavBar = () => {
             <li key={index} className="leading-[50px]">
               <Link
                 href={item.path}
-                className="text-sm font-medium font-Inter transition-colors  text-manatee hover:text-tertiary400 block w-fit h-full"
+                className="text-sm font-medium font-Inter transition-colors  text-manatee hover:text-tertiary-400 block w-fit h-full"
               >
                 {item.name}
               </Link>

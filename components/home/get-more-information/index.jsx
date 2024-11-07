@@ -5,7 +5,7 @@ import PageContainer from "@/containers/PageContainers";
 
 const GetMoreInformation = () => {
   return (
-    <PageContainer className="grid grid-cols-2 gap-x-3 py-5">
+    <PageContainer className="grid grid-cols-1 lg:grid-cols-2 gap-[40px] gap-y-24 py-[60px]">
       <div className="grid-cols-1">
         <Content />
       </div>
