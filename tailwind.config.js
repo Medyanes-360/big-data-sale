@@ -36,6 +36,7 @@ module.exports = {
       boxShadow: {
         custom: "0px 4px 4px 0px rgba(201, 201, 201, 0.25)",
         'combined': '-20px 20px 40px -4px rgba(145, 158, 171, 0.24), 0px 0px 2px 0px rgba(145, 158, 171, 0.24)', // Combined box-shadow
+         'header-shadow':'0px 12px 24px -4px #919EAB29',
       },
       fontFamily: {
         Inter: "var(--font-inter)", //inter fontun static olaraq font-inter olaraq cagiriyoruz
