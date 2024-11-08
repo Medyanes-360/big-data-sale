@@ -1,4 +1,4 @@
-import Footer from "@/components/footer";
+import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/navigation-header";
 
 export default function HomeLayout({ children }) {
@@ -16,6 +16,7 @@ export default function HomeLayout({ children }) {
     <>
       <Header />
       {children}
+
       <Footer />
     </>
   );

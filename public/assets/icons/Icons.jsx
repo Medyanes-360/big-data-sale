@@ -1,5 +1,6 @@
 export default class Icons {
-  static ArrowRight({ className }) {
+  static ArrowRight({ className, color = "#FFFFFF" }) {
+    // Default beyaz
     return (
       <svg
         className={className}
@@ -11,17 +12,81 @@ export default class Icons {
       >
         <path
           d="M4.88647 16.3398H26.301"
-          stroke="#2F1566"
+          stroke={color} // Renk prop'tan gelir
           strokeWidth="1.94678"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M17.5405 7.57935L26.301 16.3398L17.5405 25.1003"
-          stroke="#2F1566"
+          stroke={color} // Renk prop'tan gelir
           strokeWidth="1.94678"
           strokeLinecap="round"
           strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+
+  static CheckSuccess({ className }) {
+    return (
+      <svg
+        className={className}
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="0.285725"
+          y="0.162598"
+          width="15.2381"
+          height="15.2381"
+          rx="7.61905"
+          fill="#5AC519"
+        />
+        <path
+          d="M11.8333 5.28186L6.83334 10.2816L4.33334 7.78186"
+          stroke="white"
+          stroke-width="0.952381"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    );
+  }
+  static CheckError({ className }) {
+    return (
+      <svg
+        className={className}
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="0.285725"
+          y="0.162598"
+          width="15.2381"
+          height="15.2381"
+          rx="7.61905"
+          fill="#FF5A30"
+        />
+        <path
+          d="M11.1191 4.56738L4.69049 10.996"
+          stroke="white"
+          stroke-width="1.42857"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M11.1191 10.996L4.69049 4.56738"
+          stroke="white"
+          stroke-width="1.42857"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         />
       </svg>
     );

@@ -1,61 +1,47 @@
 import Link from "next/link";
 import React from "react";
 
-const FooterLinks = () => {
+const FooterServices = () => {
   return (
     <div className="w-[300px] h-[288px]">
-      <div className="flex justify-center space-x-1 ">
-        <div className=" flex-shrink-0 text-[rgba(6, 28, 61, 1)] text-[18px] ">
-          Quick Links
-        </div>
+      <div className="flex justify-center space-x-2 ">
+        <div className="text-[rgba(6, 28, 61, 1)] text-[18px] ">Database</div>
         <div className="flex flex-col mt-1 ">
           <Link
             href="/"
-            className="text-tertiary400 w-[200px] h-[36px] text-[14px] leading-[21px] "
+            className="text-tertiary400 w-[200px] h-[36px] text-[14px] leading-[21px] hover:text-[rgba(178,177,170,1)] transition"
           >
-            Anasayfa
+            Our Data
           </Link>
           <Link
             href="/"
             className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
           >
-            Nasıl Çalışır?
+            Data Transparency
           </Link>
           <Link
             href="/"
             className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
           >
-            Veri Paketleri
+            Verify Company Data
           </Link>
           <Link
             href="/"
             className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
           >
-            Hakkımızda
+            People Search
           </Link>
           <Link
             href="/"
             className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
           >
-            Başarı Hikayeleri
+            Verify Profile Data
           </Link>
           <Link
             href="/"
             className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
           >
-            Blog
-          </Link>
-          <Link
-            href="/"
-            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
-          >
-            SSS
-          </Link>
-          <Link
-            href="/"
-            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
-          >
-            İletişim
+            Company Search
           </Link>
         </div>
       </div>
@@ -63,4 +49,4 @@ const FooterLinks = () => {
   );
 };
 
-export default FooterLinks;
+export default FooterServices;

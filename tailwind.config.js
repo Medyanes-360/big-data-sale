@@ -20,7 +20,7 @@ module.exports = {
         tertiary400: "#915DFF",
         lavenderGray: "#F3F3F6",
         softedWhite: "rgba(255, 255, 255, 0.24)",
-         customGray: 'rgba(185, 185, 185, 0.19)',
+        customGray: "rgba(185, 185, 185, 0.19)",
         gray700: "#42526B",
         lightMist: "#E6E8EC",
         background: "var(--background)",
@@ -28,6 +28,11 @@ module.exports = {
         customPink: "rgba(254, 237, 250, 1)",
         tertiary900: "rgba(23, 10, 51, 1)",
         footerLink: "rgba(244, 241, 253, 1)",
+        packagesBackground: "rgba(242, 244, 250, 1)",
+        cardBackground: "rgba(255, 255, 255, 1)",
+        cardTextColor: " rgba(255, 255, 255, 1)",
+        cardTextColor1: " rgba(66, 82, 107, 1)",
+        cardLineBackground: "rgba(230, 232, 236, 1)",
       },
       backdropBlur: {
         custom: "14.8px",
@@ -35,8 +40,6 @@ module.exports = {
 
       boxShadow: {
         custom: "0px 4px 4px 0px rgba(201, 201, 201, 0.25)",
-        'combined': '-20px 20px 40px -4px rgba(145, 158, 171, 0.24), 0px 0px 2px 0px rgba(145, 158, 171, 0.24)', // Combined box-shadow
-         'header-shadow':'0px 12px 24px -4px #919EAB29',
       },
       fontFamily: {
         Inter: "var(--font-inter)", //inter fontun static olaraq font-inter olaraq cagiriyoruz

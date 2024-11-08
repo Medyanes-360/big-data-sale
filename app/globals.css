@@ -24,3 +24,72 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .section-header {
+    @apply text-[32px] leading-[54px] font-Inter font-bold;
+  }
+  .text-primary {
+    @apply text-tertiary400;
+  }
+  .text-secondary {
+    @apply text-tertiary800;
+  }
+}
+
+.text-gradient-orange {
+  background: linear-gradient(97.83deg, #ffb31d 3.46%, #ff3784 106.92%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-gray {
+  background: rgba(131, 142, 158, 1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.custom-shape {
+  position: relative;
+  width: 209px;
+  height: 59px;
+  background-color: #915dff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -19px;
+  margin-top: 24px;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  z-index: 1; /* Metni üstte tutar */
+}
+
+.custom-shape::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 55px solid #fff;
+  border-left: 45px solid transparent;
+}
+
+.custom-shape::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 19px 19px 0;
+  border-color: transparent rgba(30, 13, 68, 1) transparent transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}

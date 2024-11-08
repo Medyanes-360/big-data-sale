@@ -5,14 +5,14 @@ import FooterLinks from "./footer-links";
 import FooterServices from "./footer-services";
 const Footer = () => {
   return (
-    <div className="bg-tertiary900  my-20 p-40">
-      <PageContainer className="flex items-center ">
+    <div className="bg-tertiary900    ">
+      <PageContainer className="flex items-center px-[120px] py-[124px] ">
         <FooterExplanation />
         <FooterLinks />
         <FooterServices />
       </PageContainer>
 
-      <PageContainer className="flex flex-col space-y-6 mt-20">
+      <PageContainer className="flex flex-col space-y-6  px-[120px] pb-[32px]">
         <div className=" block h-[0.5px] w-full bg-tertiary50 "></div>
         <div className="flex mx-20 items-center justify-between">
           <p className="text-tertiary50 text-[16px]">2024</p>
