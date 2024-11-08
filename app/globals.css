@@ -99,3 +99,15 @@ button {
   top: 100%;
   left: 0;
 }
+.custom-animation{
+  animation: slideDown 0.35s ease-out;
+
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

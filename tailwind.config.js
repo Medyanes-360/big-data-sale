@@ -42,6 +42,7 @@ module.exports = {
 
       boxShadow: {
         custom: "0px 4px 4px 0px rgba(201, 201, 201, 0.25)",
+        'header-shadow':'0px 12px 24px -4px #919EAB29'
       },
       fontFamily: {
         Inter: "var(--font-inter)", //inter fontun static olaraq font-inter olaraq cagiriyoruz
