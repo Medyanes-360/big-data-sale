@@ -46,7 +46,7 @@ const SectionPackages = () => {
                   </span>
                 </Card.Brand>
 
-                <div className="w-[265px] text-cardTextColor1 mb-[20px] mt-[22px] h-[69px] font-lexend font-medium text-[15.25px] leading-[22.86px] ">
+                <div className=" text-cardTextColor1 mb-[40px] mt-[22px]  font-lexend font-medium text-[15.25px] leading-[22.86px] ">
                   Küçük işletmeler, girişimler, veya kampanyalara yeni
                   başlayanlar.
                 </div>
@@ -78,7 +78,7 @@ const SectionPackages = () => {
                   </span>
                 </Card.Brand>
 
-                <div className="w-[265px] text-cardTextColor1 mb-[20px] mt-[22px] h-[69px] font-lexend font-medium text-[15.25px] leading-[22.86px] ">
+                <div className=" text-cardTextColor1 mb-[40px] mt-[22px]  font-lexend font-medium text-[15.25px] leading-[22.86px] ">
                   Küçük işletmeler, girişimler, veya kampanyalara yeni
                   başlayanlar.
                 </div>
@@ -112,7 +112,7 @@ const SectionPackages = () => {
                   </span>
                 </Card.Brand>
 
-                <div className="w-[265px] text-cardTextColor1 mb-[20px] mt-[22px] h-[69px] font-lexend font-medium text-[15.25px] leading-[22.86px] ">
+                <div className=" text-cardTextColor1 mb-[40px] mt-[22px] font-lexend font-medium text-[15.25px] leading-[22.86px] ">
                   Küçük işletmeler, girişimler, veya kampanyalara yeni
                   başlayanlar.
                 </div>
@@ -144,7 +144,7 @@ const SectionPackages = () => {
                   </span>
                 </Card.Brand>
 
-                <div className="w-[265px] text-cardTextColor1 mb-[20px] mt-[22px] h-[69px] font-lexend font-medium text-[15.25px] leading-[22.86px] ">
+                <div className=" text-cardTextColor1 mb-[40px] mt-[22px]  font-lexend font-medium text-[15.25px] leading-[22.86px] ">
                   Küçük işletmeler, girişimler, veya kampanyalara yeni
                   başlayanlar.
                 </div>
