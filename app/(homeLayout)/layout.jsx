@@ -15,8 +15,7 @@ export default function HomeLayout({ children }) {
   return (
     <>
       <Header />
-      {children}
-
+      <main className="pt-[80px]">{children}</main>
       <Footer />
     </>
   );
