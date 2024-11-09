@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         tertiary500: "rgba(117, 52, 255, 1)",
         gray50: "rgba(245,246,247,1)",
-       
+
         tertiary800: "#2F1566",
         tertiary50: "#F1EBFF",
         customPurple: "rgba(212, 206, 232, 0.44)",
@@ -31,10 +31,12 @@ module.exports = {
         tertiary900: "rgba(23, 10, 51, 1)",
         footerLink: "rgba(244, 241, 253, 1)",
         packagesBackground: "rgba(242, 244, 250, 1)",
-        cardBackground: "rgba(255, 255, 255, 1)",
-        cardTextColor: " rgba(255, 255, 255, 1)",
-        cardTextColor1: " rgba(66, 82, 107, 1)",
-        cardLineBackground: "rgba(230, 232, 236, 1)",
+        card: {
+          background: "rgba(255, 255, 255, 1)",
+          textColor: " rgba(255, 255, 255, 1)",
+          textColor1: " rgba(66, 82, 107, 1)",
+          cardLineBackground: "rgba(230, 232, 236, 1)",
+        },
       },
       backdropBlur: {
         custom: "14.8px",
@@ -42,7 +44,7 @@ module.exports = {
 
       boxShadow: {
         custom: "0px 4px 4px 0px rgba(201, 201, 201, 0.25)",
-        'header-shadow':'0px 12px 24px -4px #919EAB29'
+        "header-shadow": "0px 12px 24px -4px #919EAB29",
       },
       fontFamily: {
         Inter: "var(--font-inter)", //inter fontun static olaraq font-inter olaraq cagiriyoruz
