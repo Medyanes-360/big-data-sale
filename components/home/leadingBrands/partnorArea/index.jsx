@@ -1,8 +1,8 @@
 import React from "react";
-import google from "@/public/assets/google.png";
-import payooner from "@/public/assets/payooner.png";
-import depositPhotos from "@/public/assets/depositPhotos.png";
-import salesforce from "@/public/assets/salesforce.png";
+import google from "@/public/assets/images/google.png";
+import payooner from "@/public/assets/images/payooner.png";
+import depositPhotos from "@/public/assets/images/depositPhotos.png";
+import salesforce from "@/public/assets/images/salesforce.png";
 import PartnorCard from "./partnorCard";
 const PartnorArea = () => {
   const partnorData = [

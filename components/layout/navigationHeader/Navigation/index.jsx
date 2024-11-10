@@ -38,7 +38,7 @@ const mainNavigation = [
 
 const NavBar = () => {
   return (
-    <nav className="hidden lg:block">
+    <div className="hidden lg:block">
       <ul className="flex items-center gap-x-5">
         {mainNavigation?.map((item, index) => {
           return (
@@ -53,7 +53,7 @@ const NavBar = () => {
           );
         })}
       </ul>
-    </nav>
+    </div>
   );
 };
 

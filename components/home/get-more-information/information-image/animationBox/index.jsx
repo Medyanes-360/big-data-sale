@@ -2,12 +2,7 @@
 import React from "react";
 import { useAnimationFrame } from "framer-motion";
 import { MotionImage } from "@/globalElements/motion";
-import PersonImage from "@/public/assets/person.webp";
-import imageOne from "@/public/assets/image-1.webp";
-import imageTwo from "@/public/assets/image-2.webp";
-import imageThree from "@/public/assets/image-3.webp";
-import imageFour from "@/public/assets/image-4.webp";
-import imageFive from "@/public/assets/image-5.webp";
+
 import Image from "next/image";
 
 const AnimationBox = () => {

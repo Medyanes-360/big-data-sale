@@ -4,11 +4,11 @@ export function BannerVideo({ setOpen }) {
       <iframe
         width="100%"
         height="100%"
-        src="https://www.youtube.com/embed/p1AvAVXktm4?si=7KBZEOCEwWckeIII"
+        src="https://www.youtube.com/embed/p1AvAVXktm4?autoplay=1&si=7KBZEOCEwWckeIII" // Added autoplay=1
         title="YouTube video player"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
+        referrerPolicy="strict-origin-when-cross-origin"
       ></iframe>
       <button
         onClick={() => setOpen(false)}

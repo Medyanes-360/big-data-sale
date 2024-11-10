@@ -1,12 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import PersonImage from "@/public/assets/person.webp";
-import imageOne from "@/public/assets/image-1.webp";
-import imageTwo from "@/public/assets/image-2.webp";
-import imageThree from "@/public/assets/image-3.webp";
-import imageFour from "@/public/assets/image-4.webp";
-import imageFive from "@/public/assets/image-5.webp";
-import { MotionImage } from "@/globalElements/motion";
+import PersonImage from "@/public/assets/images/person.webp";
+import imageOne from "@/public/assets/images/image-1.webp";
+import imageTwo from "@/public/assets/images/image-2.webp";
+import imageThree from "@/public/assets/images/image-3.webp";
+import imageFour from "@/public/assets/images/image-4.webp";
+import imageFive from "@/public/assets/images/image-5.webp";
 import EmailBox from "./emailBox";
 import AdvertisingBox from "./advertisingBox";
 import Icons from "@/public/assets/icons/Icons";
@@ -15,6 +14,7 @@ const InformationImage = () => {
     <div className="w-[412px] relative h-[412px]  mx-auto border-[2.97px] border-dashed flex items-center justify-center rounded-full border-tertiary400">
       <Image
         src={imageOne}
+        
         className="rounded-full w-[31.6px] h-[31.6px] border-[2.63px] border-solid border-white absolute left-[20px] top-[75%]"
         alt="one-avatar"
         width={32}

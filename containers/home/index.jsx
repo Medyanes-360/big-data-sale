@@ -7,7 +7,6 @@ export default function HomePageContainer() {
   return (
     <>
       <GetMoreInformation />
-
       <LeadingBrands />
       <SectionPackages />
     </>
