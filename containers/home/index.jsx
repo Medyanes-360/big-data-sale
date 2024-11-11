@@ -1,7 +1,7 @@
 import GetMoreInformation from "@/components/home/get-more-information";
 import LeadingBrands from "@/components/home/leadingBrands";
-
-import SectionPackages from "../../components/home/sectionPackages";
+import SectionPackages from "@/components/home/sectionPackages";
+import BlogPostSection from "@/components/home/BlogPostSection";
 
 export default function HomePageContainer() {
   return (
@@ -9,6 +9,7 @@ export default function HomePageContainer() {
       <GetMoreInformation />
       <LeadingBrands />
       <SectionPackages />
+      <BlogPostSection />
     </>
   );
 }

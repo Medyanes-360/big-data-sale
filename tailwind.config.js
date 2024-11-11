@@ -47,7 +47,9 @@ module.exports = {
         "header-shadow": "0px 12px 24px -4px #919EAB29",
         "custom-combined":
           "-20px 20px 40px -4px rgba(145, 158, 171, 0.24), 0px 0px 2px 0px rgba(145, 158, 171, 0.24)",
-          'custom-combined-2': '-20px 20px 40px -4px rgba(145, 158, 171, 0.24), 0px 0px 2px 0px rgba(145, 158, 171, 0.24)',
+        "custom-combined-2":
+          "-20px 20px 40px -4px rgba(145, 158, 171, 0.24), 0px 0px 2px 0px rgba(145, 158, 171, 0.24)",
+        blog: "0px 12px 24px -4px rgba(145, 158, 171, 0.16)",
       },
       fontFamily: {
         Inter: "var(--font-inter)", //inter fontun static olaraq font-inter olaraq cagiriyoruz
