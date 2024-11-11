@@ -51,11 +51,8 @@ const SectionPackages = () => {
             Her sektöre, her ihtiyaca ve her bütçeye uygun veri çözümleriyle, iş
             hedeflerinizi kolayca gerçekleştirin.
           </p>
-          <div
-            className="w-[318px] mx-[px] my-[6px] h-[52px] px-[12px] border rounded-lg bg-[#ffffff]  shadow-custom2;
-]  shadow-custom2 py-[12px]"
-          >
-            <span className="mr-[12px]  text-[#838E9E] text-[16px] font-lexend font-medium leading-[24px] ">
+          <div className="w-[318px] mx-[px] my-[6px] h-[52px] px-[12px] rounded-lg bg-[#ffffff]  shadow-sectionPackages py-[12px]">
+            <span className="mr-[12px]  text-[#838E9E] text-[16px] font-lexend font-semibold leading-[24px] ">
               Paketler
             </span>
             <span className="text-gradient-orange ">
