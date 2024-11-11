@@ -9,37 +9,37 @@ const FooterServices = () => {
         <div className="flex flex-col mt-1 ">
           <Link
             href="/"
-            className="text-tertiary400 w-[200px] h-[36px] text-[14px] leading-[21px] hover:text-[rgba(178,177,170,1)] transition"
+            className="text-tertiary400 w-[200px] h-[36px] text-[14px] leading-[21px] hover:text-[#b2b1aa]  transition"
           >
             Our Data
           </Link>
           <Link
             href="/"
-            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
+            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] hover:text-[#b2b1aa] transition"
           >
             Data Transparency
           </Link>
           <Link
             href="/"
-            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
+            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] hover:text-[#b2b1aa] transition"
           >
             Verify Company Data
           </Link>
           <Link
             href="/"
-            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
+            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] hover:text-[#b2b1aa] transition "
           >
             People Search
           </Link>
           <Link
             href="/"
-            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
+            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] hover:text-[#b2b1aa] transition"
           >
             Verify Profile Data
           </Link>
           <Link
             href="/"
-            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] "
+            className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] hover:text-[#b2b1aa] transition"
           >
             Company Search
           </Link>
