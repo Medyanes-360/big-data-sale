@@ -10,16 +10,9 @@ const BlogImage = () => {
       <Player
         autoplay
         loop
-        src="/assets/images/marker-anim.json"
+        src="/assets/images/world-marker-anim.json"
         style={{ height: "100%", width: "100%" }}
       ></Player>
-      {/* <Image
-        src={WorldImage}
-        alt="world"
-        width={500}
-        height={500}
-        className="w-[500px] h-[500px] object-cover transform scale-x-[-1]"
-      /> */}
     </div>
   );
 };
