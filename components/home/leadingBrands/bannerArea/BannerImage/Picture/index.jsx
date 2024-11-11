@@ -3,7 +3,7 @@ import React from "react";
 import girlImage from "@/public/assets/images/girl-image.png";
 const Picture = () => {
   return (
-    <figure className="relative h-full w-full">
+    <figure className="relative h-full lg:-translate-x-[100px] lg:w-[660px] flex-shrink-0">
       <Image
         src={girlImage}
         alt="girl"

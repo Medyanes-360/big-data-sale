@@ -1,7 +1,4 @@
 "use client";
-
-import Image from "next/image";
-import WorldImage from "@/public/assets/images/world.png";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
 const BlogImage = () => {
