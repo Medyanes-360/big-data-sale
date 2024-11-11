@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         tertiary500: "rgba(117, 52, 255, 1)",
+        tertiary900: "#170A33",
         gray50: "rgba(245,246,247,1)",
         amber: "#FEA310",
         tertiary800: "#2F1566",
