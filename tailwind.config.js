@@ -13,6 +13,7 @@ module.exports = {
         tertiary500: "rgba(117, 52, 255, 1)",
         tertiary900: "#170A33",
         gray50: "rgba(245,246,247,1)",
+        gray600:'#6A778B',
         amber: "#FEA310",
         tertiary800: "#2F1566",
         tertiary50: "#F1EBFF",
