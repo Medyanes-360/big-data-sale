@@ -4,6 +4,7 @@ import SectionPackages from "@/components/home/sectionPackages";
 import BlogPostSection from "@/components/home/BlogPostSection";
 import HowItWorks from "@/components/home/howItWorks";
 import Faq from "@/components/home/questinAnswer";
+import Testimonials from "@/components/home/testimonials";
 
 export default function HomePageContainer() {
   return (
@@ -13,6 +14,7 @@ export default function HomePageContainer() {
       <SectionPackages />
       <HowItWorks />
       <Faq />
+      <Testimonials/>
       <BlogPostSection />
     </>
   );

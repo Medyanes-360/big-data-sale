@@ -211,3 +211,9 @@ button {
   color: var(--text-low-contrast);
   font-weight: 600;
 }
+.bg-testimonials-pattern{
+  background: linear-gradient(101.58deg, rgba(23, 10, 51, 0.8) 2.48%, rgba(69, 30, 153, 0.8) 156.82%), url('/assets/images/testimonials-bg.jpg');
+  background-repeat: no-repeat;  
+  background-size: cover;
+  background-position: center;
+}

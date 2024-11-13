@@ -914,16 +914,16 @@ export default class Icons {
         <path
           d="M3.75 12.877H20.25"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M12 4.62695V21.127"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     );
@@ -1855,4 +1855,40 @@ export default class Icons {
       </svg>
     );
   }
+  static PrevArrow({ className }) {
+    return (
+      <svg className={className} width="32" height="41" viewBox="0 0 32 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M23 20.377H9M9 20.377L16 27.377M9 20.377L16 13.377" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+      
+    );
+  }
+  static NextArrow({ className }) {
+    return (
+      <svg className={className} width="32" height="41" viewBox="0 0 32 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 20.377H23M23 20.377L16 13.377M23 20.377L16 27.377" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+      
+    );
+  }
+  static ArrowRight({ className }) {
+    return (
+      <svg width="32" height="41" viewBox="0 0 32 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 20.377H23M23 20.377L16 13.377M23 20.377L16 27.377" stroke="#915DFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+      
+    );
+  }
+  static Rating({ className }) {
+    return (
+      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.8649 3.87311C12.4796 3.20896 11.5204 3.20896 11.1351 3.87311L8.42101 8.55042C8.23064 8.87851 7.90159 9.1024 7.52653 9.15905L2.44021 9.92727C1.58593 10.0563 1.28627 11.1349 1.95158 11.6861L5.74067 14.8253C6.09141 15.1159 6.25633 15.5743 6.17113 16.0217L5.17996 21.2269C5.02327 22.0497 5.88706 22.689 6.62821 22.2988L11.4176 19.7769C11.7821 19.585 12.2178 19.585 12.5824 19.7769L17.3718 22.2988C18.1129 22.689 18.9767 22.0497 18.82 21.2269L17.8289 16.0217C17.7437 15.5743 17.9086 15.1159 18.2593 14.8253L22.0484 11.6861C22.7137 11.1349 22.4141 10.0563 21.5598 9.92727L16.4735 9.15905C16.0984 9.1024 15.7694 8.87851 15.579 8.55042L12.8649 3.87311Z" fill="#FF8800"/>
+      </svg>
+      
+
+      
+    );
+  }     
 }
