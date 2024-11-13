@@ -12,8 +12,9 @@ module.exports = {
       colors: {
         tertiary500: "rgba(117, 52, 255, 1)",
         tertiary900: "#170A33",
+        softBreeze: "#F2F4FA",
         gray50: "rgba(245,246,247,1)",
-        gray600:'#6A778B',
+        gray600: "#6A778B",
         amber: "#FEA310",
         tertiary800: "#2F1566",
         tertiary50: "#F1EBFF",
@@ -28,6 +29,7 @@ module.exports = {
         gray700: "#42526B",
         lightMist: "#E6E8EC",
         background: "var(--background)",
+        deepAbyss: "#061C3D",
         foreground: "var(--foreground)",
         customPink: "rgba(254, 237, 250, 1)",
         tertiary900: "rgba(23, 10, 51, 1)",
@@ -39,6 +41,10 @@ module.exports = {
           textColor1: " rgba(66, 82, 107, 1)",
           cardLineBackground: "rgba(230, 232, 236, 1)",
         },
+      },
+      backgroundImage: {
+        "text-gradient":
+          "linear-gradient(179.17deg, rgba(145, 93, 255, 0.07) -92.76%, rgba(87, 56, 153, 0.07) 99.29%)",
       },
       backdropBlur: {
         custom: "14.8px",
@@ -60,5 +66,18 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".text-gradient": {
+          backgroundImage:
+            "linear-gradient(179.17deg, rgba(145, 93, 255, 0.07) -92.76%, rgba(87, 56, 153, 0.07) 99.29%)",
+          "-webkit-background-clip": "text",
+          "-webkit-text-fill-color": "transparent",
+          "background-clip": "text",
+          "text-fill-color": "transparent",
+        },
+      });
+    },
+  ],
 };

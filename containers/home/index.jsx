@@ -3,6 +3,7 @@ import LeadingBrands from "@/components/home/leadingBrands";
 import SectionPackages from "@/components/home/sectionPackages";
 import BlogPostSection from "@/components/home/BlogPostSection";
 import HowItWorks from "@/components/home/howItWorks";
+import Faq from "@/components/home/questinAnswer";
 
 export default function HomePageContainer() {
   return (
@@ -11,6 +12,7 @@ export default function HomePageContainer() {
       <LeadingBrands />
       <SectionPackages />
       <HowItWorks />
+      <Faq />
       <BlogPostSection />
     </>
   );
