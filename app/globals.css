@@ -217,3 +217,9 @@ button {
   background-size: cover;
   background-position: center;
 }
+.bg-info-pattern{
+  background: linear-gradient(101.58deg, rgba(242, 244, 250, 0.8) 2.48%, rgba(242, 244, 250, 1) 156.82%), url('/assets/images/info-bg.jpg');
+  background-repeat: no-repeat;  
+  background-size: cover;
+  background-position: center;
+}

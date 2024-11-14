@@ -5,6 +5,7 @@ import BlogPostSection from "@/components/home/BlogPostSection";
 import HowItWorks from "@/components/home/howItWorks";
 import Faq from "@/components/home/questinAnswer";
 import Testimonials from "@/components/home/testimonials";
+import InfoSection from "@/components/home/infoSection";
 
 export default function HomePageContainer() {
   return (
@@ -16,6 +17,7 @@ export default function HomePageContainer() {
       <Faq />
       <Testimonials/>
       <BlogPostSection />
+      <InfoSection/>
     </>
   );
 }
