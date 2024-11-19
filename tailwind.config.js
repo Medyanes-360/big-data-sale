@@ -10,11 +10,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        tertiary500: "rgba(117, 52, 255, 1)",
+        tertiary: {
+          50: "#F1EBFF",
+          400: "#915DFF",
+          500: "#7534FF",
+          800: "#2F1566",
+          900: "#170A33",
+        },
+        gray: {
+          50: "#F5F6F7",
+          600: "#6A778B",
+          700: "#42526B",
+        },
+        tertiary500: "#7534FF",
         tertiary900: "#170A33",
         softBreeze: "#F2F4FA",
         gray50: "rgba(245,246,247,1)",
         gray600: "#6A778B",
+        gray700: "#42526B",
+        gray600: "#E0E5FF1F",
         amber: "#FEA310",
         tertiary800: "#2F1566",
         tertiary50: "#F1EBFF",
@@ -26,10 +40,8 @@ module.exports = {
         lavenderGray: "#F3F3F6",
         softedWhite: "rgba(255, 255, 255, 0.24)",
         customGray: "rgba(185, 185, 185, 0.19)",
-        gray700: "#42526B",
-        gray600: "#E0E5FF1F",
         lightMist: "#E6E8EC",
-        light200:'#FEEDFA', 
+        light200: "#FEEDFA",
         background: "var(--background)",
         deepAbyss: "#061C3D",
         foreground: "var(--foreground)",

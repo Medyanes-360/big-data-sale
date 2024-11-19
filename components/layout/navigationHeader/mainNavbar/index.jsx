@@ -4,6 +4,8 @@ import NavigationButton from "../navigationButtons";
 import PageContainer from "@/containers/PageContainers";
 import Logo from "@/globalElements/Logo";
 import { MotionNav } from "@/globalElements/motion";
+import ButtonComponent from "@/globalElements/Button";
+import Icons from "@/public/assets/icons/Icons";
 
 const MainNavbar = ({ isScrolled }) => {
   return (
@@ -25,12 +27,15 @@ const MainNavbar = ({ isScrolled }) => {
         isScrolled ? "fixed  shadow-md" : "absolute"
       }`}
     >
-      <PageContainer className="flex items-center">
+      <PageContainer className="flex items-center justify-between lg:justify-normal">
         <Logo white={false} className="w-[110px]" />
-        <div className="flex items-center justify-between flex-1 ml-5">
+        <div className="hidden lg:flex items-center justify-between flex-1 ml-5">
           <NavBar />
           <NavigationButton />
         </div>
+        <ButtonComponent className="w-12 h-12 flex bg-tertiary-50 items-center justify-center lg:hidden  shadow-[ 0px 0px 2px rgba(145, 158, 171, 0.24), -20px 20px 40px -4px rgba(145, 158, 171, 0.24)]">
+          <Icons.Hamburger />
+        </ButtonComponent>
       </PageContainer>
     </MotionNav>
   );

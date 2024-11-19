@@ -26,7 +26,7 @@ const AdvantagesArea = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-4 gap-x-4 max-w-[95%] mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-full w-full lg:max-w-[95%] mx-auto">
       {advantagesData?.map((item, _) => {
         return (
           <AdvantagesCard title={item.title} key={item.id} icon={item.icon} />

@@ -14,11 +14,11 @@ const InformationFrame = () => {
         </span>{" "}
         Potansiyel Müşteri Verilerine Erişin!
       </h1>
-      <div className="flex items-center gap-x-4">
-        <ButtonComponent className="text-tertiary800 bg-softedWhite shadow-custom-combined  bg-white  w-full h-[52px] flex items-center justify-center max-w-[257px] rounded-[9.08px] font-Inter font-medium text-[18.17px] leading-[51.91px]">
+      <div className="flex items-center gap-4 flex-col md:flex-row">
+        <ButtonComponent className="text-tertiary800 bg-softedWhite shadow-custom-combined  bg-white  w-full h-[52px] flex items-center justify-center lg:max-w-[257px] rounded-[9.08px] font-Inter font-medium text-[18.17px] leading-[51.91px]">
           Daha Fazla Bilgi Al
         </ButtonComponent>
-        <ButtonComponent className="bg-tertiary800 h-[52px] flex shadow-custom-combined-2   w-full items-center justify-center max-w-[257px] rounded-[9.08px] font-Inter font-medium text-[18.17px] leading-[51.91px] text-white">
+        <ButtonComponent className="bg-tertiary800 h-[52px] flex shadow-custom-combined-2   w-full items-center justify-center lg:max-w-[257px] rounded-[9.08px] font-Inter font-medium text-[18.17px] leading-[51.91px] text-white">
           Hemen Başla
         </ButtonComponent>
       </div>
