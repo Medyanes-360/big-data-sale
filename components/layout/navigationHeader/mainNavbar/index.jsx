@@ -23,7 +23,7 @@ const MainNavbar = ({ isScrolled }) => {
           transition: { duration: 0.3 },
         },
       }}
-      className={`bg-white h-[80px] flex items-center w-full z-[999] ${
+      className={`bg-white-900 h-[80px] flex items-center w-full z-[999] ${
         isScrolled ? "fixed  shadow-md" : "absolute"
       }`}
     >
@@ -33,7 +33,7 @@ const MainNavbar = ({ isScrolled }) => {
           <NavBar />
           <NavigationButton />
         </div>
-        <ButtonComponent className="w-12 h-12 flex bg-tertiary-50 items-center justify-center lg:hidden  shadow-[ 0px 0px 2px rgba(145, 158, 171, 0.24), -20px 20px 40px -4px rgba(145, 158, 171, 0.24)]">
+        <ButtonComponent className="w-12 h-12 flex bg-tertiary-50 items-center justify-center lg:hidden  drop-shadow-custom-hamburger">
           <Icons.Hamburger />
         </ButtonComponent>
       </PageContainer>

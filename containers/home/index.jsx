@@ -11,13 +11,13 @@ export default function HomePageContainer() {
   return (
     <>
       <GetMoreInformation />
-      <LeadingBrands />
-      <SectionPackages />
+     {/* <LeadingBrands />  */}
+      {/* <SectionPackages />
       <HowItWorks />
       <Faq />
       <Testimonials/>
       <BlogPostSection />
-      <InfoSection/>
+      <InfoSection/> */}
     </>
   );
 }

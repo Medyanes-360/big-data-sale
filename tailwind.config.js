@@ -18,9 +18,22 @@ module.exports = {
           900: "#170A33",
         },
         gray: {
+          19: "rgba(185, 185, 185, 0.19)",
           50: "#F5F6F7",
+          60: "#838E9E",
           600: "#6A778B",
           700: "#42526B",
+        },
+        white: {
+          24: "rgba(255, 255, 255, 0.24)",
+          900: "rgba(255, 255, 255, 1)",
+        },
+        amber: {
+          900: "#FEA310",
+        },
+        purple: {
+          38: "#E9E9FF61",
+          44: "#D4CEE870",
         },
         tertiary500: "#7534FF",
         tertiary900: "#170A33",
@@ -29,7 +42,6 @@ module.exports = {
         gray600: "#6A778B",
         gray700: "#42526B",
         gray600: "#E0E5FF1F",
-        amber: "#FEA310",
         tertiary800: "#2F1566",
         tertiary50: "#F1EBFF",
         customPurple: "rgba(212, 206, 232, 0.44)",
@@ -63,7 +75,15 @@ module.exports = {
       backdropBlur: {
         custom: "14.8px",
       },
-
+      dropShadow: {
+        "custom-combined-1":
+          "0px 0px 2px rgba(145, 158, 171, 0.24) -20px 20px 40px -4px rgba(145, 158, 171, 0.24)",
+        "custom-combined": "0px 2.59345px 2.59345px rgba(201, 201, 201, 0.25)",
+        "custom-hamburger":
+          "0px 0px 2px rgba(145, 158, 171, 0.24), -20px 20px 40px -4px rgba(145, 158, 171, 0.24)",
+        "custom-combined-2":
+          "0px 20.5451px 41.0901px rgba(142, 155, 174, 0.2), inset 0px 4.10901px 10.2725px 1.02725px rgba(65, 69, 93, 0.1)",
+      },
       boxShadow: {
         custom: "0px 4px 4px 0px rgba(201, 201, 201, 0.25)",
         "header-shadow": "0px 12px 24px -4px #919EAB29",

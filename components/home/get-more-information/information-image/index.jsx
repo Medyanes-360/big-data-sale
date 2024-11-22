@@ -11,11 +11,10 @@ import AdvertisingBox from "./advertisingBox";
 import Icons from "@/public/assets/icons/Icons";
 const InformationImage = () => {
   return (
-    <div className="w-[412px] relative h-[412px]  mx-auto border-[2.97px] border-dashed flex items-center justify-center rounded-full border-tertiary400">
+    <div className="relative w-[223px] h-[223px] sm:w-[412px] sm:h-[412px]  mx-auto border-[2.97px] border-dashed flex items-center justify-center rounded-full border-tertiary400">
       <Image
         src={imageOne}
-        
-        className="rounded-full w-[31.6px] h-[31.6px] border-[2.63px] border-solid border-white absolute left-[20px] top-[75%]"
+        className="rounded-full w-[31.6px] h-[31.6px] border-[2.63px] border-solid border-white absolute left-[10px] sm:left-[20px] top-[75%]"
         alt="one-avatar"
         width={32}
         height={32}
@@ -27,7 +26,7 @@ const InformationImage = () => {
         width={27}
         height={27}
       />
-      <div className="bg-customLightPurple relative w-[350px] h-[350px] rounded-full flex items-center justify-center">
+      <div className="bg-purple-38 relative w-[181px] h-[181px] sm:w-[350px] sm:h-[350px] rounded-full flex items-center justify-center">
         <Image
           src={imageThree}
           className="rounded-full w-[31.6px] h-[31.6px] border-[2.63px] border-solid border-white absolute  top-[85%] right-[60px]"
@@ -42,15 +41,15 @@ const InformationImage = () => {
           width={16}
           height={16}
         />
-        <div className="w-[247.57px] relative h-[247.57px] rounded-full bg-customPurple ] flex items-center justify-center border-[1.47px] border-solid border-white">
+        <div className="relative w-[128px] h-[128px] sm:w-[247.57px] sm:h-[247.57px] rounded-full bg-purple-44 flex items-center justify-center border-[1.47px] border-solid border-white-900 drop-shadow-custom-combined-2">
           <Image
             src={imageFive}
-            className="rounded-full w-[48px] h-[48px] border-[2.63px] border-solid border-white absolute  right-[-20px]"
+            className="rounded-full w-[25px] h-[25px] sm:w-[48px] sm:h-[48px] border-[2.63px] border-solid border-white absolute right-[-10px] sm:right-[-20px]"
             alt="one-avatar"
             width={48}
             height={48}
           />
-          <figure className="w-[158px] h-[158px] rounded-full border-[1.32px] border-solid border-white">
+          <figure className="w-[81.9] h-[81.9] sm:w-[158px] sm:h-[158px] rounded-full border-[1.32px] border-solid border-white">
             <Image
               src={PersonImage}
               alt="Person"
@@ -66,13 +65,13 @@ const InformationImage = () => {
       <EmailBox />
       <AdvertisingBox
         text={"Doğrulanmış Veri Erişimi"}
-        icon={<Icons.CheckShield />}
-        className=" absolute bottom-0 -left-[25%]"
+        icon={<Icons.CheckShield className="w-3 h-3 lg:w-5 lg:h-5" />}
+        className=" absolute bottom-[-30px] sm:bottom-0  -left-[25%]"
       />
       <AdvertisingBox
         text={"Başarı Yolculuğunuzda Yanınızdayız"}
-        icon={<Icons.Union />}
-        className=" absolute bottom-[66px] -right-[25%]"
+        icon={<Icons.Union className="w-3 h-3 lg:w-5 lg:h-5" />}
+        className="absolute bottom-[30px] sm:bottom-[66px] -right-[25%]"
       />
     </div>
   );

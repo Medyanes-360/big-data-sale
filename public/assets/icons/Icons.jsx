@@ -264,46 +264,32 @@ export default class Icons {
   static CheckShield({ className }) {
     return (
       <svg
-        width="101"
-        height="57"
-        viewBox="0 0 101 57"
+        className={className}
+        viewBox="0 0 20 22"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g filter="url(#filter0_dd_83_3195)">
-          <g clipPath="url(#clip0_83_3195)">
-            <rect
-              x="57.0003"
-              y="12"
-              width="32"
-              height="32"
-              rx="4"
-              transform="rotate(0.243351 57.0003 12)"
-              fill="white"
-            />
-            <g filter="url(#filter1_dii_83_3195)">
-              <path
-                d="M71.5813 38.5295C71.8905 38.6963 72.2795 38.6969 72.5902 38.5327C81.0558 34.0312 81.6933 25.1689 81.6967 22.6482C81.6967 22.4456 81.6377 22.2474 81.5268 22.0778C81.4159 21.9083 81.258 21.7747 81.0724 21.6935L72.6019 17.8982C72.4671 17.838 72.3212 17.8068 72.1736 17.8063C72.026 17.8059 71.88 17.8363 71.7448 17.8956L63.3014 21.6191C63.1178 21.6988 62.961 21.8295 62.8497 21.9958C62.7383 22.162 62.6771 22.3568 62.6733 22.5568C62.6268 25.0647 63.094 33.9507 71.5813 38.5295Z"
-                fill="url(#paint0_linear_83_3195)"
-              />
-            </g>
-            <g filter="url(#filter2_dii_83_3195)">
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M77.3503 24.1653C77.8373 24.6495 77.8396 25.4368 77.3554 25.9238L72.1569 31.1521C71.6866 31.6251 70.9267 31.6428 70.435 31.192L68.0214 28.98C67.5151 28.516 67.4809 27.7294 67.9449 27.2232C68.4089 26.7169 69.1955 26.6826 69.7018 27.1466L71.2351 28.5519L75.5918 24.1703C76.076 23.6833 76.8633 23.6811 77.3503 24.1653Z"
-                fill="white"
-              />
-            </g>
-          </g>
+        <g filter="url(#filter0_dii_0_1)">
+          <path
+            d="M9.48192 17.0756C9.71862 17.2033 10.0164 17.2037 10.2542 17.078C16.7341 13.6325 17.222 6.8489 17.2246 4.91949C17.2246 4.76442 17.1794 4.6127 17.0946 4.48292C17.0097 4.35313 16.8888 4.25092 16.7467 4.18879L10.2631 1.28367C10.16 1.23766 10.0483 1.21372 9.93533 1.21338C9.82236 1.21304 9.71056 1.23631 9.60711 1.28169L3.14425 4.13182C3.00374 4.19278 2.88372 4.29285 2.79848 4.42011C2.71324 4.54736 2.66638 4.69644 2.66349 4.84958C2.6279 6.76916 2.98554 13.5708 9.48192 17.0756Z"
+            fill="url(#paint0_linear_0_1)"
+          />
+        </g>
+        <g filter="url(#filter1_dii_0_1)">
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M13.8978 6.08074C14.2706 6.45138 14.2723 7.05403 13.9016 7.42679L9.92259 11.4287C9.56257 11.7907 8.98097 11.8042 8.60454 11.4592L6.75716 9.7661C6.36963 9.41093 6.3434 8.80885 6.69857 8.42133C7.05374 8.0338 7.65582 8.00756 8.04335 8.36274L9.21703 9.43842L12.5517 6.08459C12.9224 5.71183 13.525 5.7101 13.8978 6.08074Z"
+            fill="white"
+          />
         </g>
         <defs>
           <filter
-            id="filter0_dd_83_3195"
-            x="0.86438"
-            y="-4"
-            width="104.136"
-            height="104.136"
+            id="filter0_dii_0_1"
+            x="0.0170405"
+            y="0.28784"
+            width="19.852"
+            height="21.5117"
             filterUnits="userSpaceOnUse"
             colorInterpolationFilters="sRGB"
           >
@@ -314,66 +300,8 @@ export default class Icons {
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
               result="hardAlpha"
             />
-            <feMorphology
-              radius="4"
-              operator="erode"
-              in="SourceAlpha"
-              result="effect1_dropShadow_83_3195"
-            />
-            <feOffset dx="-20" dy="20" />
-            <feGaussianBlur stdDeviation="20" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0.568627 0 0 0 0 0.619608 0 0 0 0 0.670588 0 0 0 0.24 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_83_3195"
-            />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset />
-            <feGaussianBlur stdDeviation="1" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0.568627 0 0 0 0 0.619608 0 0 0 0 0.670588 0 0 0 0.24 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="effect1_dropShadow_83_3195"
-              result="effect2_dropShadow_83_3195"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect2_dropShadow_83_3195"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter1_dii_83_3195"
-            x="59.2159"
-            y="16.5971"
-            width="25.9356"
-            height="28.104"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="2.59108" />
-            <feGaussianBlur stdDeviation="1.72739" />
+            <feOffset dy="1.9833" />
+            <feGaussianBlur stdDeviation="1.3222" />
             <feColorMatrix
               type="matrix"
               values="0 0 0 0 0.318372 0 0 0 0 0.579167 0 0 0 0 0.154444 0 0 0 0.55 0"
@@ -381,12 +309,12 @@ export default class Icons {
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_83_3195"
+              result="effect1_dropShadow_0_1"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_83_3195"
+              in2="effect1_dropShadow_0_1"
               result="shape"
             />
             <feColorMatrix
@@ -395,8 +323,8 @@ export default class Icons {
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
               result="hardAlpha"
             />
-            <feOffset dy="-1.20917" />
-            <feGaussianBlur stdDeviation="1.9865" />
+            <feOffset dy="-0.925539" />
+            <feGaussianBlur stdDeviation="1.52053" />
             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
             <feColorMatrix
               type="matrix"
@@ -405,7 +333,7 @@ export default class Icons {
             <feBlend
               mode="normal"
               in2="shape"
-              result="effect2_innerShadow_83_3195"
+              result="effect2_innerShadow_0_1"
             />
             <feColorMatrix
               in="SourceAlpha"
@@ -413,8 +341,8 @@ export default class Icons {
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
               result="hardAlpha"
             />
-            <feOffset dy="-0.518217" />
-            <feGaussianBlur stdDeviation="0.345478" />
+            <feOffset dy="-0.39666" />
+            <feGaussianBlur stdDeviation="0.26444" />
             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
             <feColorMatrix
               type="matrix"
@@ -422,16 +350,16 @@ export default class Icons {
             />
             <feBlend
               mode="normal"
-              in2="effect2_innerShadow_83_3195"
-              result="effect3_innerShadow_83_3195"
+              in2="effect2_innerShadow_0_1"
+              result="effect3_innerShadow_0_1"
             />
           </filter>
           <filter
-            id="filter2_dii_83_3195"
-            x="66.1494"
-            y="22.9876"
-            width="13.0364"
-            height="10.6527"
+            id="filter1_dii_0_1"
+            x="5.32422"
+            y="5.17933"
+            width="9.97846"
+            height="8.15387"
             filterUnits="userSpaceOnUse"
             colorInterpolationFilters="sRGB"
           >
@@ -442,8 +370,8 @@ export default class Icons {
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
               result="hardAlpha"
             />
-            <feOffset dy="0.652766" />
-            <feGaussianBlur stdDeviation="0.734362" />
+            <feOffset dy="0.499648" />
+            <feGaussianBlur stdDeviation="0.562104" />
             <feColorMatrix
               type="matrix"
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
@@ -451,12 +379,12 @@ export default class Icons {
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_83_3195"
+              result="effect1_dropShadow_0_1"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_83_3195"
+              in2="effect1_dropShadow_0_1"
               result="shape"
             />
             <feColorMatrix
@@ -465,8 +393,8 @@ export default class Icons {
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
               result="hardAlpha"
             />
-            <feOffset dy="-0.815958" />
-            <feGaussianBlur stdDeviation="0.407979" />
+            <feOffset dy="-0.62456" />
+            <feGaussianBlur stdDeviation="0.31228" />
             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
             <feColorMatrix
               type="matrix"
@@ -475,7 +403,7 @@ export default class Icons {
             <feBlend
               mode="normal"
               in2="shape"
-              result="effect2_innerShadow_83_3195"
+              result="effect2_innerShadow_0_1"
             />
             <feColorMatrix
               in="SourceAlpha"
@@ -483,8 +411,8 @@ export default class Icons {
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
               result="hardAlpha"
             />
-            <feOffset dy="-0.489575" />
-            <feGaussianBlur stdDeviation="0.489575" />
+            <feOffset dy="-0.374736" />
+            <feGaussianBlur stdDeviation="0.374736" />
             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
             <feColorMatrix
               type="matrix"
@@ -492,32 +420,21 @@ export default class Icons {
             />
             <feBlend
               mode="normal"
-              in2="effect2_innerShadow_83_3195"
-              result="effect3_innerShadow_83_3195"
+              in2="effect2_innerShadow_0_1"
+              result="effect3_innerShadow_0_1"
             />
           </filter>
           <linearGradient
-            id="paint0_linear_83_3195"
-            x1="72.2046"
-            y1="17.8065"
-            x2="72.1161"
-            y2="38.6554"
+            id="paint0_linear_0_1"
+            x1="9.95905"
+            y1="1.21348"
+            x2="9.89127"
+            y2="17.1719"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#96D14A" />
             <stop offset="1" stopColor="#61B539" />
           </linearGradient>
-          <clipPath id="clip0_83_3195">
-            <rect
-              x="57.0003"
-              y="12"
-              width="32"
-              height="32"
-              rx="4"
-              transform="rotate(0.243351 57.0003 12)"
-              fill="white"
-            />
-          </clipPath>
         </defs>
       </svg>
     );
@@ -525,94 +442,24 @@ export default class Icons {
   static Union({ className }) {
     return (
       <svg
-        width="101"
-        height="57"
-        viewBox="0 0 101 57"
+        className={className}
+        viewBox="0 0 28 21"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g filter="url(#filter0_dd_69_2146)">
-          <rect
-            x="56.6094"
-            y="12"
-            width="32"
-            height="32"
-            rx="3"
-            transform="rotate(1.09103 56.6094 12)"
-            fill="white"
+        <g filter="url(#filter0_di_525_3554)">
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M17.36 1.26606C16.5497 1.25063 15.8803 1.89502 15.8648 2.70534C15.8494 3.51567 16.4938 4.18508 17.3041 4.20051L20.1531 4.25477L14.6259 9.7761L11.9706 7.01767C11.698 6.73448 11.3232 6.57249 10.9301 6.568C10.5371 6.56351 10.1586 6.71689 9.87964 6.99377L3.57029 13.2552C2.99502 13.8261 2.99147 14.7552 3.56237 15.3305C4.13327 15.9058 5.06243 15.9093 5.6377 15.3384L10.8895 10.1266L13.5482 12.8886C13.8214 13.1723 14.1972 13.3344 14.5911 13.3382C14.985 13.3421 15.3639 13.1874 15.6426 12.909L22.1764 6.3821L22.125 9.07849C22.1096 9.88882 22.754 10.5582 23.5643 10.5737C24.3746 10.5891 25.044 9.9447 25.0595 9.13438L25.1785 2.88272C25.194 2.07239 24.5496 1.40298 23.7392 1.38755L17.36 1.26606Z"
+            fill="url(#paint0_linear_525_3554)"
           />
-          <g filter="url(#filter1_di_69_2146)">
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M75.3601 20.2661C74.5497 20.2506 73.8803 20.895 73.8649 21.7053C73.8495 22.5157 74.4938 23.1851 75.3042 23.2005L78.1531 23.2548L72.626 28.7761L69.9707 26.0177C69.6981 25.7345 69.3232 25.5725 68.9302 25.568C68.5371 25.5635 68.1587 25.7169 67.8797 25.9938L61.5703 32.2552C60.9951 32.8261 60.9915 33.7552 61.5624 34.3305C62.1333 34.9058 63.0625 34.9093 63.6378 34.3384L68.8895 29.1266L71.5482 31.8886C71.8214 32.1723 72.1972 32.3344 72.5911 32.3382C72.985 32.3421 73.3639 32.1874 73.6426 31.909L80.1764 25.3821L80.1251 28.0785C80.1096 28.8888 80.754 29.5582 81.5644 29.5737C82.3747 29.5891 83.0441 28.9447 83.0595 28.1344L83.1786 21.8827C83.194 21.0724 82.5496 20.403 81.7393 20.3875L75.3601 20.2661Z"
-              fill="url(#paint0_linear_69_2146)"
-            />
-          </g>
         </g>
         <defs>
           <filter
-            id="filter0_dd_69_2146"
-            x="0.00012207"
-            y="-4"
-            width="104.603"
-            height="104.604"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feMorphology
-              radius="4"
-              operator="erode"
-              in="SourceAlpha"
-              result="effect1_dropShadow_69_2146"
-            />
-            <feOffset dx="-20" dy="20" />
-            <feGaussianBlur stdDeviation="20" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0.568627 0 0 0 0 0.619608 0 0 0 0 0.670588 0 0 0 0.24 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_69_2146"
-            />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset />
-            <feGaussianBlur stdDeviation="1" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0.568627 0 0 0 0 0.619608 0 0 0 0 0.670588 0 0 0 0.24 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="effect1_dropShadow_69_2146"
-              result="effect2_dropShadow_69_2146"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect2_dropShadow_69_2146"
-              result="shape"
-            />
-          </filter>
-          <filter
-            id="filter1_di_69_2146"
-            x="58.6958"
-            y="18.9515"
+            id="filter0_di_525_3554"
+            x="0.695697"
+            y="-0.048504"
             width="26.9239"
             height="20.1311"
             filterUnits="userSpaceOnUse"
@@ -634,12 +481,12 @@ export default class Icons {
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_69_2146"
+              result="effect1_dropShadow_525_3554"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_69_2146"
+              in2="effect1_dropShadow_525_3554"
               result="shape"
             />
             <feColorMatrix
@@ -658,15 +505,15 @@ export default class Icons {
             <feBlend
               mode="normal"
               in2="shape"
-              result="effect2_innerShadow_69_2146"
+              result="effect2_innerShadow_525_3554"
             />
           </filter>
           <linearGradient
-            id="paint0_linear_69_2146"
-            x1="72.298"
-            y1="20.2077"
-            x2="72.0174"
-            y2="34.9438"
+            id="paint0_linear_525_3554"
+            x1="14.298"
+            y1="1.20774"
+            x2="14.0173"
+            y2="15.9438"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#EE7878" />
