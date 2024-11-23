@@ -1,6 +1,6 @@
 export function BannerVideo({ setOpen }) {
   return (
-    <>
+    <div className="h-[300px] lg:h-full">
       <iframe
         width="100%"
         height="100%"
@@ -12,10 +12,10 @@ export function BannerVideo({ setOpen }) {
       ></iframe>
       <button
         onClick={() => setOpen(false)}
-        className="absolute z-10 left-10 top-20 bg-tertiary500 p-3  px-6 rounded-md flex items-center justify-center text-white"
+        className="absolute z-10 left-10 top-20 bg-tertiary-500 p-3  px-6 rounded-md flex items-center justify-center text-white-900"
       >
         Close
       </button>
-    </>
+    </div>
   );
 }

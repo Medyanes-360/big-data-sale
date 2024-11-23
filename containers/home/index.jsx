@@ -12,9 +12,9 @@ export default function HomePageContainer() {
     <>
       <GetMoreInformation />
       <LeadingBrands />
-      {/* <SectionPackages />
+      {/* <SectionPackages /> */}
       <HowItWorks />
-      <Faq />
+      {/* <Faq />
       <Testimonials/>
       <BlogPostSection />
       <InfoSection/> */}
