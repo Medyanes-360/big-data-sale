@@ -1409,8 +1409,7 @@ export default class Icons {
   static PlayBtn({ className }) {
     return (
       <svg
-        width="44"
-        height="45"
+        className={className}
         viewBox="0 0 44 45"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

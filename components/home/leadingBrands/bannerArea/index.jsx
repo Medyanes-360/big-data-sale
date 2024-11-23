@@ -6,7 +6,7 @@ import { BannerVideo } from "./BannerVideo";
 const Banner = () => {
   const [open, setOpen] = useState(false);
   return (
-    <section className="h-[492px] relative gap-x-5 items-center overflow-hidden royalVioletGradient rounded-[44px]">
+    <section className="h-fit lg:h-[492px] relative gap-x-5 items-center overflow-hidden royalVioletGradient rounded-[44px]">
       {open ? (
         <BannerVideo setOpen={setOpen} />
       ) : (
