@@ -26,7 +26,7 @@ const ButtonComponent = ({
       {...props}
       //round ve color className prop'larda verilmeli
       className={`
-          flex items-center justify-center py-3 px-2 rounded-md        ${className}
+          flex items-center justify-center py-3 px-2         ${className}
         `}
     >
       {title ? title : children}
