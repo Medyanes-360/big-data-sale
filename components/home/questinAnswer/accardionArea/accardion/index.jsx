@@ -9,7 +9,7 @@ const Accardion = ({ i, expanded, setExpanded, title, content }) => {
   const isOpen = i === expanded;
   return (
     <div className={"mb-2 bg-white-default p-2 rounded-xl"}>
-      <div className="flex w-full px-3 justify-between gap-x-10 bg-white rounded-xl h-[54px] items-center text-midnight-950 text-lg">
+      <div className="flex w-full px-3 justify-between gap-x-10 bg-white rounded-xl h-[54px] items-center text-midnight-950 text-sm md:text-lg">
         {title}
         <ButtonComponent
           initial={false}

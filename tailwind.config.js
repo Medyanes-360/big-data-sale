@@ -26,13 +26,19 @@ module.exports = {
         blackHaze: {
           50: "#F5F6F7",
         },
+        cinder: {
+          950: "#1d1b20",
+        },
         regentGray: {
           600: "#838E9E",
         },
         raven: {
           700: "#6a778b",
         },
-
+        gray: {
+          600: "#6A778B",
+          700: "#42526B",
+        },
         fiord: {
           700: "#42526B",
         },
@@ -47,12 +53,12 @@ module.exports = {
           38: "#E9E9FF61",
           44: "#D4CEE870",
         },
-     
+
         softBreeze: "#F2F4FA",
         gray50: "rgba(245,246,247,1)",
         gray600: "#6A778B",
         gray700: "#42526B",
-        gray600: "#E0E5FF1F", 
+        gray600: "#E0E5FF1F",
         customPurple: "rgba(212, 206, 232, 0.44)",
         customGreen: "rgba(65, 108, 82, 1)",
         customLightPurple: "rgba(233, 233, 255, 0.38)",

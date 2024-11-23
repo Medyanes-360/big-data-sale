@@ -795,6 +795,23 @@ export default class Icons {
       </svg>
     );
   }
+  static Cancle({ className }) {
+    return (
+      <svg
+        width="24"
+        className={className}
+        height="25"
+        viewBox="0 0 24 25"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6.4 19.6548L5 18.2548L10.6 12.6548L5 7.05479L6.4 5.65479L12 11.2548L17.6 5.65479L19 7.05479L13.4 12.6548L19 18.2548L17.6 19.6548L12 14.0548L6.4 19.6548Z"
+          fill="currentColor"
+        />
+      </svg>
+    );
+  }
   static Hours({ className }) {
     return (
       <svg
