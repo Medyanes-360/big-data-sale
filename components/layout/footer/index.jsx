@@ -5,7 +5,7 @@ import FooterLinks from "./footer-links";
 import FooterServices from "./footer-services";
 const Footer = () => {
   return (
-    <div className="bg-tertiary900    ">
+    <div className="bg-tertiary-900    ">
       <PageContainer className="flex items-center px-[120px] py-[124px] ">
         <FooterExplanation />
         <FooterLinks />
@@ -13,10 +13,10 @@ const Footer = () => {
       </PageContainer>
 
       <PageContainer className="flex flex-col space-y-6  px-[120px] pb-[32px]">
-        <div className=" block h-[0.5px] w-full bg-tertiary50 "></div>
+        <div className=" block h-[0.5px] w-full bg-tertiary-50 "></div>
         <div className="flex mx-20 items-center justify-between">
-          <p className="text-tertiary50 text-[16px]">2024</p>
-          <p className="text-tertiary50 text-[16px] ">privacy</p>
+          <p className="text-tertiary-50 text-[16px]">2024</p>
+          <p className="text-tertiary-50 text-[16px] ">privacy</p>
         </div>
       </PageContainer>
     </div>

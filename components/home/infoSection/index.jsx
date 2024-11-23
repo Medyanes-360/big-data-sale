@@ -7,7 +7,7 @@ const InfoSection = () => {
     <div className="bg-info-pattern font-Inter  p-16">
       <PageContainer>
         <div className="flex items-center justify-center gap-8 flex-col text-center">
-          <div className="font-Inter font-bold text-[32px] leading-[54px] text-tertiary900">
+          <div className="font-Inter font-bold text-[32px] leading-[54px] text-tertiary-900">
             <div className="text-tertiary400">İşletmenizi büyütmek için ihtiyacınız olan</div>
             her şey bir tık uzağınızda
           </div>

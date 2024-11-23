@@ -23,7 +23,7 @@ const MainNavbar = ({ isScrolled }) => {
           transition: { duration: 0.3 },
         },
       }}
-      className={`bg-white-900 h-[80px] flex items-center w-full z-[999] ${
+      className={`bg-white-default h-[80px] flex items-center w-full z-[999] ${
         isScrolled ? "fixed  shadow-md" : "absolute"
       }`}
     >

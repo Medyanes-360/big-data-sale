@@ -35,7 +35,7 @@ const BlogCard = ({ title, summary, author, likes, comments, date }) => {
         {summary}
       </p>
       <div className="flex items-center gap-4">
-        <ButtonComponent className="!py-[14px] flex items-center gap-[11px] !px-[20px]  bg-tertiary500 rounded-[9.52px]">
+        <ButtonComponent className="!py-[14px] flex items-center gap-[11px] !px-[20px]  bg-tertiary-500 rounded-[9.52px]">
           <span className="text-[#FFFFFF] text-[13.9px] font-Inter    font-medium">
             Daha Fazla
           </span>

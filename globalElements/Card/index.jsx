@@ -37,7 +37,7 @@ const Card = ({
     </div>
 
     <div className="mx-[11.43px] mb-[11px] flex items-center space-x-3">
-      <span className="font-bold text-tertiary800 text-[30.48px] leading-[51px]">
+      <span className="font-bold text-tertiary-800 text-[30.48px] leading-[51px]">
         {price}
       </span>
       <span className="font-medium text-[13.3px] leading-[20px] font-Inter">
@@ -45,7 +45,7 @@ const Card = ({
       </span>
     </div>
 
-    <ButtonComponent className="!py-0 flex items-center gap-[11px] !px-[30px] w-full bg-tertiary500 rounded-[9.52px]">
+    <ButtonComponent className="!py-0 flex items-center gap-[11px] !px-[30px] w-full bg-tertiary-500 rounded-[9.52px]">
       <span className="text-card-textColor text-[16.9px] font-lexend leading-[43px] font-medium">
         Get Started
       </span>

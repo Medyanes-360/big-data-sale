@@ -30,31 +30,14 @@ body {
     @apply text-[32px] leading-[54px] font-Inter font-bold;
   }
   .text-primary {
-    @apply text-tertiary400;
+    @apply text-tertiary-400;
   }
   .text-secondary {
-    @apply text-tertiary800;
+    @apply text-tertiary-800;
   }
 }
 button {
   cursor: pointer;
-}
-.royalVioletGradient {
-  background: linear-gradient(100.9deg, #2f1566 5.85%, #5e2acc 91.92%);
-}
-
-.text-gradient-orange {
-  background: linear-gradient(97.83deg, #ffb31d 3.46%, #ff3784 106.92%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.text-gradient-gray {
-  background: rgba(131, 142, 158, 1);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .custom-shape {

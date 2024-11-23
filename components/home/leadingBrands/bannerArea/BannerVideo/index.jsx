@@ -12,7 +12,7 @@ export function BannerVideo({ setOpen }) {
       ></iframe>
       <button
         onClick={() => setOpen(false)}
-        className="absolute z-10 left-10 top-20 bg-tertiary-500 p-3  px-6 rounded-md flex items-center justify-center text-white-900"
+        className="absolute z-10 left-10 top-20 bg-tertiary-500 p-3  px-6 rounded-md flex items-center justify-center text-white-default"
       >
         Close
       </button>

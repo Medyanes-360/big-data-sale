@@ -17,16 +17,28 @@ module.exports = {
           800: "#2F1566",
           900: "#170A33",
         },
-        gray: {
-          19: "rgba(185, 185, 185, 0.19)",
+        midnight: {
+          950: "#061c3d",
+        },
+        silver: {
+          400: "rgba(185, 185, 185, 0.19)", //#b9b9b930
+        },
+        blackHaze: {
           50: "#F5F6F7",
-          60: "#838E9E",
-          600: "#6A778B",
+        },
+        regentGray: {
+          600: "#838E9E",
+        },
+        raven: {
+          700: "#6a778b",
+        },
+
+        fiord: {
           700: "#42526B",
         },
         white: {
-          24: "rgba(255, 255, 255, 0.24)",
-          900: "rgba(255, 255, 255, 1)",
+          50: "#ffffff3d",
+          default: "#fff",
         },
         amber: {
           900: "#FEA310",
@@ -35,15 +47,12 @@ module.exports = {
           38: "#E9E9FF61",
           44: "#D4CEE870",
         },
-        tertiary500: "#7534FF",
-        tertiary900: "#170A33",
+     
         softBreeze: "#F2F4FA",
         gray50: "rgba(245,246,247,1)",
         gray600: "#6A778B",
         gray700: "#42526B",
-        gray600: "#E0E5FF1F",
-        tertiary800: "#2F1566",
-        tertiary50: "#F1EBFF",
+        gray600: "#E0E5FF1F", 
         customPurple: "rgba(212, 206, 232, 0.44)",
         customGreen: "rgba(65, 108, 82, 1)",
         customLightPurple: "rgba(233, 233, 255, 0.38)",
@@ -58,7 +67,6 @@ module.exports = {
         deepAbyss: "#061C3D",
         foreground: "var(--foreground)",
         customPink: "rgba(254, 237, 250, 1)",
-        tertiary900: "rgba(23, 10, 51, 1)",
         footerLink: "rgba(244, 241, 253, 1)",
         packagesBackground: "rgba(242, 244, 250, 1)",
         card: {
@@ -110,6 +118,36 @@ module.exports = {
           "-webkit-text-fill-color": "transparent",
           "background-clip": "text",
           "text-fill-color": "transparent",
+        },
+        ".scrollbar": {
+          "&::-webkit-scrollbar": {
+            width: "4px",
+            height: "4px",
+          },
+          "&::-webkit-scrollbar-track": {
+            background: "#ccc",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            background: "#888",
+            borderRadius: "4px",
+          },
+        },
+        ".royalVioletGradient": {
+          background:
+            "linear-gradient(100.9deg, #2f1566 5.85%, #5e2acc 91.92%)",
+        },
+        ".text-gradient-orange": {
+          background:
+            "linear-gradient(97.83deg, #ffb31d 3.46%, #ff3784 106.92%)",
+          backgroundClip: "text",
+          WebkitBackgroundClip: "text",
+          color: "transparent",
+        },
+        ".text-gradient-gray": {
+          background: "rgba(131, 142, 158, 1)",
+          backgroundClip: "text",
+          WebkitBackgroundClip: "text",
+          color: "transparent",
         },
       });
     },

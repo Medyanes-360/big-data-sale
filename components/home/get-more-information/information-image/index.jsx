@@ -41,7 +41,7 @@ const InformationImage = () => {
           width={16}
           height={16}
         />
-        <div className="relative w-[128px] h-[128px] sm:w-[247.57px] sm:h-[247.57px] rounded-full bg-purple-44 flex items-center justify-center border-[1.47px] border-solid border-white-900 drop-shadow-custom-combined-2">
+        <div className="relative w-[128px] h-[128px] sm:w-[247.57px] sm:h-[247.57px] rounded-full bg-purple-44 flex items-center justify-center border-[1.47px] border-solid border-white-default drop-shadow-custom-combined-2">
           <Image
             src={imageFive}
             className="rounded-full w-[25px] h-[25px] sm:w-[48px] sm:h-[48px] border-[2.63px] border-solid border-white absolute right-[-10px] sm:right-[-20px]"

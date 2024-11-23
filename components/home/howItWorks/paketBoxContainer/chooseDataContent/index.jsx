@@ -33,8 +33,8 @@ const ChooseDataContent = () => {
             Küçük projelerden büyük kampanyalara kadar doğrulanmış ve güncel
             işletme verilerimizle başarıya ulaşın.
           </article>
-          <ButtonComponent className="w-[244px] text-[17px] leading-[38px] text-white-900 h-[53px] flex items-center justify-center gap-x-2 bg-tertiary-500 rounded-[10px]">
-            All Services <Icons.ArrowRight width="24" height="24" color="#fff" className="text-white-900" />
+          <ButtonComponent className="w-[244px] text-[17px] leading-[38px] text-white-default h-[53px] flex items-center justify-center gap-x-2 bg-tertiary-500 rounded-[10px]">
+            All Services <Icons.ArrowRight width="24" height="24" color="#fff" className="text-white-default" />
           </ButtonComponent>
         </div>
         <div className="flex flex-col gap-y-4">
@@ -51,7 +51,7 @@ const ChooseDataContent = () => {
               return (
                 <li
                   key={index}
-                  className="flex items-center gap-x-2 text-gray-600 text-[12px] leading-4"
+                  className="flex items-center gap-x-2 text-raven-700 text-[12px] leading-4"
                 >
                   <Icons.CheckTertioary /> {item.description}
                 </li>

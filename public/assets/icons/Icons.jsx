@@ -775,6 +775,26 @@ export default class Icons {
       </svg>
     );
   }
+  static Minus({ className }) {
+    return (
+      <svg
+        width="14"
+        height="2"
+        className={className}
+        viewBox="0 0 14 2"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 1.0708H13"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
   static Hours({ className }) {
     return (
       <svg
@@ -1745,6 +1765,7 @@ export default class Icons {
     return (
       <svg
         width="32"
+        className={className}
         height="41"
         viewBox="0 0 32 41"
         fill="none"
@@ -1752,7 +1773,7 @@ export default class Icons {
       >
         <path
           d="M9 20.377H23M23 20.377L16 13.377M23 20.377L16 27.377"
-          stroke="#915DFF"
+          stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
