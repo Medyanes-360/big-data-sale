@@ -18,7 +18,7 @@ const EmblaCarousel = (props) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className="embla">
+    <section className="max-w-full md:embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {blogData.map((blogData, index) => (
@@ -37,9 +37,17 @@ const EmblaCarousel = (props) => {
       </div>
 
       <div className="embla__controls">
-        <div className="embla__buttons">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+        <div className="md:embla__buttons absolute bottom-[17%] flex items-center justify-between p-4 w-full rounded-md left-0   ">
+          <PrevButton
+            className="bg-[#f3f3f6]"
+            onClick={onPrevButtonClick}
+            disabled={prevBtnDisabled}
+          />
+          <NextButton
+            className="bg-[#f3f3f6]"
+            onClick={onNextButtonClick}
+            disabled={nextBtnDisabled}
+          />
         </div>
       </div>
     </section>

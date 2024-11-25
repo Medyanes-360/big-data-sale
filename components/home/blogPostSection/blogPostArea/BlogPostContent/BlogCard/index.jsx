@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const BlogCard = ({ title, summary, author, likes, comments, date }) => {
   return (
-    <div className="p-4  ">
-      <div className="flex space-x-4 items-center w-full ">
+    <div className="md:p-4 px-[100px] ">
+      <div className="flex space-x-0 md:space-x-4 items-center w-full ">
         <div className="flex items-center space-x-2">
           <Icons.Calendar className="ml-4 mr-1" />
           <p className=" text-[#061C3D] font-Inter font-normal text-[14px] leading-[24px]">
