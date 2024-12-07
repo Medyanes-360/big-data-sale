@@ -9,7 +9,7 @@ const Faq = () => {
     <section className="bg-softBreeze py-10">
       <PageContainer>
         <PageTitle />
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
+        <div className="grid gap-3 md:gap-6 grid-cols-1 md:grid-cols-2">
           <AccardionArea />
           <MessageForm />
         </div>
