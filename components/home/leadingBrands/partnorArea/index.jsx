@@ -28,7 +28,7 @@ const PartnorArea = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-5 py-5">
+    <div className="grid grid-cols-4 sm:grid-cols-4 gap-x-5 py-5">
       {partnorData?.map((item, index) => {
         return <PartnorCard src={item.image} name={item.name} key={item.id} />;
       })}
