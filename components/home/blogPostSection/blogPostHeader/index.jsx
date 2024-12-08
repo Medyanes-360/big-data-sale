@@ -1,12 +1,10 @@
 const BlogHeader = () => {
   return (
-    <div className="mt-[64px] flex  mb-[20px]">
-      <div>
-        <h2 className="text-tertiary-900 font-Inter text-[32px] leading-[54px] font-bold">
+    <div className="mt-10 flex justify-between py-6">
+        <h2 className="text-tertiary-900 font-Inter text-[14px] leading-[21px] font-medium md:text-[32px] md:leading-[54px] md:font-bold">
           En Son Trendler ve Stratejilerle
           <p className="text-tertiary400">Dolu İçerik blogler</p>
         </h2>
-      </div>
     </div>
   );
 };

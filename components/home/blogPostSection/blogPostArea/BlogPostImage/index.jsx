@@ -3,7 +3,7 @@ import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
 const BlogImage = () => {
   return (
-    <div className="my-[24px] flex-1">
+    <div className="my-6 flex-1">
       <Player
         autoplay
         loop

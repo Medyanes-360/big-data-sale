@@ -59,7 +59,7 @@ export const NextButton = (props) => {
       type="button"
       {...restProps}
     >
-      <Icons.ArrowRight color="#915DFF" width="24px" height="24px" />
+      <Icons.ArrowRight />
       {children}
     </button>
   );

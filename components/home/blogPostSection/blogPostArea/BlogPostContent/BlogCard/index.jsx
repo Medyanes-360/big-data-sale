@@ -5,48 +5,48 @@ import Image from "next/image";
 
 const BlogCard = ({ title, summary, author, likes, comments, date }) => {
   return (
-    <div className="md:p-4 px-[100px] ">
-      <div className="flex space-x-0 md:space-x-4 items-center w-full ">
-        <div className="flex items-center space-x-2">
-          <Icons.Calendar className="ml-4 mr-1" />
-          <p className=" text-[#061C3D] font-Inter font-normal text-[14px] leading-[24px]">
+    <div className="flex flex-col justify-between h-full px-4 md:px-3">
+      <div className="flex flex-wrap justify-start items-center w-full gap-3 md:gap-2">
+        <div className="flex items-center space-x-1">
+          <Icons.Calendar/>
+          <p className=" text-[#061C3D] font-Inter font-semibold text-sm md:text-base">
             {date}
           </p>
         </div>
-        <div className="flex items-center space-x-2">
-          <Icons.Like className="mr-1" />
-          <p className=" text-[#061C3D] font-Inter font-extrabold  text-[14px] leading-[24px]">
-            {likes} Like
+        <div className="flex items-center space-x-1">
+          <Icons.Like/>
+          <p className=" text-[#061C3D] font-Inter font-medium text-sm md:text-base">
+            <span className="font-semibold">{likes}</span> Like
           </p>
         </div>
-        <div className="flex items-center space-x-2">
-          <Icons.Chat className="ml-4 mr-1" />
-          <p className=" text-[#061C3D] font-Inter font-normal text-[14px] leading-[24px]">
-            {comments} Comments
+        <div className="flex items-center space-x-1">
+          <Icons.Chat />
+          <p className=" text-[#061C3D] font-Inter font-medium text-sm md:text-base">
+          <span className="font-semibold">{comments}</span> Comments
           </p>
         </div>
       </div>
-      <div className="mt-[24px]  mb-[12px]">
-        <h2 className="text-[ #061C3D] font-extrabold text-[18px] font-Inter">
+      <div className="mt-6 mb-3">  
+        {/* kontol ett mt-2 mb-4 dene c */}
+        <h2 className="text-[#061C3D] font-extrabold text-[16px] md:text-[20px] leading-4 md:leading-6 font-Inter">
           {title}
         </h2>
       </div>
-      <p className="text-[15px] text-[#42526B] font-normal mb-[24px]">
+      <p className="text-[14px] md:text-[18px] leading-4 md:leading-6 text-[#42526B] font-normal mb-[24px]">
         {summary}
       </p>
-      <div className="flex items-center gap-4">
-        <ButtonComponent className="!py-[14px] flex items-center gap-[11px] !px-[20px]  bg-tertiary-500 rounded-[9.52px]">
-          <span className="text-[#FFFFFF] text-[13.9px] font-Inter    font-medium">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-1 md:gap-2">
+        <ButtonComponent className="w-full md:max-w-[190px] flex items-center gap-[12px] !px-4 bg-tertiary-500 rounded-[7px]">
+          <span className="text-[#FFFFFF] text-[13.9px] font-Inter font-medium">
             Daha Fazla
           </span>
-          <Icons.ArrowRight className="w-4 h-4" color="#FFFFFF" />
+          <Icons.ArrowRight className="w-6 h-6 text-white-default" />
         </ButtonComponent>
-        <div className="w-[0.9px] h-8 block bg-[#CDD2D8]"></div>
-        <div className="flex space-x-2 items-start ">
+        <div className="flex space-x-2 items-start">
           <Image
             src={author.profileImage}
             alt={author.name}
-            className="w-[44px] h-[44px] rounded-full mr-2"
+            className="h-11 w-11 rounded-full mr-2"
             width={200}
             height={200}
           />
