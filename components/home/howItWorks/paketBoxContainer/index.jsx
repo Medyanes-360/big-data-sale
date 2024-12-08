@@ -11,7 +11,7 @@ import { MotionDiv } from "@/globalElements/motion";
 const tabs = [
   {
     icons: <Icons.DataPackets />,
-    label: "Veri Paketini Axtarin",
+    label: "Veri Paketini Aktarin",
     render: () => {
       return <ChooseDataContent />;
     },
