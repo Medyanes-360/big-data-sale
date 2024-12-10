@@ -41,17 +41,11 @@ const BlogCard = ({ title, summary, author, likes, comments, date }) => {
           </span>
           <Icons.ArrowRight className="w-6 h-6 text-white-default" />
         </ButtonComponent>
-        <div className="flex space-x-2 items-start">
-          <Image
-            src={author.profileImage}
-            alt={author.name}
-            className="h-11 w-11 rounded-full mr-2"
-            width={200}
-            height={200}
-          />
-          <div className="flex flex-col items-start">
-            <p className="mb-1">{author.name}</p>
-            <p className="text-xs text-[#6A778B]">5 min read</p>
+        <div className="md:block hidden h-8 border-[1px] bg-[#CDD2D8]"></div>
+        <div className="flex items-center rounded-[4px] bg-[#E6DBFF30] py-3 w-full">
+          <div className="flex flex-wrap items-center font-Inter font-medium gap-2 text-sm text-tertiary-500">
+            <span>#Başarıya Giden</span>
+            <span>#Başarıya Giden</span>
           </div>
         </div>
       </div>
