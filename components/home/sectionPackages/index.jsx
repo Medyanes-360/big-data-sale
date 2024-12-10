@@ -35,7 +35,7 @@ const SectionPackages = () => {
   return (
     <div className="bg-packagesBackground">
       <PageContainer className="flex items-center justify-center flex-col">
-        <div className=" flex flex-col items-center font-Inter justify-center mx-[120px] mb-[32px] mt-[40px]">
+        <div className="flex flex-col items-center font-Inter justify-center  mx-[120px] mb-[32px] mt-[40px]">
           <div className="section-header font-lexend text-nowrap text-[#915DFF] text-base md:text-2xl">
             İşletmenizi Büyütmek İçin
           </div>
@@ -54,8 +54,8 @@ const SectionPackages = () => {
             hedeflerinizi kolayca gerçekleştirin.
           </p>
 
-          <div className="w-[318px] mx-[px] my-[6px] h-[52px] px-[12px] rounded-lg bg-[#ffffff]  shadow-sectionPackages py-[12px]">
-            <span className="mr-[12px]  text-[#838E9E] text-[16px] font-lexend font-semibold leading-[24px] ">
+          <div className="w-[318px] mx-[px] my-[6px] h-[52px] px-[12px] rounded-lg bg-[#ffffff] shadow-sectionPackages py-[12px]">
+            <span className="mr-[12px] text-[#838E9E] text-[16px] font-lexend font-semibold leading-[24px] ">
               Paketler
             </span>
             <span className="text-gradient-orange ">
