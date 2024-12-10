@@ -9,7 +9,7 @@ const testimonialsData = [
     title: "doctors in england",
     rating: "2",
     description:
-      "Bir web sitesi ajansı, veri paketlerimizi kullanarak Türkiye'deki web sitesi olmayan doktorları hedefledi. 8.000 kayıtlık bir veri paketi ile başlayan ajans, doğrulanmış iletişim bilgileri sayesinde doğrudan doktorlarla iletişime geçerek %35 dönüşüm oranı elde etti. Sonuç olarak, ajans hem müşteri tabanını büyüttü hem de 6 ay içinde gelirini %50 artırdı.",
+      "Bir web sitesi ajansı, veri paketlerimizi paketlerimizi kullanarak Türkiye'deki web sitesi olmayan doktorları hedefledi. 8.000 kayıtlık bir veri paketi ile başlayan ajans, doğrulanmış iletişim bilgileri sayesinde doğrudan doktorlarla iletişime geçerek %35 dönüşüm oranı elde etti. Sonuç olarak, ajans hem müşteri tabanını büyüttü hem de 6 ay içinde gelirini %50 artırdı. Bir web sitesi ajansı, veri paketlerimizi kullanarak Türkiye'deki web sitesi olmayan doktorları hedefledi. 8.000 kayıtlık bir veri paketi ile başlayan ajans, doğrulanmış iletişim bilgileri sayesinde doğrudan doktorlarla iletişime geçerek %35 dönüşüm oranı elde etti. Sonuç olarak, ajans hem müşteri tabanını büyüttü hem de 6 ay içinde gelirini %50 artırdı",
   },
   {
     image: imageOne,
@@ -54,7 +54,7 @@ const testimonialsData = [
 ];
 const TestimonialCards = ({ setPrevClick, setNextClick }) => {
   return (
-    <div className="mt-6">
+    <div className="mt-8 md:mt-6 !max-w-[1200px] md:overflow-hidden 2xl:overflow-visible">
       <TestimonialSlider
         testimonials={testimonialsData}
         setPrevClick={setPrevClick}
