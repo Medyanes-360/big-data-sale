@@ -27,27 +27,21 @@ const ChooseDataContent = () => {
         Belirleyin
       </h4>
       <div className="grid gap-6 md:gap-3 lg:grid-cols-2">
-        <div className="flex flex-col gap-y-6">
+        <div className="flex flex-col gap-y-4">
           <h1 className="text-tertiary-800 	 font-lexend font-medium  text-lg">
             Tam İhtiyacınıza Göre Seçim
           </h1>
           <article className="font-normal font-Inter text-base text-tertiary-800">
-            <b className="block font-bold">
-              İşletmenizin İhtiyacına Göre En Uygun Paketi Belirleyin
-            </b>
             İşinizi bir adım ileri taşımak için en uygun veri paketini seçin.
             Küçük projelerden büyük kampanyalara kadar doğrulanmış ve güncel
             işletme verilerimizle başarıya ulaşın.
           </article>
         </div>
-        <div className="flex flex-col gap-y-6">
+        <div className="flex flex-col gap-y-4">
           <h1 className="text-tertiary-800 font-lexend font-medium text-lg">
             Planlı Yatırım, Büyük Kazanç
           </h1>
           <article className="font-normal font-Inter text-base text-tertiary-800">
-            <b className="block font-bold">
-              Esnek Fiyat Seçenekleri ile Bütçenize Uygun Çözümler
-            </b>
             Her bütçeye uygun paketlerimiz, işletmeniz ne kadar büyük ya da
             küçük olursa olsun, ihtiyaçlarınıza çözüm sunar. Doğru veriye
             ulaşarak iş hedeflerinizi gerçekleştirmenin ilk adımını atın.
@@ -57,7 +51,7 @@ const ChooseDataContent = () => {
               return (
                 <li
                   key={index}
-                  className="flex items-center gap-x-2 text-raven-700 text-[12px] leading-4"
+                  className="flex items-center gap-x-2 text-tertiary-800 text-sm leading-4"
                 >
                   <Icons.CheckTertioary /> {item.description}
                 </li>
