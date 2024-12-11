@@ -7,11 +7,11 @@ const mainNavigation = [
     name: "Anasayfa",
   },
   {
-    path: "/",
+    path: "/how-it-works",
     name: "Nasıl Çalışır? ",
   },
   {
-    path: "/",
+    path: "/data-packages",
     name: "Veri Paketleri",
   },
   {
