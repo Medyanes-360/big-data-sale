@@ -5,7 +5,6 @@ const FooterServices = () => {
   return (
     <div className="w-[300px] h-[288px]">
       <div className="flex justify-center space-x-2 ">
-        <div className="text-[rgba(6, 28, 61, 1)] text-[18px] ">Database</div>
         <div className="flex flex-col mt-1 ">
           <Link
             href="/"

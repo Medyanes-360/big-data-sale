@@ -3,23 +3,41 @@ import React from "react";
 import FooterExplanation from "./footer-explanation";
 import FooterLinks from "./footer-links";
 import FooterServices from "./footer-services";
+import FooterContactUs from "./footer-contactUs";
+import FooterNeedHelp from "./footer-needHelp";
+import FooterSocialLinks from "./footer-socialLinks";
+import FooterCopyRight from "./footer-copyRight";
+
 const Footer = () => {
   return (
-    <div className="bg-tertiary-900    ">
-      <PageContainer className="flex items-center px-[120px] py-[124px] ">
-        <FooterExplanation />
-        <FooterLinks />
-        <FooterServices />
+    <div className="bg-tertiary-900">
+      <PageContainer className="flex flex-col gap-12 px-[120px] py-[64px]">
+        <div className="gap-3">
+          <FooterNeedHelp />
+        </div>
+
+        <div className="flex flex-row">
+          <div className="flex">
+            <FooterExplanation />
+          </div>
+
+          <div className="flex flex-row justify-between">
+            <FooterLinks />
+            <FooterServices />
+            <FooterContactUs />
+          </div>
+        </div>
       </PageContainer>
 
-      <PageContainer className="flex flex-col space-y-6  px-[120px] pb-[32px]">
-        <div className=" block h-[0.5px] w-full bg-tertiary-50 "></div>
-        <div className="flex mx-20 items-center justify-between">
-          <p className="text-tertiary-50 text-[16px]">2024</p>
-          <p className="text-tertiary-50 text-[16px] ">privacy</p>
+      <PageContainer className="flex flex-col px-[120px] pb-[32px]">
+        <div className="flex flex-col gap-12">
+          <FooterSocialLinks />
+          <FooterCopyRight />
         </div>
+
       </PageContainer>
     </div>
   );
 };
+
 export default Footer;

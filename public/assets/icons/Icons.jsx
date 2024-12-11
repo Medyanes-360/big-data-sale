@@ -180,7 +180,7 @@ export default class Icons {
               transform="translate(0 0.0219727)"
             />
           </clipPath>
-        </defs>
+        </defs>,
       </svg>
     );
   }
