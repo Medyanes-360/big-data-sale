@@ -96,8 +96,9 @@ button {
 
 .embla {
   flex: 0 0 auto;
-  max-width: 40%;
+  max-width: 100%;
   margin: auto;
+;
 }
 
 .embla__viewport {

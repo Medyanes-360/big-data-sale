@@ -7,6 +7,7 @@ const TestimonialSlider = ({ testimonials, options, setPrevClick, setNextClick }
   const [emblaRef, emblaApi] = useEmblaCarousel({
     slidesToScroll: 1,
     slidesToShow: 3,
+    align:"start",
     ...options,
   });
 
@@ -19,8 +20,8 @@ const TestimonialSlider = ({ testimonials, options, setPrevClick, setNextClick }
   }, [scrollPrev, scrollNext, setPrevClick, setNextClick]);
 
   return (
-    <div className="embla overflow-hidden md:!w-[1200px] md:!max-w-[1200px]" ref={emblaRef}>
-      <div className="embla__container !w-[1200px] flex gap-4">
+    <div className="embla !w-screen" ref={emblaRef}>
+      <div className="embla__container flex w-full gap-6">
         {testimonials.map((testimonial, index) => (
           <div key={index}>
             <TestimonialCard
@@ -30,8 +31,6 @@ const TestimonialSlider = ({ testimonials, options, setPrevClick, setNextClick }
               description={testimonial.description}
               image={testimonial.image}
             />
-         
-           
           </div>
         ))}
       </div>

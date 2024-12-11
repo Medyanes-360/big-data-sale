@@ -24,7 +24,7 @@ const Card = ({
   <div
     className={`bg-card-background px-[11px] my-[40px] relative border-1 rounded-[25px] ${
       recommendBorder ? "border-t-4 border-[#5AC519]" : ""
-    } w-[268px] h-[571px]`}
+    } w-[295px] md:w-[300px] h-[571px]`}
   >
     {recommendBorder && <CardRecommend />}
 

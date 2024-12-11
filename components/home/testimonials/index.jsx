@@ -10,13 +10,13 @@ const Testimonials = () => {
   const [nextClick, setNextClick] = useState(null);
 
   return (
-    <div className="bg-testimonials-pattern py-10 bg-cover bg-center z-50 relative">
+    <div className="bg-testimonials-pattern py-10 bg-cover bg-center z-50 relative overflow-hidden">
       <PageContainer>
         <TestimonialsHeader onPrevClick={prevClick} onNextClick={nextClick} />
         <TestimonialCards
           setPrevClick={setPrevClick}
           setNextClick={setNextClick}
-        />
+          />
       </PageContainer>
     </div>
   );
