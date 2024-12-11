@@ -28,7 +28,7 @@ const ChooseDataContent = () => {
       </h4>
       <div className="grid gap-6 md:gap-3 lg:grid-cols-2">
         <div className="flex flex-col gap-y-4">
-          <h1 className="text-tertiary-800 	 font-lexend font-medium  text-lg">
+          <h1 className="text-tertiary-800 	font-lexend font-bold  text-lg">
             Tam İhtiyacınıza Göre Seçim
           </h1>
           <article className="font-normal font-Inter text-base text-tertiary-800">
@@ -38,7 +38,7 @@ const ChooseDataContent = () => {
           </article>
         </div>
         <div className="flex flex-col gap-y-4">
-          <h1 className="text-tertiary-800 font-lexend font-medium text-lg">
+          <h1 className="text-tertiary-800 font-lexend font-bold text-lg">
             Planlı Yatırım, Büyük Kazanç
           </h1>
           <article className="font-normal font-Inter text-base text-tertiary-800">
@@ -46,7 +46,7 @@ const ChooseDataContent = () => {
             küçük olursa olsun, ihtiyaçlarınıza çözüm sunar. Doğru veriye
             ulaşarak iş hedeflerinizi gerçekleştirmenin ilk adımını atın.
           </article>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             {dataList?.map((item, index) => {
               return (
                 <li
