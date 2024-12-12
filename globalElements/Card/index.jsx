@@ -16,7 +16,7 @@ const CardRecommend = () => (
 
 const Card = ({
   packageName,
-  description,
+  totalData,
   price,
   frequency,
   recommendBorder,
@@ -29,11 +29,16 @@ const Card = ({
     {recommendBorder && <CardRecommend />}
 
     <CardBrand>
-      <span className="text-[15px] font-Inter font-medium">{packageName}</span>
+      <span
+        className="text-[15.24px] text-white font-Inter font-medium"
+        style={{ color: "white" }}
+      >
+        {packageName}
+      </span>
     </CardBrand>
 
     <div className="text-cardTextColor1 mb-[40px] mt-[22px] font-lexend font-medium text-[15.25px] leading-[22.86px]">
-      {description}
+      Toplam Veri: {totalData}
     </div>
 
     <div className="mx-[11.43px] mb-[11px] flex items-center space-x-3">
@@ -49,7 +54,7 @@ const Card = ({
       <span className="text-card-textColor text-[16.9px] font-lexend leading-[43px] font-medium">
         Get Started
       </span>
-      <Icons.ArrowRight color="#FFFFFF" />
+      <Icons.ArrowRight color="#FFF" />
     </ButtonComponent>
 
     <div className="my-[11.45px] bg-card-cardLineBackground h-[0.5px] w-full"></div>

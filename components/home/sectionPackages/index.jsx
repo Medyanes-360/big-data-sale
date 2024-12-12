@@ -5,30 +5,38 @@ import Card from "../../../globalElements/Card";
 const SectionPackages = () => {
   const cardData = [
     {
-      packageName: "Basic:100 kayıt",
-      description:
-        "Küçük işletmeler, girişimler veya kampanyalara yeni başlayanlar.",
+      packageName: "Başlangıç",
+      totalData: "50 Adet",
       price: "50$",
       frequency: "/Per year",
     },
     {
-      packageName: "Standard:200 kayıt",
-      description: "Orta ölçekli işletmeler için uygun çözümler.",
+      packageName: "Girişimci",
+      totalData: "1.000 Adet",
       price: "100$",
       frequency: "/Per year",
     },
     {
-      packageName: "Premium:500 kayıt",
-      description: "Büyük işletmeler için kapsamlı veri çözümleri.",
+      packageName: "Profosyonel",
+      totalData: "3.000 Adet",
       price: "200$",
       frequency: "/Per year",
       recommended: true, // Önerilen paketi işaretlemek için
     },
     {
-      packageName: "Enterprise:Sınırsız kayıt",
-      description: "Özel çözümler ve kapsamlı destek sunar.",
+      packageName: "Business",
+      totalData: "Tüm Veriler",
       price: "500$",
       frequency: "/Per year",
+    },
+    {
+      packageName: "Platinum",
+      totalData: "∞ Sınırsız",
+      price: "500$",
+      frequency: "/Per year",
+    },
+    {
+      packageName: "Ortak Çalışma ve İş Birliği",
     },
   ];
 
@@ -69,7 +77,7 @@ const SectionPackages = () => {
                 <Card
                   key={index}
                   packageName={data.packageName}
-                  description={data.description}
+                  totalData={data.totalData}
                   price={data.price}
                   frequency={data.frequency}
                   recommendBorder={data.recommended}

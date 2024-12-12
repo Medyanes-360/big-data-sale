@@ -1,5 +1,4 @@
 export default class Icons {
-
   static ArrowRight({ className }) {
     // Default beyaz
     return (
@@ -8,12 +7,12 @@ export default class Icons {
         width="32"
         height="41"
         viewBox="0 0 32 41"
-        fill="none"
+        fill="#fff"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M9 20.377H23M23 20.377L16 13.377M23 20.377L16 27.377"
-          stroke="currentColor"
+          stroke="#fff"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -25,21 +24,21 @@ export default class Icons {
     // Default beyaz
     return (
       <svg
-      className={className}
-      width="32"
-      height="41"
-      viewBox="0 0 32 41"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M23 20.377H9M9 20.377L16 27.377M9 20.377L16 13.377"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+        className={className}
+        width="32"
+        height="41"
+        viewBox="0 0 32 41"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M23 20.377H9M9 20.377L16 27.377M9 20.377L16 13.377"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
     );
   }
   static CheckTertioary() {
@@ -180,7 +179,8 @@ export default class Icons {
               transform="translate(0 0.0219727)"
             />
           </clipPath>
-        </defs>,
+        </defs>
+        ,
       </svg>
     );
   }
