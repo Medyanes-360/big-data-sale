@@ -59,7 +59,7 @@ const ChooseDataContent = () => {
             })}
           </ul>
           <ButtonComponent className="w-[244px] text-[17px] leading-[38px] text-white-default h-[53px] flex items-center justify-center gap-x-2 bg-tertiary-500 rounded-[10px]">
-            All Services{" "}
+            Paketleri İncele ve Seç{" "}
             <Icons.ArrowRight
               width="24"
               height="24"
