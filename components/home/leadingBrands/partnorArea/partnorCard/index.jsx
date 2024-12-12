@@ -11,7 +11,7 @@ const PartnorCard = ({ src, name }) => {
         width={100}
         height={40}
         loading="lazy"
-        className="object-contain"
+        className="object-cover aspect-auto"
       />
     </div>
   );
