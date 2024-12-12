@@ -19,22 +19,22 @@ const ChooseDataContent = () => {
   ];
   return (
     <div className="py-5">
-      <h4 className="text-base lg:text-2xl font-Inter font-semibold  text-center mb-10 text-tertiary-800">
+      <h4 className="text-base font-medium font-lexend lg:text-2xl font-Inter md:font-semibold text-center mb-10 text-tertiary-800">
         İhtiyacınıza{" "}
-        <span className="text-tertiary-400 text-base lg:text-2xl">
+        <span className="text-tertiary-400 text-base font-medium font-lexend lg:text-2xl">
           En Uygun Paketi
         </span>{" "}
         Belirleyin
       </h4>
       <div className="grid gap-6 md:gap-3 lg:grid-cols-2">
         <div className="flex flex-col gap-y-4">
-          <h1 className="text-tertiary-800 	font-lexend font-bold  text-lg">
+          <h1 className="text-tertiary-800 	font-lexend font-bold  text-lg md:text-lg">
             Tam İhtiyacınıza Göre Seçim
           </h1>
           <article className="font-normal font-Inter text-base text-tertiary-800">
-            İşinizi bir adım ileri taşımak için en uygun veri paketini seçin.
-            Küçük projelerden büyük kampanyalara kadar doğrulanmış ve güncel
-            işletme verilerimizle başarıya ulaşın.
+            Küçük başlangıçlardan büyük projelere kadar tüm ihtiyaçlarınıza
+            uygun paket seçenekleri sunuyoruz. Sadece hedeflediğiniz ülke ve
+            sektörleri belirleyin, gerisini bize bırakın!
           </article>
         </div>
         <div className="flex flex-col gap-y-4">
@@ -42,9 +42,9 @@ const ChooseDataContent = () => {
             Planlı Yatırım, Büyük Kazanç
           </h1>
           <article className="font-normal font-Inter text-base text-tertiary-800">
-            Her bütçeye uygun paketlerimiz, işletmeniz ne kadar büyük ya da
-            küçük olursa olsun, ihtiyaçlarınıza çözüm sunar. Doğru veriye
-            ulaşarak iş hedeflerinizi gerçekleştirmenin ilk adımını atın.
+            İster girişimci, ister profesyonel olun, doğru veri paketleriyle
+            pazarlama gücünüzü artırabilirsiniz. Her paket, stratejik
+            hedeflerinizi büyütmek için özel olarak tasarlanmıştır.
           </article>
           <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             {dataList?.map((item, index) => {

@@ -49,19 +49,19 @@ const SectionPackages = () => {
   return (
     <div className="bg-packagesBackground">
       <PageContainer className="flex items-center justify-center flex-col">
-        <div className="flex flex-col items-center font-Inter justify-center  mx-[120px] mb-[32px] mt-[40px]">
-          <div className="section-header font-lexend text-nowrap text-[#915DFF] text-base md:text-2xl">
+        <div className="flex flex-col items-center font-Inter justify-center  mx-[120px] mb-[15px] md:mb-[32px] mt-[40px]">
+          <div className="section-header font-lexend font-bold text-nowrap text-[#915DFF] text-base md:text-2xl">
             İşletmenizi Büyütmek İçin
           </div>
           <div className="section-header font-lexend font-bold  text-nowrap text-[#2F1566] text-base md:text-2xl">
             En Doğru Veri Paketini Seçin
           </div>
         </div>
-        <div className="flex items-center justify-center  flex-col">
+        <div className="flex items-center justify-center flex-col">
           <p
             style={{ color: "rgba(66, 82, 107, 1)" }}
-            className="text-[18px]  text-center leading-[24px] font-Inter mb-[32px] 
-             whitespace-normal sm:whitespace-pre-line sm:leading-[24px] sm:text-left"
+            className="text-[12px] text-center font-medium leading-[16px] font-Inter mb-[32px] 
+             whitespace-normal sm:whitespace-pre-line sm:leading-[24px] sm:text-lg sm:font-normal"
           >
             Her sektöre, her ihtiyaca ve her bütçeye uygun veri çözümleriyle, iş
             {"\n"}
@@ -72,7 +72,7 @@ const SectionPackages = () => {
             <span className="mr-[12px] text-[#838E9E] text-[16px] font-lexend font-semibold leading-[24px] ">
               Paketler
             </span>
-            <span className="text-gradient-orange ">
+            <span className="text-gradient-orange text-[16px] font-Inter font-medium leading-[24px]">
               bu haftaya özel %25 indirim
             </span>
           </div>
