@@ -8,12 +8,14 @@ import { MotionDiv } from "@/globalElements/motion";
 const Accardion = ({ i, expanded, setExpanded, title, content }) => {
   const isOpen = i === expanded;
   return (
-    <div className={"mb-3 bg-white-default p-3 md:px-4 rounded-xl"}>
+    <div
+      className={"mb-3 bg-white-default p-3 md:px-4 rounded-xl"}
+      onClick={() => setExpanded(isOpen ? false : i)}
+    >
       <div className="flex w-full px-3 justify-between gap-x-10 bg-white rounded-xl h-[54px] items-center text-midnight-950 font-medium text-sm md:text-lg">
         {title}
         <ButtonComponent
           initial={false}
-          onClick={() => setExpanded(isOpen ? false : i)}
           className="w-10 h-10 rounded-xl flex items-center bg-tertiary-500 justify-center"
         >
           {isOpen ? <Icons.Minus /> : <Icons.Plus />}
@@ -33,7 +35,7 @@ const Accardion = ({ i, expanded, setExpanded, title, content }) => {
             }}
             transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
           >
-            <ContentPlaceholder content={content}/>
+            <ContentPlaceholder content={content} />
           </MotionDiv>
         )}
       </AnimatePresence>
