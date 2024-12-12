@@ -46,7 +46,7 @@ const Card = ({
         {price}
       </span>
       <span className="font-medium text-[13.3px] leading-[20px] font-Inter">
-        {frequency}
+        | {frequency}
       </span>
     </div>
 

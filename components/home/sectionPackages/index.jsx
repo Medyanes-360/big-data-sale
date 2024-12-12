@@ -8,32 +8,32 @@ const SectionPackages = () => {
       packageName: "Başlangıç",
       totalData: "50 Adet",
       price: "50$",
-      frequency: "/Per year",
+      frequency: "Veri / $2",
     },
     {
       packageName: "Girişimci",
       totalData: "1.000 Adet",
       price: "100$",
-      frequency: "/Per year",
+      frequency: "Veri / $1",
     },
     {
       packageName: "Profosyonel",
       totalData: "3.000 Adet",
       price: "200$",
-      frequency: "/Per year",
+      frequency: "Veri / $0.5",
       recommended: true, // Önerilen paketi işaretlemek için
     },
     {
       packageName: "Business",
       totalData: "Tüm Veriler",
       price: "500$",
-      frequency: "/Per year",
+      frequency: "Veri / $0.5",
     },
     {
       packageName: "Platinum",
       totalData: "∞ Sınırsız",
       price: "500$",
-      frequency: "/Per year",
+      frequency: "",
     },
     {
       packageName: "Ortak Çalışma ve İş Birliği",
