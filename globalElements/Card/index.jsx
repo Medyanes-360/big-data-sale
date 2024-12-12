@@ -2,8 +2,11 @@ import ButtonComponent from "../Button";
 import CardListContent from "../../components/home/sectionPackages/sectionCardListContent";
 import Icons from "@/public/assets/icons/Icons";
 
-const CardBrand = ({ children }) => (
-  <div className="text-white custom-shape absolute  top-0 left-[-10px]">
+const CardBrand = ({ children, bgColor }) => (
+  <div
+    className="text-white  custom-shape absolute  top-0 left-[-10px]"
+    style={{ backgroundColor: bgColor }}
+  >
     {children}
   </div>
 );
@@ -17,6 +20,7 @@ const CardRecommend = () => (
 const Card = ({
   packageName,
   totalData,
+  bgColor,
   price,
   frequency,
   recommendBorder,
@@ -28,7 +32,7 @@ const Card = ({
   >
     {recommendBorder && <CardRecommend />}
 
-    <CardBrand>
+    <CardBrand bgColor={bgColor}>
       <span
         className="text-[15.24px] text-white font-Inter font-medium"
         style={{ color: "white" }}

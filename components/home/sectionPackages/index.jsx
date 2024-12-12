@@ -9,18 +9,21 @@ const SectionPackages = () => {
       totalData: "50 Adet",
       price: "50$",
       frequency: "Veri / $2",
+      bgColor: "#915DFF",
     },
     {
       packageName: "Girişimci",
       totalData: "1.000 Adet",
       price: "100$",
       frequency: "Veri / $1",
+      bgColor: "#8A33B9",
     },
     {
       packageName: "Profosyonel",
       totalData: "3.000 Adet",
       price: "200$",
       frequency: "Veri / $0.5",
+      bgColor: "#2B7300",
       recommended: true, // Önerilen paketi işaretlemek için
     },
     {
@@ -28,15 +31,18 @@ const SectionPackages = () => {
       totalData: "Tüm Veriler",
       price: "500$",
       frequency: "Veri / $0.5",
+      bgColor: "#E00083",
     },
     {
       packageName: "Platinum",
       totalData: "∞ Sınırsız",
       price: "500$",
       frequency: "",
+      bgColor: "#FFA108",
     },
     {
       packageName: "Ortak Çalışma ve İş Birliği",
+      bgColor: "#C8905F",
     },
   ];
 
@@ -76,11 +82,12 @@ const SectionPackages = () => {
               {cardData.map((data, index) => (
                 <Card
                   key={index}
-                  packageName={data.packageName}
-                  totalData={data.totalData}
-                  price={data.price}
-                  frequency={data.frequency}
-                  recommendBorder={data.recommended}
+                  packageName={data?.packageName}
+                  bgColor={data?.bgColor}
+                  totalData={data?.totalData}
+                  price={data?.price}
+                  frequency={data?.frequency}
+                  recommendBorder={data?.recommended}
                 />
               ))}
             </div>
