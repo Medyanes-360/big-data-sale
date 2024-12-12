@@ -13,7 +13,7 @@ const CardBrand = ({ children, bgColor }) => (
 
 const CardRecommend = () => (
   <div
-    className="absolute text-white font-lexend -top-11 left-1/2 -translate-x-1/2 text-center font-bold rounded-tl-[11.43px] rounded-tr-[11.43px] py-[8.57px] px-[15.24px] bg-[#5AC519]"
+    className="absolute text-white border-b font-lexend -top-11 left-1/2 -translate-x-1/2 text-center font-normal rounded-tl-[11.43px] rounded-tr-[11.43px] py-[8.57px] px-[15.24px] bg-[#5AC519]"
     style={{ color: "white" }}
   >
     RECOMMENDED
