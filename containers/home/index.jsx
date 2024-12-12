@@ -14,8 +14,8 @@ export default function HomePageContainer() {
       <LeadingBrands />
       <SectionPackages />
       <HowItWorks />
-      <Faq />
       <Testimonials />
+      <Faq />
       <BlogPostSection />
       <InfoSection />
     </>
