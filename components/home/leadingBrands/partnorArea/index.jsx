@@ -68,7 +68,7 @@ const PartnorArea = () => {
         return <PartnorCard src={item.image} name={item.name} key={item.id} />;
       })}
       <div className="col-span-2 sm:col-span-5 flex justify-center mt-4">
-        <button className="bg-tertiary-800 flex justify-center p-2 rounded-[9.08px]">
+        <button className="bg-tertiary-800 p-3 px-4 flex justify-center rounded-[9.08px]">
           <span
             className="text-white text-center font-Inter font-medium text-lg"
             style={{ color: "#fff" }}
