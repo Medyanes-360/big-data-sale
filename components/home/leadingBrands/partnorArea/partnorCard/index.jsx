@@ -3,7 +3,7 @@ import React from "react";
 
 const PartnorCard = ({ src, name }) => {
   return (
-    <div className="w-full  border-none rounded-xl bg-white shadow-leadingBrands flex items-center justify-center h-[60px] lg:w-[220px]">
+    <div className="w-full  shadow-none  border-none md:rounded-xl bg-white md:shadow-leadingBrands md:flex items-center justify-center h-[60px] lg:w-[220px]">
       <Image
         src={src}
         alt={name}

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import google from "@/public/assets/images/google.png";
 import payooner from "@/public/assets/images/payooner.png";
 import depositPhotos from "@/public/assets/images/depositPhotos.png";
@@ -21,6 +22,15 @@ import toshiba from "@/public/assets/images/toshiba.png";
 
 import PartnorCard from "./partnorCard";
 const PartnorArea = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 500);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const partnorData = [
     {
       id: "1",
@@ -63,23 +73,29 @@ const PartnorArea = () => {
   ];
 
   return (
-    <>
-      <div className="grid grid-cols-2 sm:grid-cols-5 sm:gap-4 py-10">
-        {partnerWebData.map((item) => (
+    <div className="grid grid-cols-4 sm:grid-cols-5 sm:gap-4 md:py-10">
+      {!isMobile ? (
+        <>
+          {partnerWebData?.map((item) => (
+            <PartnorCard src={item.image} name={item.name} key={item.id} />
+          ))}
+          <div className="col-span-4 sm:col-span-5 flex items-center justify-center">
+            <button className="bg-tertiary-800 p-2 px-4 flex justify-center rounded-[9.08px]">
+              <span
+                className="text-white text-center font-Inter font-medium text-lg"
+                style={{ color: "#fff" }}
+              >
+                Daha Fazla Göster
+              </span>
+            </button>
+          </div>
+        </>
+      ) : (
+        partnorData?.map((item) => (
           <PartnorCard src={item.image} name={item.name} key={item.id} />
-        ))}
-        <div className="col-span-2 sm:col-span-5 flex items-center justify-center ">
-          <button className="bg-tertiary-800 p-2 px-4 flex justify-center rounded-[9.08px]">
-            <span
-              className="text-white text-center font-Inter font-medium text-lg"
-              style={{ color: "#fff" }}
-            >
-              Daha Fazla Göster
-            </span>
-          </button>
-        </div>
-      </div>
-    </>
+        ))
+      )}
+    </div>
   );
 };
 
