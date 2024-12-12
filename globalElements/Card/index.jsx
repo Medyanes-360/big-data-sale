@@ -3,7 +3,7 @@ import CardListContent from "../../components/home/sectionPackages/sectionCardLi
 import Icons from "@/public/assets/icons/Icons";
 
 const CardBrand = ({ children }) => (
-  <div className="text-white custom-shape absolute top-0 left-[-10px]">
+  <div className="text-white custom-shape absolute  top-0 left-[-10px]">
     {children}
   </div>
 );

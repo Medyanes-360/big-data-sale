@@ -63,8 +63,8 @@ const SectionPackages = () => {
             </span>
           </div>
 
-          <div className="mt-[18px]">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-[60px]">
+          <div className="mt-[18px] md:mt[30px]">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-[60px]">
               {cardData.map((data, index) => (
                 <Card
                   key={index}
