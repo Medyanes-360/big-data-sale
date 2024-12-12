@@ -63,21 +63,23 @@ const PartnorArea = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-5 gap-x-5 py-5">
-      {partnerWebData?.map((item, index) => {
-        return <PartnorCard src={item.image} name={item.name} key={item.id} />;
-      })}
-      <div className="col-span-2 sm:col-span-5 flex justify-center mt-4">
-        <button className="bg-tertiary-800 p-3 px-4 flex justify-center rounded-[9.08px]">
-          <span
-            className="text-white text-center font-Inter font-medium text-lg"
-            style={{ color: "#fff" }}
-          >
-            Daha Fazla Göster
-          </span>
-        </button>
+    <>
+      <div className="grid grid-cols-2 sm:grid-cols-5 sm:gap-4 py-10">
+        {partnerWebData.map((item) => (
+          <PartnorCard src={item.image} name={item.name} key={item.id} />
+        ))}
+        <div className="col-span-2 sm:col-span-5 flex items-center justify-center ">
+          <button className="bg-tertiary-800 p-2.5 px-4 flex justify-center rounded-[9.08px]">
+            <span
+              className="text-white text-center font-Inter font-medium text-lg"
+              style={{ color: "#fff" }}
+            >
+              Daha Fazla Göster
+            </span>
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -3,13 +3,15 @@ import React from "react";
 
 const PartnorCard = ({ src, name }) => {
   return (
-    <div className="w-auto px-4 rounded-xl bg-white shadow-leadingBrands h-[45px] lg:w-[225px] lg:h-[62px] flex items-center justify-center">
+    <div className="w-full  border-none rounded-xl bg-white shadow-leadingBrands flex items-center justify-center h-[60px] lg:w-[220px]">
       <Image
         src={src}
         alt={name}
-        height={50}
+        layout="fixed"
+        width={100}
+        height={40}
         loading="lazy"
-        className="object-contain h-full w-auto"
+        className="object-contain"
       />
     </div>
   );
