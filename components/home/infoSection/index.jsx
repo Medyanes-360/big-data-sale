@@ -14,11 +14,11 @@ const InfoSection = () => {
           <div className="text-gray700 font-medium md:font-normal md:text-[18px] md:leading-6 text-base">
             Her sektöre, her ihtiyaca ve her bütçeye uygun veri çözümleriyle, iş hedeflerinizi kolayca gerçekleştirin.
           </div>
-          <div className="flex md:flex-row flex-col gap-3 w-full md:max-x-[408px] items-center justify-center">
-            <ButtonComponent className="border-[1.5px] border-tertiary400 text-tertiary400 h-10 rounded-lg px-4 font-Inter font-medium !text-[18px] leading-10 !w-full md:!max-w-[198px] tracking-tight">
+          <div className="flex gap-3 w-full md:max-x-[408px] items-center justify-center">
+            <ButtonComponent className="border-[1.5px] border-tertiary400 text-tertiary400 tracking-tighter h-10 rounded-lg font-Inter font-medium text-sm sm:text-base md:text-[18px] md:leading-10 !w-full md:!max-w-[198px]">
               <Link href='/'>Daha Fazla Bilgi Al</Link>
             </ButtonComponent>
-            <ButtonComponent className="bg-tertiary400 h-10 rounded-lg px-8 font-Inter font-medium !text-[18px] leading-10 !w-full md:!max-w-[198px] tracking-tight text-white-default">
+            <ButtonComponent className="bg-tertiary400 h-10 rounded-lg px-8 font-Inter font-medium text-sm sm:text-base md:text-[18px] tracking-tighter md:leading-10 !w-full md:!max-w-[198px] text-white-default">
             <Link href='/'>Hemen Başla</Link>
             </ButtonComponent>
           </div>
