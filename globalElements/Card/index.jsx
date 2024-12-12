@@ -50,7 +50,7 @@ const Card = ({
         {price}
       </span>
       <span className="font-Inter font-medium text-gray-700 text-[13.3px] leading-[20px]">
-        | {frequency}
+        {frequency && "|" + frequency}
       </span>
     </div>
 
