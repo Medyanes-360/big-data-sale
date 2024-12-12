@@ -20,6 +20,47 @@ import arcelik from "@/public/assets/images/arcelik.png";
 import foxcon from "@/public/assets/images/foxcon.png";
 import toshiba from "@/public/assets/images/toshiba.png";
 
+const partnorData = [
+  {
+    id: "1",
+    image: google,
+    name: "google",
+  },
+  {
+    id: "2",
+    image: payooner,
+    name: "payooner",
+  },
+  {
+    id: "3",
+    image: depositPhotos,
+    name: "depositphotos",
+  },
+  {
+    id: "4",
+    image: salesforce,
+    name: "salesforce",
+  },
+];
+
+const partnerWebData = [
+  { id: "1", image: ibm, name: "IBM" },
+  { id: "2", image: lenovo, name: "Lenovo" },
+  { id: "3", image: siemens, name: "Siemens" },
+  { id: "4", image: hubspot, name: "HubSpot" },
+  { id: "5", image: samsung, name: "Samsung" },
+  { id: "6", image: nestle, name: "Nestlé" },
+  { id: "7", image: adobe, name: "Adobe" },
+  { id: "8", image: oracle, name: "Oracle" },
+  { id: "9", image: tencent, name: "Tencent" },
+  { id: "10", image: dell, name: "Dell Technologies" },
+  { id: "11", image: huawei, name: "Huawei" },
+  { id: "12", image: qualcom, name: "Qualcomm" },
+  { id: "13", image: arcelik, name: "Arçelik" },
+  { id: "14", image: foxcon, name: "Foxcon" },
+  { id: "15", image: toshiba, name: "Toshiba" },
+];
+
 import PartnorCard from "./partnorCard";
 const PartnorArea = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
@@ -31,46 +72,6 @@ const PartnorArea = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  const partnorData = [
-    {
-      id: "1",
-      image: google,
-      name: "google",
-    },
-    {
-      id: "2",
-      image: payooner,
-      name: "payooner",
-    },
-    {
-      id: "3",
-      image: depositPhotos,
-      name: "depositphotos",
-    },
-    {
-      id: "4",
-      image: salesforce,
-      name: "salesforce",
-    },
-  ];
-
-  const partnerWebData = [
-    { id: "1", image: ibm, name: "IBM" },
-    { id: "2", image: lenovo, name: "Lenovo" },
-    { id: "3", image: siemens, name: "Siemens" },
-    { id: "4", image: hubspot, name: "HubSpot" },
-    { id: "5", image: samsung, name: "Samsung" },
-    { id: "6", image: nestle, name: "Nestlé" },
-    { id: "7", image: adobe, name: "Adobe" },
-    { id: "8", image: oracle, name: "Oracle" },
-    { id: "9", image: tencent, name: "Tencent" },
-    { id: "10", image: dell, name: "Dell Technologies" },
-    { id: "11", image: huawei, name: "Huawei" },
-    { id: "12", image: qualcom, name: "Qualcomm" },
-    { id: "13", image: arcelik, name: "Arçelik" },
-    { id: "14", image: foxcon, name: "Foxcon" },
-    { id: "15", image: toshiba, name: "Toshiba" },
-  ];
 
   return (
     <div className="grid grid-cols-4 sm:grid-cols-5 sm:gap-4 md:py-10">
