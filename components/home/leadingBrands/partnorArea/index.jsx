@@ -67,9 +67,16 @@ const PartnorArea = () => {
       {partnerWebData?.map((item, index) => {
         return <PartnorCard src={item.image} name={item.name} key={item.id} />;
       })}
-      <button className="bg-tertiary-800 p-2 rounded-[9.08px]">
-        <span className="text-red">Daha Fazla Göster</span>
-      </button>
+      <div className="col-span-2 sm:col-span-5 flex justify-center mt-4">
+        <button className="bg-tertiary-800 flex justify-center p-2 rounded-[9.08px]">
+          <span
+            className="text-white text-center font-Inter font-medium text-lg"
+            style={{ color: "#fff" }}
+          >
+            Daha Fazla Göster
+          </span>
+        </button>
+      </div>
     </div>
   );
 };
