@@ -1,6 +1,7 @@
 import React from "react";
 import PageContainer from "../../../containers/PageContainers";
 import Card from "../../../globalElements/Card";
+import { SectionPackagesCarousel } from "@/globalElements/EmblaCarousel/SectionPackges";
 
 const SectionPackages = () => {
   const cardData = [
@@ -181,8 +182,27 @@ const SectionPackages = () => {
             </span>
           </div>
 
-          <div className="mt-[18px] md:mt[30px]">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-[30px]">
+          <div className="mt-[18px]  md:mt[30px] ">
+            <div className=" grid grid-cols-1 justify-items-center md:hidden gap-[30px]">
+              <SectionPackagesCarousel>
+                {cardData.map((data, index) => (
+                  <div className="embla__slide">
+                    <Card
+                      key={index}
+                      packageName={data?.packageName}
+                      bgColor={data?.bgColor}
+                      totalData={data?.totalData}
+                      price={data?.price}
+                      frequency={data?.frequency}
+                      recommendBorder={data?.recommended}
+                      items={data?.items}
+                      partner={data?.partner}
+                    />
+                  </div>
+                ))}
+              </SectionPackagesCarousel>
+            </div>
+            <div className="hidden sm:grid md:grid-cols-3	 md:grid-cols-3 gap-[30px]">
               {cardData.map((data, index) => (
                 <Card
                   key={index}

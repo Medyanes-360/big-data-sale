@@ -4,7 +4,7 @@ import Icons from "@/public/assets/icons/Icons";
 
 const CardBrand = ({ children, bgColor, partner }) => (
   <div
-    className={`text-white  custom-shape absolute  top-0 left-[-10px] ${
+    className={`text-white  custom-shape absolute top-[4%] md:top-0 left-[-10px] ${
       partner && "!w-[264px]"
     }`}
     style={{ backgroundColor: bgColor }}
@@ -33,9 +33,9 @@ const Card = ({
   items,
 }) => (
   <div
-    className={`bg-card-background px-[11px] my-[40px] relative border-1 rounded-[25px] ${
+    className={`bg-card-background px-[11px] my-[40px] relative border-1 rounded-[25px] !w-[295px] h-[500px] md:h-[571px] md:w-[300px] ${
       recommendBorder ? "border-t-4 border-[#5AC519]" : ""
-    } w-[295px] md:w-[300px] h-[571px]`}
+    } `}
   >
     {recommendBorder && <CardRecommend />}
 
@@ -49,7 +49,7 @@ const Card = ({
     </CardBrand>
 
     {!partner && (
-      <div className="text-tertiary-800 mb-[40px] mt-[22px] font-lexend font-medium text-[15.24px] leading-[22.86px]">
+      <div className="text-tertiary-800 mt-[40px] md:mb-[40px] md:mt-[22px] font-lexend font-medium text-[15.24px] leading-[22.86px]">
         Toplam Veri: {totalData}
       </div>
     )}
