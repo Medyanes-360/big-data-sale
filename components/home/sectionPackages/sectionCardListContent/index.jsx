@@ -6,19 +6,18 @@ const CardListContent = () => {
   const items = [
     {
       iconType: "CheckSuccess",
-      text: "Küçük işletmeler ve başlangıç projeleri için ekonomik veri çözümü.",
+      text: "🌍 Ülke Seçimi: 1 Ülke",
     },
-    { iconType: "CheckError", text: "Başarıya ulaşılmadı, yeniden deneyin." },
-    { iconType: "CheckSuccess", text: "Veri çözümü kullanımı kolay ve hızlı." },
+    { iconType: "CheckSuccess", text: "🏭 Sektör Seçimi: 1 Sektör" },
+    { iconType: "CheckSuccess", text: "Hedef Kitle: Küçük Projeler" },
     {
       iconType: "CheckError",
-      text: "Hata oluştu, lütfen daha sonra tekrar deneyin.",
+      text: "⚡Ekstra Hizmetler: Destek Hizmeti Yok",
     },
     {
       iconType: "CheckSuccess",
-      text: "Yüksek güvenlik önlemleri ile veri koruma.",
+      text: "🚀 Öne Çıkan Avantajlar: Hızlı başlangıç, düşük maliyet, temel analiz.",
     },
-    { iconType: "CheckError", text: "Servis şu anda kullanılamıyor." },
   ];
 
   return (
@@ -26,19 +25,19 @@ const CardListContent = () => {
       {items.map((item, index) => (
         <div
           key={index}
-          className="flex items-center justify-start gap-[13px] mb-[10px]"
+          className="flex !items-center justify-start gap-[13px] mb-[10px]"
         >
-          <div className="w-[15.25px] h-[15.25px]">
+          <div className="">
             {/* Dinamik icon seçimi */}
             {item.iconType === "CheckSuccess" ? (
-              <Icons.CheckSuccess />
+              <Icons.CheckSuccess className="w-[18.81px] h-[18.81px] md:w-[24px] md:h-[24px]" />
             ) : item.iconType === "CheckError" ? (
-              <Icons.CheckError />
+              <Icons.CheckError className="w-[18.81px] h-[18.81px] md:w-[24px] md:h-[24px]" />
             ) : null}
           </div>
-          <p className="text-[10.97px] md:text-sm	font-medium	 font-Inter  text-gray-700">
+          <span className="text-[10.97px] leading-[16.46px] md:text-sm md:leading-[21px]	font-medium	 font-Inter  text-gray-700">
             {item.text}
-          </p>
+          </span>
         </div>
       ))}
     </div>
