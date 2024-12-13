@@ -28,12 +28,12 @@ export default class Icons {
         width="32"
         height="41"
         viewBox="0 0 32 41"
-        fill="none"
+        fill="#fff"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M23 20.377H9M9 20.377L16 27.377M9 20.377L16 13.377"
-          stroke="currentColor"
+          stroke="#fff"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"

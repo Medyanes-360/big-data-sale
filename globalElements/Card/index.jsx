@@ -61,7 +61,7 @@ const Card = ({
       <span className="text-card-textColor text-[16.9px] font-lexend leading-[43px] font-medium">
         Get Started
       </span>
-      <Icons.ArrowRight color="#fff" />
+      <Icons.ArrowRight className="text-white-default" />
     </ButtonComponent>
 
     <div className="my-[11.45px] bg-card-cardLineBackground h-[0.5px] w-full"></div>
