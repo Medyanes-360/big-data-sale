@@ -61,7 +61,7 @@ const Card = ({
       </span>
     </div>
 
-    <ButtonComponent className="!py-0 flex !items-center gap-[11px] !px-[30px] w-full bg-tertiary-500 rounded-[9.52px]">
+    <ButtonComponent className="!py-0 flex !items-center h-[46px] gap-[11px] !px-[30px] w-full bg-tertiary-500 rounded-[9.52px]">
       <span className="text-card-textColor font-medium text-[12.69px] leading-[41.8px] font-lexend md:text-[16.9px]  md:leading-[53.33px] ">
         Get Started
       </span>
