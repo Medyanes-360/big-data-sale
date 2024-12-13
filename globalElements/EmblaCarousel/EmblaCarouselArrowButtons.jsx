@@ -44,7 +44,7 @@ export const PrevButton = (props) => {
       type="button"
       {...restProps}
     >
-      <Icons.ArrowLeft />
+      <Icons.PrevArrow />
       {children}
     </button>
   );
@@ -59,7 +59,7 @@ export const NextButton = (props) => {
       type="button"
       {...restProps}
     >
-      <Icons.ArrowRight />
+      <Icons.NextArrow />
       {children}
     </button>
   );
