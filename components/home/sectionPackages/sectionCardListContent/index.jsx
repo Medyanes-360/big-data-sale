@@ -25,7 +25,7 @@ const CardListContent = () => {
       {items.map((item, index) => (
         <div
           key={index}
-          className="flex !items-center justify-start gap-[13px] mb-[10px]"
+          className="flex !items-start justify-start gap-[13px] mb-[10px]"
         >
           <div className="">
             {/* Dinamik icon seçimi */}
