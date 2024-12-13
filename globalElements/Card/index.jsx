@@ -57,8 +57,8 @@ const Card = ({
       </span>
     </div>
 
-    <ButtonComponent className="!py-0 flex items-center gap-[11px] !px-[30px] w-full bg-tertiary-500 rounded-[9.52px]">
-      <span className="text-card-textColor text-[16.9px] font-lexend leading-[43px] font-medium">
+    <ButtonComponent className="!py-0 flex !items-center gap-[11px] !px-[30px] w-full bg-tertiary-500 rounded-[9.52px]">
+      <span className="text-card-textColor text-[16.9px] font-lexend leading-[53.33px] font-medium">
         Get Started
       </span>
       <Icons.ArrowRight className="text-white-default" />
