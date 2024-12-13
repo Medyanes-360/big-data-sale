@@ -27,6 +27,7 @@ const Card = ({
   price,
   frequency,
   recommendBorder,
+  items,
 }) => (
   <div
     className={`bg-card-background px-[11px] my-[40px] relative border-1 rounded-[25px] ${
@@ -66,7 +67,7 @@ const Card = ({
 
     <div className="my-[11.45px] bg-card-cardLineBackground h-[0.5px] w-full"></div>
 
-    <CardListContent />
+    <CardListContent items={items} />
   </div>
 );
 

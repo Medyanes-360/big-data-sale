@@ -10,6 +10,22 @@ const SectionPackages = () => {
       price: "50$",
       frequency: "Veri / $2",
       bgColor: "#915DFF",
+      items: [
+        {
+          iconType: "CheckSuccess",
+          text: "🌍 Ülke Seçimi: 1 Ülke",
+        },
+        { iconType: "CheckSuccess", text: "🏭 Sektör Seçimi: 1 Sektör" },
+        { iconType: "CheckSuccess", text: "Hedef Kitle: Küçük Projeler" },
+        {
+          iconType: "CheckError",
+          text: "⚡Ekstra Hizmetler: Destek Hizmeti Yok",
+        },
+        {
+          iconType: "CheckSuccess",
+          text: "🚀 Öne Çıkan Avantajlar: Hızlı başlangıç, düşük maliyet, temel analiz.",
+        },
+      ],
     },
     {
       packageName: "Girişimci",
@@ -88,6 +104,7 @@ const SectionPackages = () => {
                   price={data?.price}
                   frequency={data?.frequency}
                   recommendBorder={data?.recommended}
+                  items={data?.items}
                 />
               ))}
             </div>

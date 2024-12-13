@@ -1,28 +1,12 @@
 import React from "react";
 import Icons from "@/public/assets/icons/Icons";
 
-const CardListContent = () => {
+const CardListContent = ({ items }) => {
   // Mock data: iconType ve text içeren array
-  const items = [
-    {
-      iconType: "CheckSuccess",
-      text: "🌍 Ülke Seçimi: 1 Ülke",
-    },
-    { iconType: "CheckSuccess", text: "🏭 Sektör Seçimi: 1 Sektör" },
-    { iconType: "CheckSuccess", text: "Hedef Kitle: Küçük Projeler" },
-    {
-      iconType: "CheckError",
-      text: "⚡Ekstra Hizmetler: Destek Hizmeti Yok",
-    },
-    {
-      iconType: "CheckSuccess",
-      text: "🚀 Öne Çıkan Avantajlar: Hızlı başlangıç, düşük maliyet, temel analiz.",
-    },
-  ];
 
   return (
     <div>
-      {items.map((item, index) => (
+      {items?.map((item, index) => (
         <div
           key={index}
           className="flex !items-start justify-start gap-[13px] mb-[10px]"
