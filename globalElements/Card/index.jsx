@@ -44,7 +44,7 @@ const Card = ({
       </span>
     </CardBrand>
 
-    <div className="text-cardTextColor1 mb-[40px] mt-[22px] font-lexend font-medium text-[15.25px] leading-[22.86px]">
+    <div className="text-tertiary-800 mb-[40px] mt-[22px] font-lexend font-medium text-[15.24px] leading-[22.86px]">
       Toplam Veri: {totalData}
     </div>
 
@@ -52,13 +52,13 @@ const Card = ({
       <span className="font-bold text-tertiary-800 text-[30.48px] leading-[51.43px]">
         {price}
       </span>
-      <span className="font-Inter font-medium text-gray-700 text-[13.3px] leading-[20px]">
+      <span className="font-Inter text-gray-700 font-medium text-[10.45px] leading-[15.67px]  md:text-[13.3px] md:leading-[20px]">
         {frequency && "|" + frequency}
       </span>
     </div>
 
     <ButtonComponent className="!py-0 flex !items-center gap-[11px] !px-[30px] w-full bg-tertiary-500 rounded-[9.52px]">
-      <span className="text-card-textColor text-[16.9px] font-lexend leading-[53.33px] font-medium">
+      <span className="text-card-textColor font-medium text-[12.69px] leading-[41.8px] font-lexend md:text-[16.9px]  md:leading-[53.33px] ">
         Get Started
       </span>
       <Icons.ArrowRight className="text-white-default" />
