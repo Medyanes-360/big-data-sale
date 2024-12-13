@@ -19,7 +19,7 @@ const CardListContent = ({ items }) => {
               <Icons.CheckError className="w-[18.81px] h-[18.81px] md:w-[24px] md:h-[24px]" />
             ) : null}
           </div>
-          <span className="text-[10.97px] leading-[16.46px] md:text-sm md:leading-[21px]	font-medium	 font-Inter  text-gray-700">
+          <span className="text-[10.97px] whitespace-pre-line leading-[16.46px] md:text-sm md:leading-[21px]	font-medium	 font-Inter  text-gray-700">
             {item.text}
           </span>
         </div>

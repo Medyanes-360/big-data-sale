@@ -143,7 +143,7 @@ const SectionPackages = () => {
         },
         {
           iconType: "CheckSuccess",
-          text: "🚀 Öne Çıkan Avantajlar:•	Kolay iş birliği süreçleri.•	Ortak projelerde hızlı başlangıç.•	Verimli ve hedef odaklı iletişim.",
+          text: "🚀 Öne Çıkan Avantajlar: \n•	Kolay iş birliği süreçleri.   \n •	Ortak projelerde hızlı başlangıç.  \n•	Verimli ve hedef odaklı iletişim.",
         },
       ],
       partner: true, //ortak çalışma ve iş birliği kısmı
