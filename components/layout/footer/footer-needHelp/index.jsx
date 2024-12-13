@@ -3,7 +3,7 @@ import React from "react";
 
 const FooterNeedHelp = () => {
   return (
-    <div className="relative rounded-2xl bg-tertiary-900 text-white py-[32px] px-6 sm:pr-24 sm:pl-12 flex flex-col sm:flex-row justify-between items-start sm:items-center overflow-hidden">
+    <div className="relative w-full rounded-2xl bg-tertiary-900 text-white py-[32px] px-6 sm:pr-24 sm:pl-12 flex flex-col sm:flex-row justify-between items-start sm:items-center overflow-hidden">
   
       <div
         className="absolute w-[480px] h-[480px] bg-[#915DFF] opacity-[0.04] rounded-[50%]"
