@@ -27,6 +27,7 @@ const Card = ({
   price,
   frequency,
   recommendBorder,
+  partner,
   items,
 }) => (
   <div
@@ -45,9 +46,11 @@ const Card = ({
       </span>
     </CardBrand>
 
-    <div className="text-tertiary-800 mb-[40px] mt-[22px] font-lexend font-medium text-[15.24px] leading-[22.86px]">
-      Toplam Veri: {totalData}
-    </div>
+    {!partner && (
+      <div className="text-tertiary-800 mb-[40px] mt-[22px] font-lexend font-medium text-[15.24px] leading-[22.86px]">
+        Toplam Veri: {totalData}
+      </div>
+    )}
 
     <div className="mx-[11.43px] mb-[11px] flex items-center space-x-3">
       <span className="font-bold text-tertiary-800 text-[30.48px] leading-[51.43px]">

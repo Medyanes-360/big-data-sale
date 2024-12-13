@@ -5,7 +5,7 @@ const CardListContent = ({ items }) => {
   // Mock data: iconType ve text içeren array
 
   return (
-    <div>
+    <>
       {items?.map((item, index) => (
         <div
           key={index}
@@ -24,7 +24,7 @@ const CardListContent = ({ items }) => {
           </span>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

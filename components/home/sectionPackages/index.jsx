@@ -193,6 +193,7 @@ const SectionPackages = () => {
                   frequency={data?.frequency}
                   recommendBorder={data?.recommended}
                   items={data?.items}
+                  partner={data?.partner}
                 />
               ))}
             </div>
