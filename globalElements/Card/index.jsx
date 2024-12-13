@@ -2,9 +2,11 @@ import ButtonComponent from "../Button";
 import CardListContent from "../../components/home/sectionPackages/sectionCardListContent";
 import Icons from "@/public/assets/icons/Icons";
 
-const CardBrand = ({ children, bgColor }) => (
+const CardBrand = ({ children, bgColor, partner }) => (
   <div
-    className="text-white  custom-shape absolute  top-0 left-[-10px]"
+    className={`text-white  custom-shape absolute  top-0 left-[-10px] ${
+      partner && "!w-[264px]"
+    }`}
     style={{ backgroundColor: bgColor }}
   >
     {children}
@@ -37,7 +39,7 @@ const Card = ({
   >
     {recommendBorder && <CardRecommend />}
 
-    <CardBrand bgColor={bgColor}>
+    <CardBrand bgColor={bgColor} partner={partner}>
       <span
         className="text-[15.24px] text-white font-Inter font-medium"
         style={{ color: "white" }}
@@ -61,7 +63,11 @@ const Card = ({
       </span>
     </div>
 
-    <ButtonComponent className="!py-0 flex !items-center h-[46px] gap-[11px] !px-[30px] w-full bg-tertiary-500 rounded-[9.52px]">
+    <ButtonComponent
+      className={`!py-0 flex !items-center h-[46px] gap-[11px] !px-[30px] w-full bg-tertiary-500 rounded-[9.52px] ${
+        partner && "mt-8"
+      }`}
+    >
       <span className="text-card-textColor font-medium text-[12.69px] leading-[41.8px] font-lexend md:text-[16.9px]  md:leading-[53.33px] ">
         Get Started
       </span>
