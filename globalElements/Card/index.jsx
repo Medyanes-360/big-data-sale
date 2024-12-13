@@ -68,7 +68,7 @@ const Card = ({
       <Icons.ArrowRight className="text-white-default" />
     </ButtonComponent>
 
-    <div className="my-[11.45px] bg-card-cardLineBackground h-[0.5px] w-full"></div>
+    <div className="my-[11.45px] bg-[#fff] h-[0.5px] w-full"></div>
 
     <CardListContent items={items} />
   </div>
