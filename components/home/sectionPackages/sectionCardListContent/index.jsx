@@ -36,7 +36,7 @@ const CardListContent = () => {
               <Icons.CheckError />
             ) : null}
           </div>
-          <p className="text-[9px] font-Inter font-normal text-card-textColor1">
+          <p className="text-[10.97px] md:text-sm	font-medium	 font-Inter  text-gray-700">
             {item.text}
           </p>
         </div>

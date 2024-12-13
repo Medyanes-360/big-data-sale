@@ -1,9 +1,7 @@
 export default class Icons {
-  static ArrowRight({ className }) {
-    // Default beyaz
+  static ArrowRight({ className, color = "#FFFFFF" }) {
     return (
       <svg
-        className={className}
         width="32"
         height="41"
         viewBox="0 0 32 41"
@@ -11,7 +9,7 @@ export default class Icons {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M9 20.377H23M23 20.377L16 13.377M23 20.377L16 27.377"
+          d="M23 20.377H9M9 20.377L16 27.377M9 20.377L16 13.377"
           stroke="#fff"
           strokeWidth="2"
           strokeLinecap="round"
@@ -20,20 +18,20 @@ export default class Icons {
       </svg>
     );
   }
-  static ArrowLeft({ className }) {
-    // Default beyaz
+
+  static ArrowLeft({ color = "#FFFFFF" }) {
     return (
       <svg
-        className={className}
         width="32"
         height="41"
         viewBox="0 0 32 41"
-        fill="none"
+        fill={color}
+        style={{ color: "#fff" }}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M23 20.377H9M9 20.377L16 27.377M9 20.377L16 13.377"
-          stroke="currentColor"
+          stroke={color}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
