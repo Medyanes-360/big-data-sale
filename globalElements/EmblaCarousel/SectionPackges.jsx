@@ -2,8 +2,8 @@
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
-export function SectionPackagesCarousel({ children }) {
-  const [emblaRef] = useEmblaCarousel();
+export function SectionPackagesCarousel({ children, slides, options }) {
+  const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   return (
     <div className="embla w-full" ref={emblaRef}>

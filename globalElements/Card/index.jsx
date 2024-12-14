@@ -33,7 +33,7 @@ const Card = ({
   items,
 }) => (
   <div
-    className={`bg-card-background px-[11px] my-[40px] relative border-1 rounded-[25px] !w-[295px] h-[447px] md:h-[571px] md:w-[300px] ${
+    className={`bg-card-background px-[11px] my-[40px] relative border-1 rounded-[25px] !w-[295px] h-[465px] md:h-[571px] md:w-[300px] ${
       recommendBorder ? "border-t-4 border-[#5AC519]" : ""
     } `}
   >
