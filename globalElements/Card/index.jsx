@@ -50,7 +50,8 @@ const Card = ({
 
     {!partner && (
       <div className="text-tertiary-800 mt-[40px] md:mb-[40px] md:mt-[22px] font-lexend font-medium text-[15.24px] leading-[22.86px]">
-        Toplam Veri: {totalData}
+        Toplam Veri: <span className="md:hidden">👤</span>
+        {totalData}
       </div>
     )}
 
