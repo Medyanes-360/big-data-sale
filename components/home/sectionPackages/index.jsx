@@ -186,7 +186,7 @@ const SectionPackages = () => {
             <div className=" grid grid-cols-1 justify-items-center md:hidden gap-[30px]">
               <SectionPackagesCarousel>
                 {cardData.map((data, index) => (
-                  <div className="embla__slide">
+                  <div className="embla__slide" key={index}>
                     <Card
                       key={index}
                       packageName={data?.packageName}
