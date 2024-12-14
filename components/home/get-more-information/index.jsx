@@ -5,11 +5,22 @@ import PageContainer from "@/containers/PageContainers";
 
 const GetMoreInformation = () => {
   return (
-    <PageContainer className="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-[40px] lg:gap-y-24 py-[35px] md:py-[60px] ">
-      <div className="grid-cols-1 order-2 lg:order-1">
-        <Content />
+    <PageContainer className="flex flex-col lg:flex-row gap-y-12 lg:gap-8 py-4 md:py-16">
+      {/* Sol kısım (Content) */}
+      <div
+        className="order-2 lg:order-1"
+        style={{
+          flexBasis: "100%", 
+          maxWidth: "100%", 
+        }}
+      >
+        <div className="xl:max-w-[45%] lg:max-w-[40%] md:max-w-[30%]">
+          <Content />
+        </div>
       </div>
-      <div className="grid-cols-1 order-1 lg:order-2">
+
+      {/* Sağ kısım (Image) */}
+      <div className="order-1 lg:order-2 relative lg:flex-grow">
         <InformationImage />
       </div>
     </PageContainer>

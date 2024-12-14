@@ -4,7 +4,7 @@ import InformationFrame from "./information-frame";
 
 const Content = () => {
   return (
-    <div className="flex flex-col gap-y-4 lg:gap-y-8">
+    <div className="flex flex-col gap-3 items-start  lg:gap-y-[72px]">
       <GetStartFree />
       <InformationFrame />
     </div>

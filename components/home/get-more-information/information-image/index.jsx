@@ -14,7 +14,7 @@ const InformationImage = () => {
     <div className="relative w-[223px] h-[223px] sm:w-[412px] sm:h-[412px]  mx-auto border-[2.97px] border-dashed flex items-center justify-center rounded-full border-tertiary400">
       <Image
         src={imageOne}
-        className="rounded-full w-[31.6px] h-[31.6px] border-[2.63px] border-solid border-white absolute left-[10px] sm:left-[20px] top-[75%]"
+        className="rounded-full w-[31.6px] h-[31.6px] border-[2.63px] border-solid border-white absolute left-[0px] sm:left-[20px] top-[75%]"
         alt="one-avatar"
         width={32}
         height={32}

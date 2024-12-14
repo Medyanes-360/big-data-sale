@@ -3,8 +3,8 @@ import React from "react";
 
 const FooterServices = () => {
   return (
-    <div className="w-[300px] h-[288px]">
-      <div className="flex justify-center space-x-2 ">
+    <div className="w-[33%] h-[288px]">
+      <div className="flex justify-center ">
         <div className="flex flex-col mt-1 ">
           <Link
             href="/"

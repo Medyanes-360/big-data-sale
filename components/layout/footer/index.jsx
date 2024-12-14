@@ -10,19 +10,22 @@ import FooterCopyRight from "./footer-copyRight";
 
 const Footer = () => {
   return (
-    <div className="bg-tertiary-900">
-      {/* Ana yapıyı mobil ve tablet için responsive hale getiriyoruz */}
+    <div
+      className="bg-[linear-gradient(136.55deg,#170A33_24.33%,#451E99_149.33%)]"
+    >
       <PageContainer className="flex flex-col gap-12 px-4 sm:px-8 md:px-[120px] py-[64px]">
         <div className="flex flex-col gap-3 sm:flex-row sm:justify-between">
           <FooterNeedHelp />
         </div>
 
-        <div className="flex flex-col gap-6 sm:flex-row sm:justify-between">
-          <div className="flex flex-col sm:flex-1 sm:mr-8">
+        <div className="flex flex-col justify-between lg:flex-row">
+          {/* Footer Explanation */}
+          <div className="flex flex-col sm:flex-1 sm:mr-8 lg:w-auto w-full">
             <FooterExplanation />
           </div>
 
-          <div className="flex flex-col gap-6 sm:flex-row sm:flex-1 sm:justify-between">
+          {/* Footer Links, Services, Contact Us */}
+          <div className="flex flex-col w-full gap-6 sm:flex-row sm:flex-1 sm:justify-between">
             <FooterLinks />
             <FooterServices />
             <FooterContactUs />
