@@ -3,6 +3,8 @@ import PageContainer from "../../../containers/PageContainers";
 import Card from "../../../globalElements/Card";
 import { SectionPackagesCarousel } from "@/globalElements/EmblaCarousel/SectionPackges";
 
+const OPTIONS = { slidesToScroll: "auto" };
+
 const SectionPackages = () => {
   const cardData = [
     {
@@ -151,6 +153,8 @@ const SectionPackages = () => {
     },
   ];
 
+  const SLIDE_COUNT = cardData?.length;
+  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
   return (
     <div className="bg-packagesBackground">
       <PageContainer className="flex items-center justify-center flex-col">
@@ -184,9 +188,9 @@ const SectionPackages = () => {
 
           <div className="mt-[18px]  md:mt[30px] ">
             <div className=" grid grid-cols-1 justify-items-center md:hidden gap-[30px]">
-              <SectionPackagesCarousel>
+              <SectionPackagesCarousel slides={SLIDES} options={OPTIONS}>
                 {cardData.map((data, index) => (
-                  <div className="embla__slide">
+                  <div className="embla__slide" key={index}>
                     <Card
                       key={index}
                       packageName={data?.packageName}

@@ -1,8 +1,12 @@
+import InfoSection from "@/components/home/infoSection";
+import HowItWorks from "@/components/howItWorks";
+
+
 export default function HowItWorksPageContainer() {
   return (
     <>
-      How İt Works Page
-      {/* How It Works Page Components Here */}
+      <HowItWorks/>
+      <InfoSection/>
     </>
   );
 }
