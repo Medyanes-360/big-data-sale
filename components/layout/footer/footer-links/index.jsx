@@ -31,7 +31,7 @@ const FooterLinks = () => {
             Hakkımızda
           </Link>
           <Link
-            href="/"
+            href="/success-story"
             className="text-footerLink w-[200px] h-[36px] text-[14px] leading-[21px] hover:text-[#b2b1aa] transition "
           >
             Başarı Hikayeleri

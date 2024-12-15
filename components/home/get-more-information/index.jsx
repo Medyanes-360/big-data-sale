@@ -20,7 +20,7 @@ const GetMoreInformation = () => {
       </div>
 
       {/* Sağ kısım (Image) */}
-      <div className="order-1 lg:order-2 relative lg:flex-grow">
+      <div className="order-1 py-8 lg:order-2 relative lg:flex-grow">
         <InformationImage />
       </div>
     </PageContainer>

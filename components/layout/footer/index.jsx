@@ -20,12 +20,12 @@ const Footer = () => {
 
         <div className="flex flex-col justify-between lg:flex-row">
           {/* Footer Explanation */}
-          <div className="flex flex-col sm:flex-1 sm:mr-8 lg:w-auto w-full">
+          <div className="flex flex-col w-full sm:flex-1 sm:mr-8 lg:w-auto">
             <FooterExplanation />
           </div>
 
           {/* Footer Links, Services, Contact Us */}
-          <div className="flex flex-col w-full gap-6 sm:flex-row sm:flex-1 sm:justify-between">
+          <div className="flex flex-col w-full gap-6 mt-8 sm:mt-0 sm:flex-row sm:flex-1 sm:justify-between ml-16 sm:ml-0 sm:items-start">
             <FooterLinks />
             <FooterServices />
             <FooterContactUs />

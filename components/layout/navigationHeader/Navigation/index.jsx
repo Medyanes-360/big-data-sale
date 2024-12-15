@@ -19,7 +19,7 @@ const mainNavigation = [
     name: "Hakkımızda",
   },
   {
-    path: "/",
+    path: "/success-story",
     name: "Başarı Hikâyeleri",
   },
   {
