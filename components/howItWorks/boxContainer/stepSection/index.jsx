@@ -63,7 +63,7 @@ const StepSection = ({ item }) => {
             {item.listTitle}
           </h2>
 
-          <div className="flex flex-col items-start gap-1">
+          <div className="flex flex-col items-start gap-2">
             {item.dataList?.map((i, index) => {
               return (
                 <li

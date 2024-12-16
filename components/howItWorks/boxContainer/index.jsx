@@ -109,7 +109,7 @@ const data = [
 ];
 const BoxContainer = () => {
   return (
-    <div className="grid lg:grid-cols-4 grid-cols-1 md:gap-3 gap-2">
+    <div className="grid lg:grid-cols-4 grid-cols-1 lg:gap-12 gap-4">
       {data?.map((item, index) => {
         return <StepSection key={index} item={item} />;
       })}
