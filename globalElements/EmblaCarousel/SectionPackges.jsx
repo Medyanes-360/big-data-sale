@@ -22,10 +22,8 @@ export function SectionPackagesCarousel({ children, slides, options }) {
   }, [emblaApi]);
 
   return (
-    <div className="embla w-full" ref={emblaRef}>
-      <div className="embla__container px-[40px] flex justify-start gap-[30px]">
-        {children}
-      </div>
+    <div className=" w-full" ref={emblaRef}>
+      <div className="px-[20px] flex justify-start gap-[30px]">{children}</div>
 
       <div className="flex gap-1 mb-[20px] md:hidden">
         {slides?.map((item, index) => {

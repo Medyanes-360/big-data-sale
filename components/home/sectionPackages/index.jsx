@@ -3,7 +3,7 @@ import PageContainer from "../../../containers/PageContainers";
 import Card from "../../../globalElements/Card";
 import { SectionPackagesCarousel } from "@/globalElements/EmblaCarousel/SectionPackges";
 
-const OPTIONS = { slidesToScroll: "auto", loop: false };
+const OPTIONS = { slidesToScroll: "auto", loop: false, scslidesToScroll: 1 };
 
 const SectionPackages = () => {
   const cardData = [
@@ -190,7 +190,7 @@ const SectionPackages = () => {
             <div className=" grid grid-cols-1 justify-items-center md:hidden gap-[30px]">
               <SectionPackagesCarousel slides={SLIDES} options={OPTIONS}>
                 {cardData.map((data, index) => (
-                  <div className="embla__slide" key={index}>
+                  <div className="" key={index}>
                     <Card
                       key={index}
                       packageName={data?.packageName}
