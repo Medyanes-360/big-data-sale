@@ -3,7 +3,7 @@ import PageContainer from "../../../containers/PageContainers";
 import Card from "../../../globalElements/Card";
 import { SectionPackagesCarousel } from "@/globalElements/EmblaCarousel/SectionPackges";
 
-const OPTIONS = { slidesToScroll: "auto" };
+const OPTIONS = { slidesToScroll: "auto", loop: false };
 
 const SectionPackages = () => {
   const cardData = [
