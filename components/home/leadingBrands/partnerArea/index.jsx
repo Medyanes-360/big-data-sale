@@ -19,6 +19,7 @@ import qualcom from "@/public/assets/images/qualcom.png";
 import arcelik from "@/public/assets/images/arcelik.png";
 import foxcon from "@/public/assets/images/foxcon.png";
 import toshiba from "@/public/assets/images/toshiba.png";
+import PartnerCard from "./partnerCard";
 
 const partnerData = [
   {
@@ -61,46 +62,32 @@ const partnerWebData = [
   { id: "15", image: toshiba, name: "Toshiba" },
 ];
 
-import PartnerCard from "./partnerCard";
 const PartnerArea = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 500);
-    };
-    setIsLoading(false);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  if (isLoading) {
-    return <div></div>;
-  }
-
   return (
-    <div className="grid grid-cols-4 sm:grid-cols-5 sm:gap-4 md:py-10">
-      {isMobile ? (
-        <>
-          {partnerWebData?.map((item) => (
-            <PartnerCard src={item.image} name={item.name} key={item.id} />
-          ))}
-          <div className="col-span-4 sm:col-span-5 flex items-center justify-center">
-            <button className="bg-tertiary-800 p-2 px-4 flex justify-center rounded-[9.08px]">
-              <span
-                className="text-white text-center font-Inter font-medium text-lg"
-                style={{ color: "#fff" }}
-              >
-                Daha Fazla Göster
-              </span>
-            </button>
-          </div>
-        </>
-      ) : (
-        partnerData?.map((item) => (
+    <div className="w-full py-10">
+      {/* desktop view */}
+      <div className="grid-cols-4 sm:grid-cols-5 sm:gap-4 md:py-10 hidden md:grid">
+        {partnerWebData?.map((item) => (
           <PartnerCard src={item.image} name={item.name} key={item.id} />
-        ))
-      )}
+        ))}
+      </div>
+      {/* mobile view */}
+
+      <div className="w-full md:hidden flex sm:gap-4 md:py-10">
+        {partnerData?.map((item) => (
+          <PartnerCard src={item.image} name={item.name} key={item.id} />
+        ))}
+      </div>
+      <div className="col-span-4 sm:col-span-5 flex items-center justify-center">
+        <button className="bg-tertiary-800 p-2 px-4 flex justify-center rounded-[9.08px]">
+          <span
+            className="text-white text-center font-Inter font-medium text-lg"
+            style={{ color: "#fff" }}
+          >
+            Daha Fazla Göster
+          </span>
+        </button>
+      </div>
     </div>
   );
 };
