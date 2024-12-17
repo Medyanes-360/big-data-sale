@@ -14,24 +14,24 @@ const mainNavigation = [
     path: "/data-packages",
     name: "Veri Paketleri",
   },
+  // {
+  //   path: "/",
+  //   name: "Hakkımızda",
+  // },
   {
-    path: "/",
-    name: "Hakkımızda",
+    path: "/blog",
+    name: "Blog",
   },
   {
     path: "/success-story",
     name: "Başarı Hikâyeleri",
   },
   {
-    path: "/",
-    name: "Blog",
-  },
-  {
-    path: "/",
+    path: "/faq",
     name: "SSS",
   },
   {
-    path: "/",
+    path: "/contact",
     name: "İletişim",
   },
 ];
