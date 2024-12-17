@@ -1,7 +1,7 @@
 import React from "react";
 import AdvantagesArea from "./advantagesArea";
 import PageContainer from "@/containers/PageContainers";
-import PartnorArea from "./partnorArea";
+import PartnerArea from "./partnerArea";
 import Banner from "./bannerArea";
 
 const LeadingBrands = () => {
@@ -9,7 +9,7 @@ const LeadingBrands = () => {
     <PageContainer className="flex flex-col gap-y-5">
       <AdvantagesArea />
       <Banner />
-      <PartnorArea />
+      <PartnerArea />
     </PageContainer>
   );
 };

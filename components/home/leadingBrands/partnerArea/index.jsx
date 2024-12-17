@@ -20,7 +20,7 @@ import arcelik from "@/public/assets/images/arcelik.png";
 import foxcon from "@/public/assets/images/foxcon.png";
 import toshiba from "@/public/assets/images/toshiba.png";
 
-const partnorData = [
+const partnerData = [
   {
     id: "1",
     image: google,
@@ -61,24 +61,29 @@ const partnerWebData = [
   { id: "15", image: toshiba, name: "Toshiba" },
 ];
 
-import PartnorCard from "./partnorCard";
-const PartnorArea = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
+import PartnerCard from "./partnerCard";
+const PartnerArea = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 500);
     };
-
+    setIsLoading(false);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  if (isLoading) {
+    return <div></div>;
+  }
+
   return (
     <div className="grid grid-cols-4 sm:grid-cols-5 sm:gap-4 md:py-10">
-      {!isMobile ? (
+      {isMobile ? (
         <>
           {partnerWebData?.map((item) => (
-            <PartnorCard src={item.image} name={item.name} key={item.id} />
+            <PartnerCard src={item.image} name={item.name} key={item.id} />
           ))}
           <div className="col-span-4 sm:col-span-5 flex items-center justify-center">
             <button className="bg-tertiary-800 p-2 px-4 flex justify-center rounded-[9.08px]">
@@ -92,12 +97,12 @@ const PartnorArea = () => {
           </div>
         </>
       ) : (
-        partnorData?.map((item) => (
-          <PartnorCard src={item.image} name={item.name} key={item.id} />
+        partnerData?.map((item) => (
+          <PartnerCard src={item.image} name={item.name} key={item.id} />
         ))
       )}
     </div>
   );
 };
 
-export default PartnorArea;
+export default PartnerArea;
