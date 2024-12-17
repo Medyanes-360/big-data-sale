@@ -190,7 +190,7 @@ const SectionPackages = () => {
             </span>
           </div>
 
-          <div className="mt-[18px]  md:mt[30px] ">
+          <div className="mt-[18px]  md:mt[30px]  w-full">
             <div className="grid grid-cols-1 justify-items-start md:hidden gap-[30px]">
               <SectionPackagesCarousel slides={SLIDES} options={OPTIONS}>
                 {cardData.map((data, index) => (
