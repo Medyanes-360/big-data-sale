@@ -1,116 +1,12 @@
 "use client";
 
+import howitworksMockData from "@/public/howitworksMockData";
 import StepSection from "./stepSection";
-const data = [
-  {
-    order: "01.",
-    title: "İhtiyacınıza uygun paketi seçin",
-    description:
-      "Küçük başlangıçlardan büyük projelere kadar tüm ihtiyaçlarınıza uygun paket seçenekleri sunuyoruz. Sadece hedeflediğiniz ülke ve sektörleri belirleyin, gerisini bize bırakın!",
-    footerTitle: "Planlı Yatırım, Büyük Kazanç",
-    footerDescription:
-      "İster girişimci, ister profesyonel olun, doğru veri paketleriyle pazarlama gücünüzü artırabilirsiniz. Her paket, stratejik hedeflerinizi büyütmek için özel olarak tasarlanmıştır. ",
-    listTitle: "Onaylanmış Maddeler",
-    dataList: [
-      {
-        description: "Küçükten büyüğe geniş paket seçenekleri",
-      },
-      {
-        description: "Hedefe özel veri sunumu",
-      },
-      {
-        description: "Kolay ve hızlı satın alma",
-      },
-      {
-        description: "Stratejinizi destekleyen veriler",
-      },
-    ],
-    color: "#E6DBFF",
-    shadow: "0px 10px 6px 0px #4B3E6747",
-  },
-  {
-    order: "02.",
-    title: "İhtiyacınıza uygun paketi seçin",
-    description:
-      "Küçük başlangıçlardan büyük projelere kadar tüm ihtiyaçlarınıza uygun paket seçenekleri sunuyoruz. Sadece hedeflediğiniz ülke ve sektörleri belirleyin, gerisini bize bırakın!",
-    footerTitle: "Planlı Yatırım, Büyük Kazanç",
-    footerDescription:
-      "İster girişimci, ister profesyonel olun, doğru veri paketleriyle pazarlama gücünüzü artırabilirsiniz. Her paket, stratejik hedeflerinizi büyütmek için özel olarak tasarlanmıştır. ",
-    listTitle: "Onaylanmış Maddeler",
-    dataList: [
-      {
-        description: "Küçükten büyüğe geniş paket seçenekleri",
-      },
-      {
-        description: "Hedefe özel veri sunumu",
-      },
-      {
-        description: "Kolay ve hızlı satın alma",
-      },
-      {
-        description: "Stratejinizi destekleyen veriler",
-      },
-    ],
-    color: "#915DFF",
-    shadow: "0px 10px 6px 0px #E6DBFF30",
-  },
-  {
-    order: "03.",
-    title: "İhtiyacınıza uygun paketi seçin",
-    description:
-      "Küçük başlangıçlardan büyük projelere kadar tüm ihtiyaçlarınıza uygun paket seçenekleri sunuyoruz. Sadece hedeflediğiniz ülke ve sektörleri belirleyin, gerisini bize bırakın!",
-    footerTitle: "Planlı Yatırım, Büyük Kazanç",
-    footerDescription:
-      "İster girişimci, ister profesyonel olun, doğru veri paketleriyle pazarlama gücünüzü artırabilirsiniz. Her paket, stratejik hedeflerinizi büyütmek için özel olarak tasarlanmıştır. ",
-    listTitle: "Onaylanmış Maddeler",
-    dataList: [
-      {
-        description: "Küçükten büyüğe geniş paket seçenekleri",
-      },
-      {
-        description: "Hedefe özel veri sunumu",
-      },
-      {
-        description: "Kolay ve hızlı satın alma",
-      },
-      {
-        description: "Stratejinizi destekleyen veriler",
-      },
-    ],
-    color: "#6437C5",
-    shadow: "0px 10px 6px 0px #E6DBFF30",
-  },
-  {
-    order: "04.",
-    title: "İhtiyacınıza uygun paketi seçin",
-    description:
-      "Küçük başlangıçlardan büyük projelere kadar tüm ihtiyaçlarınıza uygun paket seçenekleri sunuyoruz. Sadece hedeflediğiniz ülke ve sektörleri belirleyin, gerisini bize bırakın!",
-    footerTitle: "Planlı Yatırım, Büyük Kazanç",
-    footerDescription:
-      "İster girişimci, ister profesyonel olun, doğru veri paketleriyle pazarlama gücünüzü artırabilirsiniz. Her paket, stratejik hedeflerinizi büyütmek için özel olarak tasarlanmıştır. ",
-    listTitle: "Onaylanmış Maddeler",
-    dataList: [
-      {
-        description: "Küçükten büyüğe geniş paket seçenekleri",
-      },
-      {
-        description: "Hedefe özel veri sunumu",
-      },
-      {
-        description: "Kolay ve hızlı satın alma",
-      },
-      {
-        description: "Stratejinizi destekleyen veriler",
-      },
-    ],
-    color: "#451E99",
-    shadow: "0px 10px 6px 0px #E6DBFF30",
-  },
-];
+
 const BoxContainer = () => {
   return (
     <div className="grid lg:grid-cols-4 grid-cols-1 lg:gap-12 gap-10 md:gap-4">
-      {data?.map((item, index) => {
+      {howitworksMockData?.map((item, index) => {
         return <StepSection key={index} item={item} />;
       })}
     </div>

@@ -5,7 +5,7 @@ import BoxContainer from "./boxContainer";
 
 const HowItWorks = () => {
   return (
-    <section className="py-6">
+    <section className="py-10">
       <PageContainer>
         <PageTitle/>
         <BoxContainer/>
