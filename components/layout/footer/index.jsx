@@ -10,22 +10,20 @@ import FooterCopyRight from "./footer-copyRight";
 
 const Footer = () => {
   return (
-    <div
-      className="bg-[linear-gradient(136.55deg,#170A33_24.33%,#451E99_149.33%)]"
-    >
+    <div className="bg-[linear-gradient(136.55deg,#170A33_24.33%,#451E99_149.33%)]">
       <PageContainer className="flex flex-col gap-12 px-4 sm:px-8 md:px-[120px] py-[64px]">
         <div className="flex flex-col gap-3 sm:flex-row sm:justify-between">
           <FooterNeedHelp />
         </div>
 
-        <div className="flex flex-col justify-between lg:flex-row">
+        <div className="flex flex-col justify-between lg:flex-row gap-10 md:gap-0">
           {/* Footer Explanation */}
           <div className="flex flex-col w-full sm:flex-1 sm:mr-8 lg:w-auto">
             <FooterExplanation />
           </div>
 
           {/* Footer Links, Services, Contact Us */}
-          <div className="flex flex-col w-full gap-6 mt-8 sm:mt-0 sm:flex-row sm:flex-1 sm:justify-between ml-16 sm:ml-0 sm:items-start">
+          <div className="flex flex-col w-full gap-6 sm:flex-row sm:flex-1 sm:justify-between sm:items-start">
             <FooterLinks />
             <FooterServices />
             <FooterContactUs />

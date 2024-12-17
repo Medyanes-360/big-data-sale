@@ -2,7 +2,7 @@ import Logo from "@/globalElements/Logo";
 
 const FooterExplanation = () => {
   return (
-    <div className="flex flex-col lg:items-start lg:text-left items-center text-center w-full">
+    <div className="flex flex-col lg:items-start lg:text-left items-center px-2 md:px-0 w-full">
       <Logo
         white={true}
         className="w-[110px] h-[43px] text-[16px] leading-[24px] mb-6"

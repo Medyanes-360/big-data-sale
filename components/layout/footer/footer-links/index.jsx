@@ -3,7 +3,7 @@ import React from "react";
 
 const FooterLinks = () => {
   return (
-    <div className="w-[33%] h-[288px]">
+    <div className="md:w-[33%] h-[288px]">
       <div className="flex justify-center space-x-1 ">
         <div className="flex flex-col mt-1 ">
           <Link
