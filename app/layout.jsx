@@ -17,6 +17,7 @@ const inter = Inter({
 const lexend = Lexend({
   subsets: ["latin"],
   weight: ["300"], // Kullandığınız ağırlıkları belirtin
+  variable: "--font-lexend",
 });
 
 export const metadata = {
