@@ -18,7 +18,7 @@ function StaticsSection() {
         Temel <span className="text-tertiary400">değerlerimiz</span>
       </div>
 
-      <div className="flex gap-6 h-[124px]">
+      <div className="flex flex-col lg:flex-row gap-6 lg:h-[124px]">
         {staticSectionData?.map((item, index) => {
           return (
             <div
