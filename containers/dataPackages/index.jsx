@@ -1,8 +1,13 @@
+import SectionPackages from "@/components/home/sectionPackages";
+import DataPackagesPages from "../../components/dataPackagesPage/index";
+import Faq from "@/components/home/questinAnswer";
+
 export default function DataPackagesPageContainer() {
   return (
     <>
-      Data Packages Page
-      {/* Data Packages Page Components Here */}
+      <SectionPackages />
+      <DataPackagesPages />
+      <Faq />
     </>
   );
 }

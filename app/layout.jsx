@@ -1,7 +1,13 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Lexend } from "next/font/google";
+import { Poppins } from "next/font/google";
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+});
 const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -11,6 +17,7 @@ const inter = Inter({
 const lexend = Lexend({
   subsets: ["latin"],
   weight: ["300"], // Kullandığınız ağırlıkları belirtin
+  variable: "--font-lexend",
 });
 
 export const metadata = {
@@ -21,7 +28,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${lexend.className} `}>
+      <body
+        className={`${inter.className} ${lexend.className}  ${poppins.variable}`}
+      >
         {children}
       </body>
     </html>

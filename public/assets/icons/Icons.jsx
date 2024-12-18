@@ -1834,4 +1834,112 @@ export default class Icons {
       </svg>
     );
   }
+
+  static Glasses({ className }) {
+    return (
+      <svg
+        className={className}
+        xmlns="http://www.w3.org/2000/svg"
+        width="114"
+        height="44"
+        viewBox="0 0 114 44"
+        fill="none"
+      >
+        <path
+          d="M31.0731 41.0805C40.8704 41.0805 48.8127 33.1382 48.8127 23.3409C48.8127 13.5436 40.8704 5.60132 31.0731 5.60132C21.2758 5.60132 13.3335 13.5436 13.3335 23.3409C13.3335 33.1382 21.2758 41.0805 31.0731 41.0805Z"
+          fill="#915DFF"
+          stroke="#2F1566"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M82.9269 41.0805C73.1296 41.0805 65.1873 33.1382 65.1873 23.3409C65.1873 13.5436 73.1296 5.60132 82.9269 5.60132C92.7242 5.60132 100.667 13.5436 100.667 23.3409C100.667 33.1382 92.7242 41.0805 82.9269 41.0805Z"
+          fill="#915DFF"
+          stroke="#2F1566"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M2.4165 21.9763H13.3332"
+          stroke="#2F1566"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M111.583 21.9763H100.667"
+          stroke="#2F1566"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M46.0835 13.7889C47.4481 8.33053 51.5418 2.87219 57.0002 2.87219C62.4585 2.87219 66.5522 8.33053 67.9168 13.7889"
+          stroke="#2F1566"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    );
+  }
+  static Users({ className }) {
+    return (
+      <svg
+        className={className}
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="41"
+        viewBox="0 0 40 41"
+        fill="none"
+      >
+        <g clipPath="url(#clip0)">
+          <path
+            opacity="0.2"
+            d="M13.75 25.4762C18.2373 25.4762 21.875 21.8385 21.875 17.3512C21.875 12.8639 18.2373 9.2262 13.75 9.2262C9.26269 9.2262 5.625 12.8639 5.625 17.3512C5.625 21.8385 9.26269 25.4762 13.75 25.4762Z"
+            fill="#7534FF"
+          />
+          <path
+            d="M13.75 25.4762C18.2373 25.4762 21.875 21.8385 21.875 17.3512C21.875 12.8639 18.2373 9.2262 13.75 9.2262C9.26269 9.2262 5.625 12.8639 5.625 17.3512C5.625 21.8385 9.26269 25.4762 13.75 25.4762Z"
+            stroke="#7534FF"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+          />
+          <path
+            d="M24.2834 9.52876C25.401 9.21389 26.573 9.14217 27.7206 9.31841C28.8682 9.49464 29.9647 9.91476 30.9362 10.5504C31.9078 11.1861 32.7318 12.0226 33.3529 13.0036C33.9739 13.9846 34.3775 15.0873 34.5365 16.2374C34.6955 17.3875 34.6062 18.5583 34.2746 19.671C33.943 20.7837 33.3768 21.8124 32.6142 22.6878C31.8515 23.5632 30.9101 24.2651 29.8534 24.7461C28.7966 25.227 27.6491 25.476 26.4881 25.4761"
+            stroke="#7534FF"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M2.49927 31.3194C3.76823 29.5144 5.45285 28.0412 7.41091 27.0242C9.36897 26.0072 11.543 25.4763 13.7494 25.4762C15.9558 25.4761 18.1299 26.0069 20.088 27.0238C22.0461 28.0406 23.7309 29.5137 25 31.3186"
+            stroke="#7534FF"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M26.488 25.4762C28.6947 25.4746 30.8692 26.0047 32.8275 27.0217C34.7858 28.0387 36.4702 29.5126 37.7381 31.3186"
+            stroke="#7534FF"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0">
+            <rect
+              width="40"
+              height="40"
+              fill="white"
+              transform="translate(0 0.476196)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    );
+  }
 }
