@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import PageContainer from "@/containers/PageContainers";
 import successStoriesData from "@/public/successStoryMockData";
@@ -25,26 +25,40 @@ const SuccessStories = () => {
     const currentStory = successStoriesData[currentStoryIndex];
 
     return (
-        <section >
-            <PageContainer>
-                <div className="relative w-[1200px] h-[768px] gap-6 rounded-tl-[24px] bg-white shadow-[0px_12px_32px_0px_rgba(160,160,160,0.12)] flex p-8">
-                    <TopSvg />
-                    <ImageSection imageSrc={currentStory.image} altText={currentStory.name} />
-                    <InfoSection
-                        name={currentStory.name}
-                        sector={currentStory.sector}
-                        goal={currentStory.goal}
-                        solution={currentStory.solution}
-                        comment={currentStory.comment}
-                    />
-                    <BottomInfoSection
-                        avatarSrc={currentStory.image}
-                        sector={currentStory.sector}
-                        onPrevious={handlePrevious}
-                        onNext={handleNext}
-                        disablePrevious={currentStoryIndex === 0}
-                        disableNext={currentStoryIndex === successStoriesData.length - 1}
-                    />
+        <section>
+            <PageContainer className="!px-0">
+                <div className="w-full h-auto gap-2 rounded-tl-[24px] bg-white shadow-[0px_12px_32px_0px_rgba(160,160,160,0.12)] flex flex-col lg:flex-row lg:items-stretch py-8 ">
+                    {/* ImageSection */}
+                    <div className="w-full lg:w-1/2 h-full">
+                        <ImageSection
+                            imageSrc={currentStory.image}
+                            altText={currentStory.name}
+                        />
+                    </div>
+
+                    {/* Wrapper Div */}
+                    <div className="w-full lg:w-1/2 flex flex-col justify-between gap-3 sm:gap-8 relative">
+                        <TopSvg />
+
+                        {/* InfoSection */}
+                        <InfoSection
+                            name={currentStory.name}
+                            sector={currentStory.sector}
+                            goal={currentStory.goal}
+                            solution={currentStory.solution}
+                            comment={currentStory.comment}
+                        />
+
+                        {/* BottomInfoSection */}
+                        <BottomInfoSection
+                            avatarSrc={currentStory.image}
+                            sector={currentStory.sector}
+                            onPrevious={handlePrevious}
+                            onNext={handleNext}
+                            disablePrevious={currentStoryIndex === 0}
+                            disableNext={currentStoryIndex === successStoriesData.length - 1}
+                        />
+                    </div>
                 </div>
             </PageContainer>
         </section>

@@ -95,16 +95,20 @@ button {
 }
 
 .embla {
+  scroll-behavior: smooth;
   flex: 0 0 auto;
   max-width: 100%;
   margin: auto;
+  height: auto;
 }
 
 .embla__viewport {
   overflow: hidden;
+  width: 100%;
 }
 
 .embla__container {
+  scroll-behavior: smooth;
   display: flex;
   touch-action: pan-y pinch-zoom;
   margin-left: calc(var(--slide-spacing) * -1);
@@ -112,6 +116,7 @@ button {
 }
 
 .embla__slide {
+  scroll-behavior: smooth;
   transform: translate3d(0, 0, 0);
   flex: 0 0 100%; /* Tüm slide'lar eşit genişlikte olacak şekilde */
   min-width: 0;

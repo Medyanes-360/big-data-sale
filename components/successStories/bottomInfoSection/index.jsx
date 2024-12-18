@@ -9,29 +9,21 @@ export default function BottomInfoSection({
   disableNext,
 }) {
   return (
-    <div className="absolute bottom-12 px-8 left-[50%] right-0 flex justify-between items-center">
-      {/* Sector Bilgisi */}
-      <div className="flex items-center">
+    <div className="flex flex-row justify-between items-center">
+      {/* Sol Bilgi - md altında sol üste */}
+      <div className="absolute top-3 left-0 items-center sm:relative flex  px-4">
         <Image
           src={avatarSrc}
           alt="Avatar"
-          width={40}
-          height={40}
-          className="rounded-full"
+          width={48}
+          height={48}
+          className="rounded-[50%]"
         />
-        <span
-          className="font-inter text-[18px] font-normal leading-[24px] tracking-[-0.015em] text-left ml-2"
-          style={{
-            textUnderlinePosition: "from-font",
-            textDecorationSkipInk: "none",
-          }}
-        >
-          {sector}
-        </span>
+        <span className="ml-2 text-[14px] sm:text-[18px] font-normal">{sector}</span>
       </div>
 
-      {/* Next/Previous İşaretleri */}
-      <div className="flex items-center gap-3">
+      {/* Ok Butonları - md altında sol alta */}
+      <div className="absolute bottom-[-32px] left-0 mb-2 sm:mb-6 sm:relative flex gap-3 px-4">
         <button onClick={onPrevious} disabled={disablePrevious}>
           <Image
             src="/assets/icons/success-arrow-left.svg"
