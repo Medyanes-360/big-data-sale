@@ -18,18 +18,27 @@ function StaticsSection() {
         Temel <span className="text-tertiary400">değerlerimiz</span>
       </div>
 
-      <div className="flex flex-row gap-6 h-[124px]">
-        <div className="flex">
-          <div className="icon">
-            <Icons.Users />
-          </div>
-          <div className="">
-            <h2 className="font-Inter text font-bold text-[32px] leading-[54px] !text-[#18191C]">
-              2024
-            </h2>
-            <span>Year Founded</span>
-          </div>
-        </div>
+      <div className="flex gap-6 h-[124px]">
+        {staticSectionData?.map((item, index) => {
+          return (
+            <div
+              className="w-[282px] flex items-center gap-[20px] p-[20px]"
+              key={index + 1}
+            >
+              <div className="w-[72px] h-[72px] rounded bg-tertiary-50 flex items-center justify-center">
+                <Icons.Users />
+              </div>
+              <div className="flex flex-col justify-center gap-1.5">
+                <span className="font-Inter  font-bold text-[32px] leading-[54px] !text-[#18191C]">
+                  {item?.title}
+                </span>
+                <span className="font-poppins text-base text-tertiary-800 font-normal">
+                  {item?.mass}
+                </span>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
