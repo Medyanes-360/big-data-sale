@@ -18,7 +18,19 @@ function StaticsSection() {
         Temel <span className="text-tertiary400">değerlerimiz</span>
       </div>
 
-      <div></div>
+      <div className="flex flex-row gap-6 h-[124px]">
+        <div className="flex">
+          <div className="icon">
+            <Icons.Users />
+          </div>
+          <div className="">
+            <h2 className="font-Inter text font-bold text-[32px] leading-[54px] !text-[#18191C]">
+              2024
+            </h2>
+            <span>Year Founded</span>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
