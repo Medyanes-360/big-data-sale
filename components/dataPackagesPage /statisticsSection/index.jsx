@@ -22,7 +22,7 @@ function StaticsSection() {
         {staticSectionData?.map((item, index) => {
           return (
             <div
-              className="w-[282px] flex items-center gap-[20px] p-[20px]"
+              className="w-[343px] lg:w-[282px] flex items-center gap-[20px] p-[20px]"
               key={index + 1}
             >
               <div className="w-[72px] h-[72px] rounded bg-tertiary-50 flex items-center justify-center">
