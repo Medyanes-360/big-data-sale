@@ -40,7 +40,6 @@ const SuccessStories = () => {
                     <div className="w-full lg:w-1/2 flex flex-col justify-between gap-3 sm:gap-8 relative">
                         <TopSvg />
 
-                        {/* InfoSection */}
                         <InfoSection
                             name={currentStory.name}
                             sector={currentStory.sector}
@@ -49,7 +48,6 @@ const SuccessStories = () => {
                             comment={currentStory.comment}
                         />
 
-                        {/* BottomInfoSection */}
                         <BottomInfoSection
                             avatarSrc={currentStory.image}
                             sector={currentStory.sector}

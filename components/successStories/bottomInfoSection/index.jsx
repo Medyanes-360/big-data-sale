@@ -10,7 +10,7 @@ export default function BottomInfoSection({
 }) {
   return (
     <div className="flex flex-row justify-between items-center">
-      {/* Sol Bilgi - md altında sol üste */}
+      {/* Sol Bilgi  */}
       <div className="absolute top-3 left-0 items-center sm:relative flex  px-4">
         <Image
           src={avatarSrc}
@@ -22,7 +22,7 @@ export default function BottomInfoSection({
         <span className="ml-2 text-[14px] sm:text-[18px] font-normal">{sector}</span>
       </div>
 
-      {/* Ok Butonları - md altında sol alta */}
+      {/* Ok Butonları */}
       <div className="absolute bottom-[-32px] left-0 mb-2 sm:mb-6 sm:relative flex gap-3 px-4">
         <button onClick={onPrevious} disabled={disablePrevious}>
           <Image
