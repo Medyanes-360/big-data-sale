@@ -1,6 +1,6 @@
 import Link from "next/link";
 import BlogPostSection from "./blogPostSection";
-import FormSection from "./formSection";
+// import FormSection from "./formSection";
 import blogAreaMockData from "@/public/blogAreaMockData";
 import PageContainer from "@/containers/PageContainers";
 

@@ -212,7 +212,7 @@ const SectionPackages = () => {
                 ))}
               </SectionPackagesCarousel>
             </div>
-            <div className="hidden sm:grid md:grid-cols-3	 md:grid-cols-3 gap-[30px]">
+            <div className="hidden sm:grid 	 md:grid-cols-3 gap-[30px]">
               {cardData.map((data, index) => (
                 <Card
                   key={index}
