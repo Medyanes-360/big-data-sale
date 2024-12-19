@@ -1850,37 +1850,37 @@ export default class Icons {
           fill="#915DFF"
           stroke="#2F1566"
           strokeWidth="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M82.9269 41.0805C73.1296 41.0805 65.1873 33.1382 65.1873 23.3409C65.1873 13.5436 73.1296 5.60132 82.9269 5.60132C92.7242 5.60132 100.667 13.5436 100.667 23.3409C100.667 33.1382 92.7242 41.0805 82.9269 41.0805Z"
           fill="#915DFF"
           stroke="#2F1566"
           strokeWidth="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M2.4165 21.9763H13.3332"
           stroke="#2F1566"
           strokeWidth="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M111.583 21.9763H100.667"
           stroke="#2F1566"
           strokeWidth="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M46.0835 13.7889C47.4481 8.33053 51.5418 2.87219 57.0002 2.87219C62.4585 2.87219 66.5522 8.33053 67.9168 13.7889"
           stroke="#2F1566"
           strokeWidth="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     );
