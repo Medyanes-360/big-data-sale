@@ -8,14 +8,14 @@ const StepSection = ({ item }) => {
       <div className="mb-6 relative rounded-full w-[240px] h-[240px] border-[3px] border-[#915DFF] flex items-center justify-center">
         <Image
           src="/assets/icons/EllipseDot.svg"
-          className="absolute left-[-12px] top-auto"
+          className="absolute left-[-11px] top-auto"
           alt="dotIcon"
           width={21}
           height={21}
         />
         <Image
           src="/assets/icons/EllipseDot.svg"
-          className="absolute right-[-12px] top-auto"
+          className="absolute right-[-11px] top-auto"
           alt="dotIcon"
           width={21}
           height={21}
@@ -38,14 +38,14 @@ const StepSection = ({ item }) => {
         </div>
       </div>
 
-      <div className="flex flex-col px-4 gap-3 w-full h-max-[145px] items-center pb-12">
+      <div className="flex flex-col gap-3 w-full h-max-[145px] items-center pb-12">
         <h2 className="text-tertiary-900 font-medium md:text-[14px] md:leading-[21px] font-Inter text-center">
           {item.title}
         </h2>
         <div className="text-tertiary-800 font-Inter font-medium text-xs text-center">
           {item.description}
         </div>
-        <ButtonComponent className="bg-tertiary-500 w-full max-w-[193px] !px-5 rounded-[5px] gap-2 text-Inter font-medium text-[14px] text-white-default">
+        <ButtonComponent className="bg-tertiary-500 w-full max-w-[193px] !px-2 rounded-[5px] gap-2 text-Inter font-medium text-[14px] text-white-default">
           <span>Paketleri İncele Ve Seç</span>
         </ButtonComponent>
       </div>
