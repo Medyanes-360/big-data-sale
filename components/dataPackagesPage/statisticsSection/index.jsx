@@ -1,3 +1,4 @@
+"use client";
 import Icons from "@/public/assets/icons/Icons";
 import React from "react";
 
