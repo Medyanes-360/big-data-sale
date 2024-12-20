@@ -1,12 +1,12 @@
 import Link from "next/link";
 import BlogPostSection from "./blogPostSection";
-// import FormSection from "./formSection";
+import FormSection from "./formSection";
 import blogAreaMockData from "@/public/blogAreaMockData";
 import PageContainer from "@/containers/PageContainers";
 
 const BlogSection = () => {
   return (
-    <section className="py-10 lg:py-20">
+    <section className="py-6 lg:py-20">
       <PageContainer>
         <div className="flex text-lg font-normal font-Inter">
           <Link
@@ -20,13 +20,11 @@ const BlogSection = () => {
           </Link>
         </div>
 
-        {blogAreaMockData?.map((item) => (
-          <>
-            <div key={item.id} className="py-8">
-              <BlogPostSection data={item} />
-              {/* {(index + 1) % 2 === 0 && <FormSection />} */}
-            </div>
-          </>
+        {blogAreaMockData?.map((item, index) => (
+          <div key={item.id} className="py-8">
+            <BlogPostSection data={item} />
+            {(index + 1) % 2 === 0 && <FormSection />}
+          </div>
         ))}
       </PageContainer>
     </section>
