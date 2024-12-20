@@ -85,6 +85,8 @@ module.exports = {
       backgroundImage: {
         "text-gradient":
           "linear-gradient(179.17deg, rgba(145, 93, 255, 0.07) -92.76%, rgba(87, 56, 153, 0.07) 99.29%)",
+        "custom-gradient":
+          "linear-gradient(128.03deg, #F4F1FD 2.96%, #FEF5F0 105.34%)", 
       },
       backdropBlur: {
         custom: "14.8px",

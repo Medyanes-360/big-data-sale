@@ -1,6 +1,6 @@
 import React from "react";
 
-const index = ({
+const Input = ({
   name,
   value,
   onChange,
@@ -22,4 +22,4 @@ const index = ({
   );
 };
 
-export default index;
+export default Input;
