@@ -24,7 +24,6 @@ export function SectionPackagesCarousel({ children, slides, options }) {
   return (
     <div className="w-full overflow-hidden" ref={emblaRef}>
       <div className="px-[20px] flex justify-start gap-[30px]">{children}</div>
-
       <div className="flex gap-1 mb-[20px] md:hidden">
         {slides?.map((item, index) => {
           return (

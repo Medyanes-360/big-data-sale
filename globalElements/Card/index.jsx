@@ -76,7 +76,6 @@ const Card = ({
     </ButtonComponent>
 
     <div className="my-[11.45px] bg-[#fff] h-[0.5px] w-full"></div>
-
     <CardListContent items={items} />
   </div>
 );
