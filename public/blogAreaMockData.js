@@ -28,12 +28,12 @@ const blogAreaMockData = [
   },
   {
     id: 3,
-    title: "Başarıya Giden Yolda Verinin Gücü: Müşteri Dönüşümünü Artırmak",
+    title: "Verinin Gücüyle Satışları Artırın",
     summary:
-      "Doğru verileri kullanarak müşteri dönüşüm oranlarınızı nasıl artırabileceğinizi ve bu süreçte hangi veri analiz araçlarının yardımcı olabileceğini inceleyen bir yazı.",
-    likes: 2.729,
-    comments: 45,
-    date: "25 Dec, 2025",
+      "Müşteri dönüşüm oranlarınızı artırmak için veriyi nasıl etkili kullanabileceğinizi ve bu süreçte hangi analiz araçlarının işinizi kolaylaştıracağını keşfedin.",
+    likes: 4.729,
+    comments: 25,
+    date: "26 Dec, 2025",
     label:["İşBüyütme","DijitalPazarlama"],
     image: blog3
   },
