@@ -7,7 +7,12 @@ import blogAreaMockData from "@/public/blogAreaMockData";
 import PageContainer from "@/containers/PageContainers";
 import { useState } from "react";
 
-const BlogImportantSection = () => {
+const BlogSection = () => {
+  const [activeTab, setActiveTab] = useState("En son ekleyenler");
+  const latestTab = blogAreaMockData;
+  const favoritesTab = [...blogAreaMockData].reverse();
+  const currentTab = activeTab === "En son ekleyenler" ? latestTab : favoritesTab;
+
   return (
     <section className="py-6 lg:py-20">
       <PageContainer>
@@ -53,4 +58,4 @@ const BlogImportantSection = () => {
   );
 };
 
-export default BlogImportantSection;
+export default BlogSection;
