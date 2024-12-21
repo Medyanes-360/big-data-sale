@@ -4,7 +4,7 @@ import FormSection from "./formSection";
 import blogAreaMockData from "@/public/blogAreaMockData";
 import PageContainer from "@/containers/PageContainers";
 
-const BlogSection = () => {
+const BlogImportantSection = () => {
   return (
     <section className="py-6 lg:py-20">
       <PageContainer>
@@ -31,4 +31,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default BlogImportantSection;
