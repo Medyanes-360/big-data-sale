@@ -86,7 +86,9 @@ module.exports = {
         "text-gradient":
           "linear-gradient(179.17deg, rgba(145, 93, 255, 0.07) -92.76%, rgba(87, 56, 153, 0.07) 99.29%)",
         "custom-gradient":
-          "linear-gradient(128.03deg, #F4F1FD 2.96%, #FEF5F0 105.34%)", 
+          "linear-gradient(128.03deg, #F4F1FD 2.96%, #FEF5F0 105.34%)",
+        "attachFile-gradient":
+          "linear-gradient(128.03deg, #F4F1FD 2.96%, #FEF5F0 105.34%)",
       },
       backdropBlur: {
         custom: "14.8px",
@@ -111,6 +113,7 @@ module.exports = {
         sectionPackages: " 0px 12px 24px -4px rgba(145, 158, 171, 0.16)",
         leadingBrands:
           "-20px 20px 40px -4px #919EAB3D, 0px 0px 2px 0px #919EAB3D;",
+        concatForm: "0px 12px 24px -4px #919EAB29",
       },
       fontFamily: {
         Inter: "var(--font-inter)", //inter fontun static olaraq font-inter olaraq cagiriyoruz
