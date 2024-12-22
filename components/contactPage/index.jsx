@@ -2,8 +2,9 @@
 import PageContainer from "@/containers/PageContainers";
 import Icons from "@/public/assets/icons/Icons";
 import React from "react";
-import { useField, Form, Formik } from "formik";
+import { Form, Formik } from "formik";
 import Input from "@/globalElements/FormikForm/Input";
+import Textarea from "@/globalElements/FormikForm/TextArea";
 
 function Contact() {
   return (
@@ -25,10 +26,7 @@ function Contact() {
             file: "",
           }}
           onSubmit={(values, actions) => {
-            setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              actions.setSubmitting(false);
-            }, 1000);
+            console.log(values, actions, "onSubmit kısmı burası");
           }}
         >
           {(props) => (
@@ -37,7 +35,7 @@ function Contact() {
                 <div className="flex flex-col flex-1 gap-[6px]">
                   <Input
                     name="fullname"
-                    className="outline-0 h-[47px]  w-full lg:w-full  border border-1 border-lightMist rounded-[5px] px-2"
+                    className="outline-0 h-[47px]  w-full lg:w-full  border border-1 border-lightMist rounded-[5px] px-4"
                     labelClassName="font-Inter font-medium text-sm text-midnight"
                     type="text"
                     placeholder="FullName"
@@ -47,7 +45,7 @@ function Contact() {
                 <div className="flex flex-col  flex-1 gap-[6px]">
                   <Input
                     name="email"
-                    className="outline-0 h-[47px] w-full lg:w-full border border-1 border-lightMist rounded-[5px] px-2"
+                    className="outline-0 h-[47px] w-full lg:w-full border border-1 border-lightMist rounded-[5px] px-4"
                     labelClassName="font-Inter font-medium text-sm text-midnight"
                     type="email"
                     label="Email"
@@ -59,17 +57,17 @@ function Contact() {
                 <Input
                   name="company"
                   type="text"
-                  className="outline-0 h-[47px] border border-1 border-lightMist rounded-[5px] px-2"
+                  className="outline-0 h-[47px] border border-1 border-lightMist rounded-[5px] px-4"
                   labelClassName="font-Inter font-medium text-sm text-midnight"
                   label="Company Name"
                   placeholder="Brand/Company/Product Name"
                 />
               </div>
               <div className="flex flex-col gap-[6px]">
-                <Input
+                <Textarea
                   name="message"
                   type="text"
-                  className="outline-0 p-2 resize-none text-start h-[102px] border border-1 border-lightMist rounded-[5px] px-2"
+                  className="outline-0 p-2 resize-none text-start h-[102px] border border-1 border-lightMist rounded-[5px] px-4"
                   labelClassName="font-Inter font-medium text-sm text-midnight"
                   label="Message"
                   placeholder="Tell us about your project..."
