@@ -34,7 +34,7 @@ function Contact() {
                 <div className="flex flex-col flex-1 gap-[6px]">
                   <Input
                     name="name"
-                    className="outline-0 h-[47px]  w-full lg:w-full  border border-1 border-lightMist rounded-[5px] px-4"
+                    className="outline-0 h-[47px]  w-full lg:w-full  border border-lightMist rounded-[5px] px-4"
                     labelClassName="font-Inter font-medium text-sm text-midnight"
                     type="text"
                     placeholder="Full Name"
@@ -44,7 +44,7 @@ function Contact() {
                 <div className="flex flex-col  flex-1 gap-[6px]">
                   <Input
                     name="email"
-                    className="outline-0 h-[47px] w-full lg:w-full border border-1 border-lightMist rounded-[5px] px-4"
+                    className="outline-0 h-[47px] w-full lg:w-full border  border-lightMist rounded-[5px] px-4"
                     labelClassName="font-Inter font-medium text-sm text-midnight"
                     type="email"
                     label="Email"
@@ -56,7 +56,7 @@ function Contact() {
                 <Input
                   name="company"
                   type="text"
-                  className="outline-0 h-[47px] border border-1 border-lightMist rounded-[5px] px-4"
+                  className="outline-0 h-[47px] border  border-lightMist rounded-[5px] px-4"
                   labelClassName="font-Inter font-medium text-sm text-midnight"
                   label="Company Name"
                   placeholder="Brand/Company/Product Name"
@@ -66,7 +66,7 @@ function Contact() {
                 <Textarea
                   name="message"
                   type="text"
-                  className="outline-0 p-2 resize-none text-start h-[102px] border border-1 border-lightMist rounded-[5px] px-4"
+                  className="outline-0 p-2 resize-none text-start h-[102px] border  border-lightMist rounded-[5px] px-4"
                   labelClassName="font-Inter font-medium text-sm text-midnight"
                   label="Message"
                   placeholder="Tell us about your project..."
@@ -78,7 +78,7 @@ function Contact() {
                 </h1>
                 <button
                   type="file"
-                  className="flex items-center justify-center rounded-[5px] h-[43px] border border-1 border-lightMist bg-white-default pt-[11px] pr-[20px] pb-[11px] pl-[20px]"
+                  className="flex items-center justify-center rounded-[5px] h-[43px] border  border-lightMist bg-white-default pt-[11px] pr-[20px] pb-[11px] pl-[20px]"
                 >
                   Upload File
                 </button>
