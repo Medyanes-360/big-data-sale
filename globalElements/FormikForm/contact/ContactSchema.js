@@ -1,3 +1,4 @@
+"use client";
 import { object, string, date } from "yup";
 
 export let contactSchema = object({
