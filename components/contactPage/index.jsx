@@ -23,7 +23,6 @@ function Contact() {
             email: "",
             company: "",
             message: "",
-            file: "",
           }}
           onSubmit={(values, actions) => {
             console.log(values, actions, "onSubmit kısmı burası");
@@ -34,11 +33,11 @@ function Contact() {
               <div className="flex gap-[20px]">
                 <div className="flex flex-col flex-1 gap-[6px]">
                   <Input
-                    name="fullname"
+                    name="name"
                     className="outline-0 h-[47px]  w-full lg:w-full  border border-1 border-lightMist rounded-[5px] px-4"
                     labelClassName="font-Inter font-medium text-sm text-midnight"
                     type="text"
-                    placeholder="FullName"
+                    placeholder="Full Name"
                     label="First Name"
                   />
                 </div>
@@ -84,16 +83,15 @@ function Contact() {
                   Upload File
                 </button>
               </div>
+              <button
+                type="submit"
+                className="flex items-center w-full h-[44px] lg:h-[56px] lg:w-[312px] justify-center ml-auto bg-tertiary400 px-8 rounded-[7px] gap-[12px] text-white-default font-Inter font-medium text-[17px] leading-[56px]"
+              >
+                Send message <Icons.ArrowRight className="text-white-default" />
+              </button>
             </Form>
           )}
         </Formik>
-
-        <button
-          type="submit"
-          className="flex items-center w-full h-[44px] lg:h-[56px] lg:w-[312px] justify-center ml-auto bg-tertiary400 px-8 rounded-[7px] gap-[12px] text-white-default font-Inter font-medium text-[17px] leading-[56px]"
-        >
-          Send message <Icons.ArrowRight className="text-white-default" />
-        </button>
       </div>
     </PageContainer>
   );
