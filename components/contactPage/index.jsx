@@ -90,7 +90,10 @@ function Contact() {
           )}
         </Formik>
 
-        <button className="flex items-center w-full h-[44px] lg:h-[56px] lg:w-[312px] justify-center ml-auto bg-tertiary400 px-8 rounded-[7px] gap-[12px] text-white-default font-Inter font-medium text-[17px] leading-[56px]">
+        <button
+          type="submit"
+          className="flex items-center w-full h-[44px] lg:h-[56px] lg:w-[312px] justify-center ml-auto bg-tertiary400 px-8 rounded-[7px] gap-[12px] text-white-default font-Inter font-medium text-[17px] leading-[56px]"
+        >
           Send message <Icons.ArrowRight className="text-white-default" />
         </button>
       </div>
