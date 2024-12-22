@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useField } from "formik";
+import { useField, ErrorMessage } from "formik";
 
 function Textarea({ label, labelClassName, ...props }) {
   const [field, meta, helpers] = useField(props?.name);
@@ -9,6 +9,11 @@ function Textarea({ label, labelClassName, ...props }) {
     <>
       <label className={labelClassName}>{label}</label>
       <textarea {...field} {...props} />
+      <ErrorMessage
+        component="span"
+        name={props?.name}
+        className="text-red-500 text-sm font-medium"
+      />
     </>
   );
 }
