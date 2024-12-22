@@ -9,11 +9,12 @@ export let contactSchema = object({
   email: string()
     .email()
     .matches(
-      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$ /,
+      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
       "Lütfen doğru bir Email Adresi Giriniz"
     )
     .required(),
   company: string()
+    .matches(/^[a-zA-Z]+$/, "Sadece harf !")
     .min(5, "Minimum 5 Karakter")
     .max(30, "Maximum 30 Karakter")
     .required(),
