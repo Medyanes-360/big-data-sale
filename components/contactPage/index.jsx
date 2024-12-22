@@ -2,10 +2,10 @@ import PageContainer from "@/containers/PageContainers";
 import Icons from "@/public/assets/icons/Icons";
 import React from "react";
 
-function ConcatPage() {
+function Contact() {
   return (
     <PageContainer className="mb-4 md:!px-0 ">
-      <div class="flex flex-col items-center bg-white gap-[20px] rounded-[24px] px-3 md:p-[48px] md:gap-[48px] shadow-concatForm">
+      <div className="flex flex-col items-center bg-white gap-[20px] rounded-[24px] px-3 md:p-[48px] md:gap-[48px] shadow-concatForm">
         <div className="font-Inter font-semibold text-base lg:text-4xl text-deepAbyss">
           concat{" "}
           <span className="text-tertiary400 text-base lg:text-4xl font-Inter font-semibold">
@@ -39,7 +39,7 @@ function ConcatPage() {
               <input
                 type="email"
                 id="email"
-                placeHolder="Email adress"
+                placeholder="Email adress"
                 className="outline-0 h-[47px] w-full lg:w-full border border-1 border-lightMist rounded-[5px] px-2"
               />
             </div>
@@ -94,4 +94,4 @@ function ConcatPage() {
   );
 }
 
-export default ConcatPage;
+export default Contact;
