@@ -5,6 +5,7 @@ import React from "react";
 import { Form, Formik } from "formik";
 import Input from "@/globalElements/FormikForm/Input";
 import Textarea from "@/globalElements/FormikForm/TextArea";
+import { contactSchema } from "@/globalElements/FormikForm/contact/ContactSchema";
 
 function Contact() {
   return (
@@ -24,6 +25,7 @@ function Contact() {
             company: "",
             message: "",
           }}
+          validationSchema={contactSchema}
           onSubmit={(values, actions) => {
             console.log(values, actions, "onSubmit kısmı burası");
           }}
