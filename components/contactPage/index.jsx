@@ -58,7 +58,7 @@ function Contact() {
                 <Input
                   name="company"
                   type="text"
-                  className="outline-0 h-[47px] border  border-lightMist rounded-[5px] px-4"
+                  className="outline-0 h-[47px] border border-lightMist rounded-[5px] px-4"
                   labelClassName="font-Inter font-medium text-sm text-midnight"
                   label="Company Name"
                   placeholder="Brand/Company/Product Name"
@@ -87,6 +87,13 @@ function Contact() {
               </div>
               <button
                 type="submit"
+                style={{
+                  opacity: !(props.isValid && props.dirty) ? 0.5 : 1,
+                  cursor: !(props.isValid && props.dirty)
+                    ? "not-allowed"
+                    : "pointer",
+                }}
+                disabled={!(props.isValid && props.dirty)}
                 className="flex items-center w-full h-[44px] lg:h-[56px] lg:w-[312px] justify-center ml-auto bg-tertiary400 px-8 rounded-[7px] gap-[12px] text-white-default font-Inter font-medium text-[17px] leading-[56px]"
               >
                 Send message <Icons.ArrowRight className="text-white-default" />
