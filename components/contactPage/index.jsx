@@ -2,10 +2,33 @@
 import PageContainer from "@/containers/PageContainers";
 import Icons from "@/public/assets/icons/Icons";
 import React from "react";
-import { Form, Formik } from "formik";
+import { Formik, Form } from "formik";
 import Input from "@/globalElements/FormikForm/Input";
 import Textarea from "@/globalElements/FormikForm/TextArea";
-import { contactSchema } from "@/globalElements/FormikForm/contact/ContactSchema";
+import { object, string, date } from "yup";
+
+export let contactSchema = object({
+  name: string()
+    .min(5, "Minimum 5 harften oluşur.")
+    .max(20, "Maximum 20 karakter!")
+    .required("Name zorunlu"),
+  email: string()
+    .email()
+    .matches(
+      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+      "Lütfen doğru bir Email Adresi Giriniz"
+    )
+    .required("Email Zorunlu"),
+  company: string()
+    .min(5, "Minimum 5 Karakter")
+    .max(30, "Maximum 30 Karakter")
+    .required("Company Name zorunlu"),
+  message: string()
+    .min(10, "Minimum 10 karakter")
+    .max(50, "Maximum 50 karakter")
+    .required("Message zorunlu"),
+  createdOn: date().default(() => new Date()),
+});
 
 function Contact() {
   return (
@@ -35,12 +58,12 @@ function Contact() {
               <div className="flex gap-[20px]">
                 <div className="flex flex-col flex-1 gap-[6px]">
                   <Input
-                    name="name"
+                    name="First Name"
                     className="outline-0 h-[47px]  w-full lg:w-full  border border-lightMist rounded-[5px] px-4"
                     labelClassName="font-Inter font-medium text-sm text-midnight"
                     type="text"
                     placeholder="Full Name"
-                    label="First Name"
+                    label="Name"
                   />
                 </div>
                 <div className="flex flex-col  flex-1 gap-[6px]">
