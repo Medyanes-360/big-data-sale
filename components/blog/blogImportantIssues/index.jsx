@@ -24,7 +24,7 @@ const BlogImportantIssues = () => {
     <PageContainer>
       <div className="relative h-auto py-6 px-4 rounded-[24px] bg-gradient-to-r from-[#170A33] via-[#451E99] to-[#451E99] overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-[url('/assets/images/blogBg.png')] bg-cover opacity-30 z-0"></div>
+        <div className="absolute inset-0 bg-[url('/assets/images/blogBg.png')] bg-center bg-cover opacity-30 z-0"></div>
 
         <div className="relative z-10">
           <ImportantIssuesHeader onPrevClick={scrollLeft} onNextClick={scrollRight} />
