@@ -2,7 +2,7 @@
 import React from "react";
 import { useField, ErrorMessage } from "formik";
 
-function Input({ label, labelClassName, ...props }) {
+function Input({ label, as = "span", labelClassName, ...props }) {
   const [field, meta, helpers] = useField(props?.name);
 
   return (
@@ -10,7 +10,7 @@ function Input({ label, labelClassName, ...props }) {
       <label className={labelClassName}>{label}</label>
       <input {...field} {...props} />
       <ErrorMessage
-        component="span"
+        component={as}
         name={props?.name}
         className="text-red-500 text-sm font-medium h-[15px]"
       />
