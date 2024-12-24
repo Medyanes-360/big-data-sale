@@ -1,5 +1,9 @@
 import React from "react";
 
-export const BookDemoPageContainer = () => {
-  return <div>BookDemoPageContainer</div>;
-};
+export default function BookDemoPageContainer() {
+  return (
+    <div>
+      BookDemoPageContainer
+    </div>
+  );
+}
