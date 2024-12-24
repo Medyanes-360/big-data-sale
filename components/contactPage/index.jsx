@@ -58,7 +58,7 @@ function Contact() {
               <div className="flex gap-[20px]">
                 <div className="flex flex-col flex-1 gap-[6px]">
                   <Input
-                    name="First Name"
+                    name="name"
                     className="outline-0 h-[47px]  w-full lg:w-full  border border-lightMist rounded-[5px] px-4"
                     labelClassName="font-Inter font-medium text-sm text-midnight"
                     type="text"
