@@ -16,7 +16,7 @@ function Input({ label, as = "span", labelClassName, ...props }) {
       <ErrorMessage
         component={as}
         name={props?.name}
-        className="text-red-500 text-sm font-medium h-[15px]"
+        className="text-red-500 text-xs sm:text-sm font-medium h-[15px]"
       />
     </>
   );
