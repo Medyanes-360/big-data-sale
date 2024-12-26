@@ -55,8 +55,8 @@ function Contact() {
           }}
         >
           {(props) => (
-            <Form className="w-full flex flex-col gap-[30px]">
-              <div className="flex gap-[20px]">
+            <Form className="w-full flex flex-col gap-[25px]">
+              <div className="flex justify-between w-full gap-[20px]">
                 <div className="flex flex-col flex-1 gap-[6px] relative">
                   <Input
                     name="name"
@@ -68,7 +68,7 @@ function Contact() {
                     label="Name"
                   />
                 </div>
-                <div className="flex flex-col  flex-1 gap-[6px] relative">
+                <div className="flex flex-col flex-1 gap-[6px] relative">
                   <Input
                     name="email"
                     className="form-input"

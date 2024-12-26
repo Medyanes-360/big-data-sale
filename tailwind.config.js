@@ -164,6 +164,7 @@ module.exports = {
           color: "transparent",
         },
         ".form-input": {
+          width: "100%",
           outline: "0",
           height: "47px",
           border: "1px solid #E0E0E0" /* lightMist rengini temsil eder */,
