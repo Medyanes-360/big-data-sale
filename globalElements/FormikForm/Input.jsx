@@ -23,7 +23,7 @@ function Input({
         {...field}
         {...props}
         className={`${props.className} transition-all duration-500 ${
-          meta.touched && meta.error ? "border-red-500" : "border-gray-300"
+          meta.touched && meta.error ? "!border-red-500" : "border-gray-300"
         }`}
       />
       <ErrorMessage

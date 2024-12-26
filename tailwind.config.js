@@ -163,6 +163,29 @@ module.exports = {
           WebkitBackgroundClip: "text",
           color: "transparent",
         },
+        ".form-input": {
+          outline: "0",
+          height: "47px",
+          border: "1px solid #E0E0E0" /* lightMist rengini temsil eder */,
+          borderRadius: "5px",
+          padding: "0px 16px" /* px-4 eşdeğeri */,
+        },
+        ".form-label": {
+          fontFamily: "Inter, sans-serif",
+          fontWeight: "500", // font-medium
+          fontSize: "0.875rem", // text-sm (14px)
+          lineHeight: "1.25rem", // Line height ayarı (opsiyonel)
+          color: "#2B2B2B", // text-midnight
+        },
+        ".form-error": {
+          fontSize: "0.875rem", // text-sm (14px)
+          fontWeight: "500", // font-medium
+          color: "#EF4444", // text-red-500
+          transition: "all 0.5s", // transition-all ve duration-500
+          position: "absolute", // absolute
+          left: "0", // left-0
+          top: "100%", // top-full
+        },
       });
     },
   ],
