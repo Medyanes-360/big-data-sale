@@ -2,6 +2,10 @@
 import React from "react";
 import { useField, ErrorMessage } from "formik";
 
+// as = aşağıdaki error componentinin olması istediğin etiket anlamına geliyor mesela div - span-vs.
+//labelClassName = labele verilecek className
+//kalan propslar inputa/textareaya ekleniyor direk className vs
+//label ise labelin alacağı text anlamına geliyor
 function Textarea({ label, labelClassName, ...props }) {
   const [field, meta, helpers] = useField(props?.name);
 
