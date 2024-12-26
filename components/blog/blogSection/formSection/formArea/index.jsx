@@ -1,22 +1,22 @@
 import ButtonComponent from "@/globalElements/Button";
 import Input from "@/globalElements/FormikForm/Input";
 import Icons from "@/public/assets/icons/Icons";
-import { Form, Formik } from "formik";
-import { object, string, date } from "yup";
+import {Form, Formik } from "formik";
+import * as Yup from "yup";
 
-export let formSchema = object({
-  name: string()
-    .min(5, "Minimum 5 harften oluşur.")
-    .max(20, "Maximum 20 karakter!")
-    .required("Name zorunlu"),
-  email: string()
-    .email()
+
+const formSchema = Yup.object().shape({
+  name: Yup.string()
+    .min(5, "Name must be at least 5 characters long.")
+    .max(20, "No more than 20 characters long!")
+    .required("Name is required"),
+  email: Yup.string()
+    .email("Invalid email address")
     .matches(
       /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-      "Lütfen doğru bir Email Adresi Giriniz"
+      "Please Enter a Correct Email Address"
     )
-    .required("Email Zorunlu"),
-  createdOn: date().default(() => new Date()),
+    .required("Email is required"),
 });
 
 const FormArea = () => {
