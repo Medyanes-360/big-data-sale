@@ -30,6 +30,7 @@ export let contactSchema = object({
   createdOn: date().default(() => new Date()),
 });
 
+/*form-input - form-label - form-error tailwind pluginde hazır classlar ekstra özellik değiştirmek istersen kaldırıp classname props olarak geçebilirsin direk */
 function Contact() {
   return (
     <PageContainer className="mb-4 md:!px-0 pt-5">
