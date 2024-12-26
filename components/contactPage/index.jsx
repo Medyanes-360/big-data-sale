@@ -77,7 +77,7 @@ function Contact() {
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-[6px]">
+              <div className="flex flex-col gap-[6px] relative">
                 <Input
                   name="company"
                   type="text"
