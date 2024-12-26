@@ -8,11 +8,19 @@ function Textarea({ label, labelClassName, ...props }) {
   return (
     <>
       <label className={labelClassName}>{label}</label>
-      <textarea {...field} {...props} />
+      <textarea
+        {...field}
+        {...props}
+        className={`${props.className} transition-all duration-500 ${
+          meta.touched && meta.error ? "border-red-500" : "border-gray-300"
+        }`}
+      />
       <ErrorMessage
         component="span"
         name={props?.name}
-        className="text-red-500 text-sm font-medium"
+        className={`text-red-500 text-sm font-medium  transition-all duration-500 ${
+          meta.touched && meta.error ? "visible" : "invisible"
+        }`}
       />
     </>
   );
