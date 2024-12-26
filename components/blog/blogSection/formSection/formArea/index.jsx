@@ -45,6 +45,7 @@ const FormArea = () => {
                   name="name"
                   label="Ad"
                   placeholder="Ad & surname"
+                  errorClassName="text-red-600"
                   labelClassName="block text-sm text-tertiary-800 md:font-semibold font-medium"
                   className="bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px]"
                 />
@@ -52,6 +53,7 @@ const FormArea = () => {
                   name="email"
                   label="E-posta"
                   placeholder="eposta"
+                  errorClassName="text-red-600"
                   labelClassName="block text-sm text-tertiary-800 md:font-semibold font-medium"
                   className="bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px]"
                 />
