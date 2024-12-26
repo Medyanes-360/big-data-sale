@@ -61,18 +61,18 @@ function Contact() {
                     name="name"
                     className="outline-0 h-[47px]  w-full lg:w-full  border border-lightMist rounded-[5px] px-4"
                     labelClassName="font-Inter font-medium text-sm text-midnight"
-                    errorClassName="text-red-500 text-sm font-medium  transition-all duration-500"
+                    errorClassName="text-red-500 text-sm font-medium  transition-all duration-500 absolute left-0 top-full"
                     type="text"
                     placeholder="Full Name"
                     label="Name"
                   />
                 </div>
-                <div className="flex flex-col  flex-1 gap-[6px]">
+                <div className="flex flex-col  flex-1 gap-[6px] relative">
                   <Input
                     name="email"
                     className="outline-0 h-[47px] w-full lg:w-full border  border-lightMist rounded-[5px] px-4"
                     labelClassName="font-Inter font-medium text-sm text-midnight"
-                    errorClassName="text-red-500 text-sm font-medium  transition-all duration-500"
+                    errorClassName="text-red-500 text-sm font-medium  transition-all duration-500 absolute left-0 top-full"
                     type="email"
                     label="Email"
                     placeholder="Email"
@@ -85,18 +85,18 @@ function Contact() {
                   type="text"
                   className="outline-0 h-[47px] border border-lightMist rounded-[5px] px-4"
                   labelClassName="font-Inter font-medium text-sm text-midnight"
-                  errorClassName="text-red-500 text-sm font-medium  transition-all duration-500"
+                  errorClassName="text-red-500 text-sm font-medium  transition-all duration-500 absolute left-0 top-full"
                   label="Company Name"
                   placeholder="Brand/Company/Product Name"
                 />
               </div>
-              <div className="flex flex-col gap-[6px]">
+              <div className="flex flex-col gap-[6px] relative">
                 <Textarea
                   name="message"
                   type="text"
                   className="outline-0 p-2 resize-none text-start h-[102px] border  border-lightMist rounded-[5px] px-4"
                   labelClassName="font-Inter font-medium text-sm text-midnight"
-                  errorClassName="text-red-500 text-sm font-medium  transition-all duration-500"
+                  errorClassName="text-red-500 text-sm font-medium  transition-all duration-500 absolute left-0 top-full"
                   label="Message"
                   placeholder="Tell us about your project..."
                 />
