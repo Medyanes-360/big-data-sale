@@ -187,6 +187,20 @@ module.exports = {
           left: "0", // left-0
           top: "100%", // top-full
         },
+        ".file-btn": {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: "5px",
+          height: "43px",
+          borderWidth: "1px",
+          borderColor: "#D3D3D3", // lightMist rengi
+          backgroundColor: "#FFFFFF", // white-default rengi
+          paddingTop: "11px",
+          paddingRight: "20px",
+          paddingBottom: "11px",
+          paddingLeft: "20px",
+        },
       });
     },
   ],

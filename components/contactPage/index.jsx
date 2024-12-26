@@ -6,6 +6,7 @@ import { Formik, Form } from "formik";
 import Input from "@/globalElements/FormikForm/Input";
 import Textarea from "@/globalElements/FormikForm/TextArea";
 import { object, string, date } from "yup";
+import FileUpload from "@/globalElements/FormikForm/FileUpload";
 
 export let contactSchema = object({
   name: string()
@@ -106,12 +107,7 @@ function Contact() {
                 <h1 className="font-lexend font-medium text-lg text-gray-700">
                   Attach File
                 </h1>
-                <button
-                  type="file"
-                  className="flex items-center justify-center rounded-[5px] h-[43px] border  border-lightMist bg-white-default pt-[11px] pr-[20px] pb-[11px] pl-[20px]"
-                >
-                  Upload File
-                </button>
+                <FileUpload className="file-btn" />
               </div>
               <button
                 type="submit"
