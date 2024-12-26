@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
 
 function FileUpload({ text = "Upload File", ...props }) {
+  const handleFileChanged = (e) => {
+    console.log(e.target.files, "dosya yüklendi");
+  };
   return (
     <div>
       <button
@@ -9,7 +13,12 @@ function FileUpload({ text = "Upload File", ...props }) {
         {...props}
       >
         {text}
-        <input type="file" className="hidden invisible" id="file-input" />
+        <input
+          type="file"
+          className="hidden invisible"
+          id="file-input"
+          onChange={handleFileChanged}
+        />
       </button>
     </div>
   );
