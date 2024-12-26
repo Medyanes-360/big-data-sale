@@ -38,16 +38,16 @@ const FormArea = () => {
           touched,
           errors,
           setFieldValue,
-          handleSubmit,
           isValid,
           dirty,
         }) => (
-          <Form action="" className="flex flex-col w-full gap-3">
+          <Form action="" className="flex flex-col w-full gap-3 md:pb-32">
             <Input
               name="name"
               label="First name"
               placeholder="First name"
               labelClassName="text-gray-600 text-xs font-Inter font-normal"
+              errorClassName="text-red-600"
               className={`bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px] ${
                 touched.name && errors.name ? "border-red-600" : ""
               }`}
@@ -57,6 +57,7 @@ const FormArea = () => {
               label="Email"
               placeholder="email"
               labelClassName="text-gray-600 text-xs font-Inter font-normal "
+              errorClassName="text-red-600"
               className={`bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px] ${
                 touched.email && errors.email ? "border-red-600" : ""
               }`}
