@@ -6,7 +6,14 @@ import { useField, ErrorMessage } from "formik";
 //labelClassName = labele verilecek className
 //kalan propslar inputa ekleniyor direk className vs
 //label ise labelin alacağı text anlamına geliyor
-function Input({ label, as = "span", labelClassName, ...props }) {
+//errorClassName <ErrorMessage> componentine vermek istediiğiniz özellikler
+function Input({
+  label,
+  as = "span",
+  errorClassName,
+  labelClassName,
+  ...props
+}) {
   const [field, meta, helpers] = useField(props?.name);
 
   return (
@@ -22,7 +29,7 @@ function Input({ label, as = "span", labelClassName, ...props }) {
       <ErrorMessage
         component={as}
         name={props?.name}
-        className={`text-red-500 text-sm font-medium  transition-all duration-500 ${
+        className={`${errorClassName} ${
           meta.touched && meta.error ? "visible" : "invisible"
         }`}
       />
