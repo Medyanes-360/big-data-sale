@@ -1,22 +1,32 @@
 "use client";
 import React from "react";
+import { useField, ErrorMessage } from "formik";
 
 function FileUpload({ text = "Upload File", ...props }) {
+  const [field, meta, helpers] = useField(props?.name);
+
+  const { setValue } = helpers;
+
   const handleFileChanged = (e) => {
-    console.log(e.target.files, "dosya yüklendi");
+    setValue(e.target.files);
   };
+
+  console.log(meta);
+
   return (
     <div>
       <button
         type="button"
-        onClick={() => document.getElementById("file-input").click()}
+        onClick={() => document.getElementById("file").click()}
         {...props}
+        {...field}
       >
-        {text}
+        {meta?.value?.file ? "Dosya Yüklendi" : text}
         <input
           type="file"
           className="hidden invisible"
-          id="file-input"
+          id="file"
+          accept=".jpg,.png,.pdf"
           onChange={handleFileChanged}
         />
       </button>

@@ -49,6 +49,7 @@ function Contact() {
             email: "",
             company: "",
             message: "",
+            file: null,
           }}
           validationSchema={contactSchema}
           onSubmit={(values, actions) => {
