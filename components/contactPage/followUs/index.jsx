@@ -17,12 +17,14 @@ function FollowUs() {
       <div className="flex flex-row justify-between items-center gap-2 w-[197.5px]">
         {followData?.map((item, index) => {
           return (
-            <div
+            <a
+              href="https://www.google.com"
+              target="blank"
               className="w-[44px] h-[44px] flex justify-center items-center"
               key={index + 1}
             >
               {item?.component}
-            </div>
+            </a>
           );
         })}
       </div>
