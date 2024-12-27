@@ -34,8 +34,8 @@ export let contactSchema = object({
 /*form-input - form-label - form-error tailwind pluginde hazır classlar ekstra özellik değiştirmek istersen kaldırıp classname props olarak geçebilirsin direk */
 function Contact() {
   return (
-    <PageContainer className="mb-4 md:!px-0 pt-5">
-      <div className="flex flex-col items-center bg-white gap-[20px] rounded-[24px] px-3 md:p-[48px] md:gap-[48px] shadow-concatForm">
+    <>
+      <div className="flex flex-col w-full items-center bg-white gap-[20px] rounded-[24px] px-3 md:p-[48px] lg:w-[1200px] md:gap-[48px] shadow-concatForm">
         <div className="font-Inter font-semibold text-base lg:text-4xl text-deepAbyss">
           contact{" "}
           <span className="text-tertiary400 text-base lg:text-4xl font-Inter font-semibold">
@@ -131,7 +131,7 @@ function Contact() {
           )}
         </Formik>
       </div>
-    </PageContainer>
+    </>
   );
 }
 

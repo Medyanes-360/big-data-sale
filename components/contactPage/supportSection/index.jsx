@@ -16,7 +16,7 @@ const support = [
 
 function SupportSection() {
   return (
-    <div className="flex flex-col items-center gap-8 lg:gap-16">
+    <div className="flex flex-col items-center w-full h-full lg:h-[456px] gap-8 lg:gap-16 lg:w-[1200px]">
       <div className="text-center">
         <h1 className="text-tertiary400 font-Inter font-bold text-[32px] leading-[54px]">
           İletişim
@@ -25,7 +25,7 @@ function SupportSection() {
           size yardım etmeye hazırız
         </span>
       </div>
-      <div className="flex flex-col gap-6 lg:flex-row">
+      <div className="flex w-full flex-col gap-6 lg:flex-row">
         {support?.map((item, index) => {
           return (
             <SupportCard
