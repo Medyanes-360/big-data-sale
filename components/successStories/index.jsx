@@ -26,8 +26,8 @@ const SuccessStories = () => {
 
     return (
         <section>
-            <PageContainer className="!px-0">
-                <div className="w-full h-auto gap-2 rounded-tl-[24px] bg-white shadow-[0px_12px_32px_0px_rgba(160,160,160,0.12)] flex flex-col lg:flex-row lg:items-stretch py-8 ">
+            <PageContainer>
+                <div className="w-full h-auto  rounded-tl-[24px] bg-white shadow-[0px_12px_32px_0px_rgba(160,160,160,0.12)] flex flex-col lg:flex-row lg:items-stretch py-8 ">
                     {/* ImageSection */}
                     <div className="w-full lg:w-1/2 h-full">
                         <ImageSection
@@ -37,7 +37,7 @@ const SuccessStories = () => {
                     </div>
 
                     {/* Wrapper Div */}
-                    <div className="w-full lg:w-1/2 flex flex-col justify-between gap-3 sm:gap-8 relative">
+                    <div className="w-full pr-8 lg:w-1/2 flex flex-col justify-between gap-3 sm:gap-8 relative">
                         <TopSvg />
 
                         <InfoSection
