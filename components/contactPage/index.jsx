@@ -49,11 +49,11 @@ function Contact() {
             email: "",
             company: "",
             message: "",
-            file: null,
           }}
           validationSchema={contactSchema}
           onSubmit={(values, actions) => {
             console.log(values, actions, "onSubmit kısmı burası");
+            actions.resetForm();
           }}
         >
           {(props) => (
@@ -111,6 +111,7 @@ function Contact() {
                 <FileUpload
                   className="file-btn transition-all duration-500"
                   errorClassName="form-error"
+                  name="file"
                 />
               </div>
               <button

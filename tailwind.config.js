@@ -194,8 +194,6 @@ module.exports = {
           borderRadius: "5px",
           height: "43px",
           borderWidth: "1px",
-          borderColor: "#D3D3D3", // lightMist rengi
-          backgroundColor: "#FFFFFF", // white-default rengi
           paddingTop: "11px",
           paddingRight: "20px",
           paddingBottom: "11px",
