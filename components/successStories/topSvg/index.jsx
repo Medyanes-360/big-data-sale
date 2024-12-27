@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function TopSvg() {
   return (
-    <div className="flex justify-end space-x-2">
+    <div className="flex justify-end mt-2">
       <Image
         src="/assets/icons/9.svg"
         alt="9 Icon"

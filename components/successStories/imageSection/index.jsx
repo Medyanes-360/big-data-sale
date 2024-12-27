@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ImageSection({ imageSrc, altText }) {
   return (
-    <div className="w-full h-auto flex justify-center items-center xl:w-[556px] lg:w-[500px] lg:h-[768px] md:ml-0 ml-4">
+    <div className=" h-auto flex justify-center items-center xl:w-[556px] lg:w-[500px] lg:h-[768px] md:ml-0 px-4 md:px-8">
       <Image
         src={imageSrc}
         alt={altText}

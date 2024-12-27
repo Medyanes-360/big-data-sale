@@ -11,16 +11,19 @@ export default function BottomInfoSection({
   return (
     <div className="flex flex-row justify-between items-center">
       {/* Sol Bilgi  */}
-      <div className="absolute top-3 left-0 items-center sm:relative flex  px-4">
-        <Image
-          src={avatarSrc}
-          alt="Avatar"
-          width={48}
-          height={48}
-          className="rounded-[50%]"
-        />
+      <div className="absolute top-3 left-0 mb-1 items-center sm:relative flex px-4">
+        <div className="w-[48px] h-[48px] rounded-full overflow-hidden flex-shrink-0">
+          <Image
+            src={avatarSrc}
+            alt="Avatar"
+            width={48}
+            height={48}
+            className="object-cover w-full h-full"
+          />
+        </div>
         <span className="ml-2 text-[14px] sm:text-[18px] font-normal">{sector}</span>
       </div>
+
 
       {/* Ok Butonları */}
       <div className="absolute bottom-[-32px] left-0 mb-2 sm:mb-6 sm:relative flex gap-3 px-4">

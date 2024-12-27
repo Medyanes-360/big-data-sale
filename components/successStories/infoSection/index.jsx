@@ -1,6 +1,6 @@
 export default function InfoSection({ name, sector, goal, solution, comment }) {
   return (
-    <div className="flex flex-col gap-3 px-4 md:px-8 w-full md:ml-0 ml-4">
+    <div className="flex flex-col gap-3 md:px-8 w-full md:ml-0 ml-4">
       {/* Başlık */}
       <h1 className="font-inter text-[24px] md:text-[32px] font-bold leading-8 md:leading-[54px] tracking-[-0.015em] text-left">
         {name}
