@@ -4,8 +4,14 @@ import SuccessStories from "@/components/successStories";
 export default function SuccessStoryPageContainer() {
   return (
     <div className="min-h-screen flex flex-col items-center">
-      <SuccessStories />
-      <Testimonials />
+      <div>
+        <SuccessStories />
+      </div>
+      <div className="w-[100vw]">
+        <Testimonials />
+      </div>
+
+
     </div>
   );
 }
