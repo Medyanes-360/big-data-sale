@@ -10,7 +10,7 @@ const followData = [
 
 function FollowUs() {
   return (
-    <div className="flex flex-col items-center justify-center w-full py-7  bg-softBreeze gap-3 lg:w-[1200px]">
+    <div className="flex flex-col items-center justify-center w-full py-7  bg-softBreeze gap-3">
       <h1 className="font-lexend font-bold text-lg text-black text-center">
         Bizi Takip Edin
       </h1>

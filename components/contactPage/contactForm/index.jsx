@@ -35,7 +35,7 @@ export let contactSchema = object({
 function ContactForm() {
   return (
     <>
-      <div className="flex flex-col w-full items-center bg-white gap-[20px] rounded-[24px] px-3 md:p-[48px] lg:w-[1200px] md:gap-[48px] shadow-concatForm">
+      <div className="flex flex-col w-full items-center bg-white gap-[20px] rounded-[24px] px-3 md:p-[48px] md:gap-[48px] shadow-concatForm">
         <div className="font-Inter font-semibold text-base lg:text-4xl text-deepAbyss">
           contact{" "}
           <span className="text-tertiary400 text-base lg:text-4xl font-Inter font-semibold">
