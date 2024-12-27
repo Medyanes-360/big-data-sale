@@ -1,11 +1,11 @@
-import FormSection from "@/components/bookDemoPage/formSection";
+import BookDemo from "@/components/bookDemoPage";
 import React from "react";
 
 export default function BookDemoPageContainer() {
+
   return (
-    <div>
-      BookDemoPageContainer
-      <FormSection />
-    </div>
+    <>
+      <BookDemo />
+    </>
   );
 }
