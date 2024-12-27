@@ -2,7 +2,7 @@
 import React from "react";
 import { useField, ErrorMessage } from "formik";
 
-function FileUpload({ text = "Upload File", ...props }) {
+function FileUpload({ text = "Upload File", errorClassName, ...props }) {
   const [field, meta, helpers] = useField(props?.name);
 
   const { setValue } = helpers;
@@ -18,6 +18,7 @@ function FileUpload({ text = "Upload File", ...props }) {
       <button
         type="button"
         onClick={() => document.getElementById("file").click()}
+        className={props.className}
         {...props}
         {...field}
       >
@@ -30,6 +31,13 @@ function FileUpload({ text = "Upload File", ...props }) {
           onChange={handleFileChanged}
         />
       </button>
+      <ErrorMessage
+        component="span"
+        name={text}
+        className={`${errorClassName} ${
+          meta.touched && meta.error ? "visible" : "invisible"
+        }`}
+      />
     </div>
   );
 }

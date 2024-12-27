@@ -108,7 +108,10 @@ function Contact() {
                 <h1 className="font-lexend font-medium text-lg text-gray-700">
                   Attach File
                 </h1>
-                <FileUpload className="file-btn" />
+                <FileUpload
+                  className="file-btn transition-all duration-500"
+                  errorClassName="form-error"
+                />
               </div>
               <button
                 type="submit"
