@@ -50,7 +50,9 @@ function FileUpload({ text = "Upload File", errorClassName, ...props }) {
             : "bg-white-default border-gray-300"
         }`}
       >
-        {meta.value ? `Yüklenen Dosya: ${meta.value.name}` : text}
+        {meta.value
+          ? `Yüklenen Dosya: ${meta.value?.name?.substring(1, 20)}`
+          : text}
       </button>
 
       {/* Gizli input */}
