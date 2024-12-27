@@ -4,7 +4,7 @@ import React from "react";
 function SupportCard({ title, btntitle, img }) {
   return (
     <>
-      <div className="flex flex-col w-full flex-1 items-center justify-center gap-[12px] rounded-[26px] shadow-supportCard h-full lg:h-[310px] p-6 pb-10 px-6">
+      <div className="flex flex-col w-full flex-1 items-center justify-center gap-[12px] rounded-[26px] shadow-supportCard h-full  p-6 pb-10 px-6">
         <Image src={img} alt="Picture of the author" />
         <span className="text-gray-700 text-2xl font-Inter font-medium">
           {title}
