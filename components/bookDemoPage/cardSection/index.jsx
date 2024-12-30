@@ -63,7 +63,7 @@ const CardCarousel = () => {
         <section className="pt-8">
             <PageContainer>
                 <div
-                    className="flex flex-col shadow-[#919eab29]  rounded-3xl px-3 py-6 gap-3 md:gap-10 max-w-[521px]"
+                    className="flex flex-col mt-8 px-3 py-6 gap-3 md:gap-10 max-w-[521px]"
                     onMouseDown={handleMouseDown}
                     onMouseUp={handleMouseUp}
                     onTouchStart={handleTouchStart}
@@ -72,10 +72,13 @@ const CardCarousel = () => {
                     <div className="block md:hidden font-lexend text-center text-lg font-medium text-tertiary-900">
                         Bizi Tercih Edenler
                     </div>
-                    <h2 className=" hidden md:flex text-[32px] font-medium leading-[56px] font-Inter text-[#000000]">#Some history</h2>
+                    <div>
+                        <h2 className=" hidden md:flex text-[32px] font-medium leading-[56px] font-Inter text-[#000000] ">#Some history</h2>
+                    </div>
+
 
                     {/* Kart */}
-                    <div className="flex flex-col w-full gap-1 p-8 shadow-md rounded-lg">
+                    <div className="flex flex-col w-full gap-1 p-8 bg-[#fff] rounded-xl" style={{ boxShadow: '0px 17.31px 34.61px -5.77px #919EAB29' }}>
                         <div className="flex justify-between items-center mb-4">
                             <div className="flex items-center gap-4 mb-4">
                                 <img
@@ -109,24 +112,26 @@ const CardCarousel = () => {
                         <img
                             src={mockData[currentIndex].cardImage}
                             alt={`${mockData[currentIndex].name} card`}
-                            className="w-[125px] h-[125px] mt-4 mx-auto"
+                            className="w-[125px] h-[125px] rounded-full object-cover mx-auto"
                         />
                     </div>
-                </div>
-                {/* Navigasyon */}
-                <div className="flex items-center justify-center w-full max-w-xs mt-4 mx-auto">
-                    <div className="flex gap-1">
-                        {mockData.map((_, index) => (
-                            <span
-                                key={index}
-                                className={`w-3 h-3 rounded-full ${index === currentIndex
-                                    ? "bg-tertiary-400 w-[23.07px] h-[11.54px] rounded-[21.63]"
-                                    : "bg-[#915dff09] w-[11.54px] h-[11.54px] rounded-[21.63]"
-                                    }`}
-                            />
-                        ))}
+
+                    {/* Navigasyon */}
+                    <div className="flex items-center justify-center w-full max-w-xs mx-auto ">
+                        <div className="flex gap-1">
+                            {mockData.map((_, index) => (
+                                <span
+                                    key={index}
+                                    className={`w-3 h-3 rounded-full ${index === currentIndex
+                                        ? "bg-tertiary-400 w-[23.07px] h-[11.54px] rounded-[21.63]"
+                                        : "bg-[#915dff09] w-[11.54px] h-[11.54px] rounded-[21.63]"
+                                        }`}
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
+
             </PageContainer>
         </section>
     );

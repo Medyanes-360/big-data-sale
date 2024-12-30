@@ -17,10 +17,13 @@ const BookDemo = () => {
                 </div>
                 <div className="relative lg:w-1/2 flex flex-col items-center">
                     {/* Calendar Masaüstü */}
-                    <div className="hidden absolute top-[-5%] left-[10%] lg:block">
+                    <div className="hidden absolute top-0 left-[10%] mt-16 lg:block">
                         <Calendar />
                     </div>
+                    <div className="mt-[92px] ">
                     <CardCarousel />
+                    </div>
+                    
                 </div>
             </div>
             {/* Testimonials Bölümü */}
