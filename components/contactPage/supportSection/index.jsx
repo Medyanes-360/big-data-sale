@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import SupportImg from "../../../public/assets/images/support.png";
 import PartnerImg from "../../../public/assets/images/partnership.png";
@@ -16,7 +15,7 @@ const support = [
 
 function SupportSection() {
   return (
-    <div className="flex flex-col items-center w-full h-full lg:h-[456px] gap-8 lg:gap-16 lg:w-[1200px]">
+    <div className="flex flex-col justify-center w-full h-full lg:h-[456px] gap-8 lg:gap-16">
       <div className="text-center">
         <h1 className="text-tertiary400 font-Inter font-bold text-[32px] leading-[54px]">
           İletişim
@@ -25,7 +24,7 @@ function SupportSection() {
           size yardım etmeye hazırız
         </span>
       </div>
-      <div className="flex w-full flex-col gap-6 lg:flex-row">
+      <div className="flex w-full flex-col justify-between gap-6 lg:flex-row">
         {support?.map((item, index) => {
           return (
             <SupportCard
