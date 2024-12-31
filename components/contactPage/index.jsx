@@ -1,3 +1,4 @@
+"use client";
 import PageContainer from "@/containers/PageContainers";
 import React from "react";
 import SupportSection from "./supportSection";

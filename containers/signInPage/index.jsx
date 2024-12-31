@@ -1,7 +1,7 @@
 import React from "react";
-import SignInPage from "../../components/signIn/index";
+import SignInPage from "../../components/signInPage/index";
 
-function signInPageContainer() {
+function SignInPageContainer() {
   return (
     <>
       <SignInPage />
@@ -9,4 +9,4 @@ function signInPageContainer() {
   );
 }
 
-export default signInPageContainer;
+export default SignInPageContainer;
