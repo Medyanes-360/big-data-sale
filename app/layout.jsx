@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${lexend.className}  ${poppins.variable}`}
+        className={`${inter.variable} ${lexend.variable}  ${poppins.variable}`}
       >
         {children}
       </body>

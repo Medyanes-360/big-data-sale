@@ -116,6 +116,7 @@ module.exports = {
           "-20px 20px 40px -4px #919EAB3D, 0px 0px 2px 0px #919EAB3D;",
         concatForm: "0px 12px 24px -4px #919EAB29",
         supportCard: " 0px 12px 24px -4px #919EAB29",
+        signCard: "0px 12px 24px -4px #919EAB29",
       },
       fontFamily: {
         Inter: "var(--font-inter)", //inter fontun static olaraq font-inter olaraq cagiriyoruz
