@@ -56,7 +56,7 @@ function ChooseUs() {
             ulaşmaya başladı.
           </span>
         </div>
-        <div>
+        <div className="mt-2">
           <p className="font-Inter font-normal text-base text-white-default">
             "Benim işim görsel tasarımla restoranların marka değerini artırmak.
             Sunduğunuz verilerle web sitesi olmayan veya dijital görünürlüğü
