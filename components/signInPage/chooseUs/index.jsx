@@ -1,5 +1,8 @@
+"use client";
 import Logo from "@/globalElements/Logo";
 import React from "react";
+import Avatar from "@/public/assets/images/avatar.png";
+import Image from "next/image";
 
 function ChooseUs() {
   return (
@@ -14,8 +17,13 @@ function ChooseUs() {
       </h3>
 
       <div className="card bg-tertiary-900 w-[384px] signCard h-[475px] rounded-2xl	p-6 gap-2">
-        <div>
-          <img src="" alt="logo" />
+        <div className="flex border border-gray600 p-3 rounded-xl gap-3">
+          <Image
+            src={Avatar}
+            width={48}
+            height={48}
+            alt="Picture of the author"
+          />
           <div className="flex flex-col">
             <span className="text-white-default">Amanda</span>
             <span className="text-white-default">Amanda Test</span>
