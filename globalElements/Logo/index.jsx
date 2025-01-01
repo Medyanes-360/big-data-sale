@@ -3,12 +3,12 @@ import Link from "next/link";
 import React from "react";
 import whiteLogo from "@/public/assets/logo/welness_white.png";
 import blackLogo from "@/public/assets/logo/welness_black.webp";
-const Logo = ({ white, className }) => {
+const Logo = ({ white, className, border = true }) => {
   return (
     <Link
       href="/"
       className={`block w-fit h-fit ${
-        white ? "" : "pr-6 border-r border-solid border-r-lightMist"
+        !border ? "" : "pr-6 border-r border-solid border-r-lightMist"
       }`}
     >
       <Image

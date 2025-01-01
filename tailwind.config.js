@@ -152,7 +152,7 @@ module.exports = {
           background:
             "linear-gradient(100.9deg, #2f1566 5.85%, #5e2acc 91.92%)",
         },
-        ".lavanta": {
+        ".bg-lavanta": {
           background:
             "linear-gradient(128.03deg, #F4F1FD 2.96%, #FEF5F0 105.34%)",
         },
