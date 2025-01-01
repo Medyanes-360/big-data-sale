@@ -60,10 +60,11 @@ function ChooseUs() {
             Sunduğunuz verilerle web sitesi olmayan veya dijital görünürlüğü
             zayıf restoranlarla çalışmaya başladım. 7 ayda 35 farklı restoran
             için projeler yaptım. Bu işletmelere ihtiyacını net bir şekilde
-            gösterince hemen ilgilendiler." — Amanda L.
+            gösterince hemen ilgilendiler."— Amanda L.
           </p>
         </div>
       </div>
+      <div className="w-[8px] h-[8px] bg-[#E6DBFF] rounded-[22px]"></div>
     </div>
   );
 }
