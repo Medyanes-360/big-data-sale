@@ -14,7 +14,15 @@ function ChooseUs() {
       </h3>
 
       <div className="card bg-tertiary-900 w-[384px] signCard h-[475px] rounded-2xl	p-6 gap-2">
-        <h2>card</h2>
+        <div>
+          <img src="" alt="logo" />
+          <div className="flex flex-col">
+            <span className="text-white-default">Amanda</span>
+            <span className="text-white-default">Amanda Test</span>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
       </div>
     </div>
   );
