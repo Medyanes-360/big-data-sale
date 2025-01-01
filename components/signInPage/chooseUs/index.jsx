@@ -4,15 +4,17 @@ import React from "react";
 import Avatar from "@/public/assets/images/avatar.png";
 import Image from "next/image";
 
+const tempArray = [0, 1, 2, 3, 4, 5, 6];
+
 function ChooseUs() {
   return (
-    <div className="flex flex-col justify-center items-center w-[480px] h-full rounded-xl bg-lavanta py-[30px]">
+    <div className="flex flex-col justify-center gap-6 items-center w-[480px] h-full rounded-xl bg-lavanta py-[30px]">
       <Logo
         white={false}
         border={false}
-        className="w-[110px] h-[44px] mb-6 border-0"
+        className="w-[110px] h-[44px] border-0"
       />
-      <h3 className="text-lg font-medium font-lexend text-tertiary900">
+      <h3 className="text-lg font-bold font-lexend text-tertiary900">
         Bizi Tercih Edenler
       </h3>
 
@@ -54,7 +56,7 @@ function ChooseUs() {
             ulaşmaya başladı.
           </span>
         </div>
-        <div className="mt-2">
+        <div>
           <p className="font-Inter font-normal text-base text-white-default">
             "Benim işim görsel tasarımla restoranların marka değerini artırmak.
             Sunduğunuz verilerle web sitesi olmayan veya dijital görünürlüğü
@@ -64,7 +66,20 @@ function ChooseUs() {
           </p>
         </div>
       </div>
-      <div className="w-[8px] h-[8px] bg-[#E6DBFF] rounded-[22px]"></div>
+      <div className="flex gap-1">
+        {tempArray.map((item, index) => {
+          return (
+            <div
+              className={`${
+                0 == index
+                  ? "w-[30px] h-[8px] bg-tertiary-500 rounded-[22px]"
+                  : "w-[8px] h-[8px] bg-[#E6DBFF] rounded-[22px]"
+              }`}
+              key={index + 1}
+            ></div>
+          );
+        })}
+      </div>
     </div>
   );
 }
