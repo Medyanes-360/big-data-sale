@@ -1955,7 +1955,6 @@ export default class Icons {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        class="lucide lucide-eye-off"
       >
         <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" />
         <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
@@ -1964,7 +1963,7 @@ export default class Icons {
       </svg>
     );
   }
-  static EyeIcon({ className, color }) {
+  static EyeIcon({ className }) {
     return (
       <svg
         className={className}
@@ -1973,14 +1972,40 @@ export default class Icons {
         height="24"
         viewBox="0 0 24 24"
         fill="none"
-        stroke={color ? `${color}` : "currentColor"}
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        class="lucide lucide-eye"
       >
         <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
         <circle cx="12" cy="12" r="3" />
+      </svg>
+    );
+  }
+  static MailIcon({ className }) {
+    return (
+      <svg
+        className={className}
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 8.75H35V30C35 30.3315 34.8683 30.6495 34.6339 30.8839C34.3995 31.1183 34.0815 31.25 33.75 31.25H6.25C5.91848 31.25 5.60054 31.1183 5.36612 30.8839C5.1317 30.6495 5 30.3315 5 30V8.75Z"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M35 8.75L20 22.5L5 8.75"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     );
   }

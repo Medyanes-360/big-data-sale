@@ -1,5 +1,5 @@
 "use client";
-import { ErrorMessage, Field, Form, Formik } from "formik";
+import { Field, Form, Formik } from "formik";
 import React, { useState } from "react";
 import * as Yup from "yup";
 import "react-phone-number-input/style.css";
@@ -8,7 +8,6 @@ import Input from "@/globalElements/FormikForm/Input";
 import ButtonComponent from "@/globalElements/Button";
 import Icons from "@/public/assets/icons/Icons";
 import Link from "next/link";
-
 
 const formSchema = Yup.object().shape({
   name: Yup.string()
@@ -31,9 +30,9 @@ const formSchema = Yup.object().shape({
 const RegisterForm = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <div className="w-full md:max-w-[588px] md:max-h-[690px] mx-auto flex flex-col gap-3 md:gap-10 shadow-blog rounded-3xl p-3 md:p-8">
+    <div className="w-full z-40  md:max-w-[600px]  m-auto flex flex-col gap-3 bg-white-default md:gap-10 shadow-blog rounded-3xl p-3 md:p-8">
       {/* header */}
-      <h2 className="font-Inter font-bold text-2xl text-terirary-900 text-center pt-8">
+      <h2 className="font-Inter font-bold text-2xl text-terirary-900 text-center">
         Sign up
       </h2>
       {/* formaAlanı */}
@@ -52,25 +51,29 @@ const RegisterForm = () => {
       >
         {({ values, touched, errors, setFieldValue, isValid, dirty }) => (
           <Form action="" className="space-y-3">
-            <div className="md:grid grid-cols-2 gap-5 space-y-1">
+            <div className="md:grid grid-cols-2 gap-5  ">
               <div className="">
                 <Input
                   name="name"
                   label="First name"
                   placeholder="First name"
                   labelClassName="text-gray-600 text-xs font-Inter font-normal"
-                  errorClassName="text-red-600"
-                  className={"bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px] "}
+                  errorClassName="text-red-600 text-xs"
+                  className={
+                    "bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px] "
+                  }
                 />
               </div>
-              <div>
+              <div className="">
                 <Input
                   name="lastname"
                   label="Last name"
                   placeholder="Last name"
                   labelClassName="text-gray-600 text-xs font-Inter font-normal"
-                  errorClassName="text-red-600"
-                  className={"bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px]"}
+                  errorClassName="text-red-600 text-xs"
+                  className={
+                    "bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px]"
+                  }
                 />
               </div>
             </div>
@@ -81,58 +84,65 @@ const RegisterForm = () => {
                   label="Email"
                   placeholder="email"
                   labelClassName="text-gray-600 text-xs font-Inter font-normal "
-                  errorClassName="text-red-600"
-                  className={"bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px]"}
+                  errorClassName="text-red-600 text-xs"
+                  className={
+                    "bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px]"
+                  }
                 />
               </div>
-            
-                <div
-                  className={`flex w-full max-h-fit flex-col rounded-md ${
-                    touched.phone && errors.phone ? "border-red-600 border" : ""
-                  }`}
-                >
+
+              <div
+                className={`flex w-full max-h-fit flex-col rounded-md ${
+                  touched.phone && errors.phone ? "border-red-600 border" : ""
+                }`}
+              >
                 <label className="text-gray-600 text-xs font-Inter font-normal">
                   Phone number
                 </label>
-                  <Field
-                    component={PhoneInput}
-                    name="phone"
-                    defaultCountry="TR"
-                    placeholder="201-555-0123"
-                    value={values.phone}
-                    onChange={(value) => setFieldValue("phone", value)}
-                    className="bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px]"
-                  />
-                </div>
- 
+                <Field
+                  component={PhoneInput}
+                  name="phone"
+                  defaultCountry="TR"
+                  placeholder="201-555-0123"
+                  value={values.phone}
+                  onChange={(value) => setFieldValue("phone", value)}
+                  className="bg-white-default outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[47px]"
+                />
+              </div>
             </div>
             <div className="relative">
+
+              <div>
+
               <Input
                 name="password"
                 label="Password"
                 type={visible ? "text" : "password"}
                 placeholder="8+ characters"
                 labelClassName="text-gray-600 text-xs font-Inter font-normal"
-                errorClassName="text-red-600"
+                errorClassName="text-red-600 text-xs"
                 className="outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[56px]"
-              />
-              <button
+                right={ ()=>(<button
                   type="button"
                   onClick={() => setVisible(!visible)}
-                  className="absolute right-2 top-1/2 text-gray-500 hover:text-gray-700"
+                  className="text-gray-500 hover:text-gray-700"
                 >
-                  {visible ? (
-                    <Icons.EyeIcon/>
-                  ) : (
-                    <Icons.EyeOffIcon/>
-                  )}
-                </button>
+                  {visible ? <Icons.EyeIcon /> : <Icons.EyeOffIcon />}
+                </button>)
+                }
+              />
+             
+              </div>
+
             </div>
             <div className="text-right">
-                <Link href="#" className="text-sm text-tertiary-900 underline font-normal font-Inter">
-                  Forgot password?
-                </Link>
-              </div>
+              <Link
+                href="#"
+                className="text-sm text-tertiary-900 underline font-normal font-Inter"
+              >
+                Forgot password?
+              </Link>
+            </div>
             <div className="items-center justify-center flex">
               <ButtonComponent
                 type="submit"
