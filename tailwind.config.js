@@ -91,6 +91,8 @@ module.exports = {
           "linear-gradient(128.03deg, #F4F1FD 2.96%, #FEF5F0 105.34%)",
         "attachFile-gradient":
           "linear-gradient(128.03deg, #F4F1FD 2.96%, #FEF5F0 105.34%)",
+        "bg-gradient":
+          "linear-gradient(128.03deg, #F4F1FD 2.96%, #FEF5F0 105.34%)",
       },
       backdropBlur: {
         custom: "14.8px",
