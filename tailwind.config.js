@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  corePlugins: {
+    backdropBlur: true,
+  },
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -187,6 +190,12 @@ module.exports = {
           fontSize: "0.875rem", // text-sm (14px)
           lineHeight: "1.25rem", // Line height ayarı (opsiyonel)
           color: "#2B2B2B", // text-midnight
+        },
+        ".login-Backdrop": {
+          "backdrop-filter": "blur(278.1337890625px)",
+        },
+        ".login-Backdrop2": {
+          "backdrop-filter": "blur(57.79999923706055px)",
         },
         ".form-error": {
           fontSize: "0.875rem", // text-sm (14px)

@@ -8,7 +8,7 @@ const tempArray = [0, 1, 2, 3, 4, 5, 6];
 
 function ChooseUs() {
   return (
-    <div className="flex flex-col justify-center gap-6 items-center w-[480px] h-full rounded-xl bg-lavanta py-[30px]">
+    <div className="flex flex-col justify-center gap-6 items-center w-[375px] lg:w-[480px] h-full rounded-xl bg-lavanta py-[30px]">
       <Logo
         white={false}
         border={false}
@@ -18,7 +18,7 @@ function ChooseUs() {
         Bizi Tercih Edenler
       </h3>
 
-      <div className="card bg-tertiary-900 w-[384px] signCard h-[475px] rounded-2xl	p-6 gap-2">
+      <div className="card bg-tertiary-900 w-[343px] lg:w-[384px] signCard h-[475px] rounded-2xl	p-6 gap-2">
         <div className="flex items-center border border-gray600 p-3 rounded-xl gap-3">
           <Image
             src={Avatar}
@@ -56,7 +56,7 @@ function ChooseUs() {
             ulaşmaya başladı.
           </span>
         </div>
-        <div className="mt-2">
+        <div className="mt-1 lg:mt-2">
           <p className="font-Inter font-normal text-base text-white-default">
             "Benim işim görsel tasarımla restoranların marka değerini artırmak.
             Sunduğunuz verilerle web sitesi olmayan veya dijital görünürlüğü

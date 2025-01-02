@@ -5,8 +5,8 @@ import React from "react";
 
 function LoginForm() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center h-full">
-      <div className="w-[588px] h-[475px]">
+    <div className="flex flex-1 items-center justify-center h-full">
+      <div className="w-[343px] lg:w-[588px]">
         <Formik
           initialValues={{
             email: "",
@@ -29,7 +29,7 @@ function LoginForm() {
                 <Input
                   name="email"
                   className="w-full h-[56px] rounded-lg flex gap-2 border border-loginInputBorder placeholder:text-tertiary-900 py-4 px-[14px]"
-                  labelClassName="font-Inter font-normal text-xs text-raven-700 absolute top-[-8px] left-[10px] bg-white-default px-1"
+                  labelClassName="font-Inter font-normal text-xs text-raven-700 absolute top-[-7px] left-[10px] bg-white-default px-1"
                   errorClassName="form-error"
                   type="email"
                   placeholder="demo@minimals.cc"
@@ -60,7 +60,7 @@ function LoginForm() {
               <button
                 type="submit"
                 disabled={!(props.isValid && props.dirty)}
-                className="flex items-center cursor-pointer w-full h-[44px] lg:h-[56px] lg:w-[312px] justify-center bg-tertiary400 px-8 rounded-[8px] gap-[12px] text-white-default font-Inter font-medium text-[17px] leading-[56px]"
+                className="flex items-center gap-2 cursor-pointer w-full h-[48px] lg:w-[312px] justify-center bg-tertiary400 px-[22px] py-[11px] rounded-[8px]  text-white-default font-Inter font-medium text-sm"
               >
                 Login
               </button>
