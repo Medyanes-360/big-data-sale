@@ -100,6 +100,12 @@ module.exports = {
       backdropBlur: {
         custom: "14.8px",
       },
+      blur: {
+        custom:"80px"
+      },
+      blur: {
+        custommobile:"50px",
+      },
       dropShadow: {
         "custom-combined-1":
           "0px 0px 2px rgba(145, 158, 171, 0.24) -20px 20px 40px -4px rgba(145, 158, 171, 0.24)",

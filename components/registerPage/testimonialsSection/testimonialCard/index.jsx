@@ -28,9 +28,9 @@ const TestimonialCard = ({ item }) => {
           Çözüm:<span className="text-white-default pl-1">{item.solution}</span>
         </div>
       </div>
-      <p className="flex flex-col text-white-default text-[12px] leading-5 md:text-base p-0 font-normal font-Inter">
-        "{item.comment}"<div>— {item.name}</div>
-      </p>
+      <div className="flex flex-col text-white-default text-[12px] leading-5 md:text-base p-0 font-normal font-Inter">
+        "{item.comment}"<p>— {item.name}</p>
+      </div>
     </div>
   );
 };

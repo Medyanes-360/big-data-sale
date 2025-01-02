@@ -6,7 +6,7 @@ import { TestimonialCarousel } from "@/globalElements/EmblaCarousel/TestimonialC
 
 const TestimonialsSection = () => {
   return (
-    <section className="max-h-screen w-full">
+    <section className="max-h-screen  w-full max-w-[480px]">
       <div className="gap-6 flex flex-col items-center">
         <h1 className="text-lg text-center font-semibold text-tertiary-900 font-lexend">
           Bizi Tercih Edenler
@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
             {testimonialMockData?.map((item, index) => (
               <div
                 key={index}
-                className="flex-[0_0_100%] py-4 items-center justify-center px-4 sm:px-8 md:px-6"
+                className="flex-[0_0_100%] py-4 items-center justify-center px-4 sm:px-8 md:px-6 lg:px-3"
               >
                 <TestimonialCard item={item} />
               </div>
