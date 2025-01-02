@@ -27,22 +27,22 @@ function LoginForm() {
             <div className="flex flex-col w-full relative">
               <Input
                 name="email"
-                className="form-input w-full rounded-lg flex gap-2 border border-loginInputBorder"
+                className="w-full h-[56px] rounded-lg flex gap-2 border border-loginInputBorder placeholder:text-tertiary-900 py-4 px-[14px]"
                 labelClassName="font-Inter font-normal text-xs text-raven-700 absolute top-[-8px] left-[10px] bg-white-default px-1"
                 errorClassName="form-error"
-                type="text"
+                type="email"
                 placeholder="demo@minimals.cc"
                 label="Email address"
               />
             </div>
             <div className="flex flex-col w-full">
               <Input
-                name="email"
-                className="form-input w-full rounded-lg flex gap-2 border border-loginInputBorder"
+                name="password"
+                className="h-[56px] w-full rounded-lg flex border border-loginInputBorder gap-2 placeholder:text-raven-700 py-4 px-[14px]"
                 labelClassName="font-Inter font-normal text-xs text-raven-700"
                 errorClassName="form-error"
-                type="text"
-                placeholder="demo@minimals.cc"
+                type="password"
+                placeholder="Password"
                 label=""
               />
             </div>
