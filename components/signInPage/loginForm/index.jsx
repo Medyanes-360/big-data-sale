@@ -51,7 +51,12 @@ function LoginForm() {
                 color="#838E9E"
               />
             </div>
-
+            <a
+              href="#"
+              className="w-full font-Inter font-normal text-sm text-right text-tertiary-900 underline  underline-offset-1"
+            >
+              Forgot Password?
+            </a>
             <button type="submit">Submit</button>
           </Form>
         )}
