@@ -1,4 +1,5 @@
 import Input from "@/globalElements/FormikForm/Input";
+import Icons from "@/public/assets/icons/Icons";
 import { Form, Formik } from "formik";
 import React from "react";
 
@@ -35,7 +36,7 @@ function LoginForm() {
                 label="Email address"
               />
             </div>
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col justify-center w-full relative">
               <Input
                 name="password"
                 className="h-[56px] w-full rounded-lg flex border border-loginInputBorder gap-2 placeholder:text-raven-700 py-4 px-[14px]"
@@ -45,7 +46,12 @@ function LoginForm() {
                 placeholder="Password"
                 label=""
               />
+              <Icons.EyeIcon
+                className=" absolute top-[18px] right-[12px]"
+                color="#838E9E"
+              />
             </div>
+
             <button type="submit">Submit</button>
           </Form>
         )}

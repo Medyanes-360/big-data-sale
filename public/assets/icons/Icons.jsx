@@ -1964,7 +1964,7 @@ export default class Icons {
       </svg>
     );
   }
-  static EyeIcon({ className }) {
+  static EyeIcon({ className, color }) {
     return (
       <svg
         className={className}
@@ -1973,7 +1973,7 @@ export default class Icons {
         height="24"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="currentColor"
+        stroke={color ? `${color}` : "currentColor"}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
