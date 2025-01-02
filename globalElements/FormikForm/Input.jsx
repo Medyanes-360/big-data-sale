@@ -18,7 +18,7 @@ function Input({
 
   return (
     <>
-      <label className={labelClassName}>{label}</label>
+      {label && <label className={labelClassName}>{label}</label>}
       <input
         {...field}
         {...props}

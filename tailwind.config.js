@@ -70,6 +70,7 @@ module.exports = {
         customGray: "rgba(185, 185, 185, 0.19)",
         lightMist: "#E6E8EC",
         light200: "#FEEDFA",
+        loginInputBorder: "#919EAB52",
         background: "var(--background)",
         deepAbyss: "#061C3D",
         foreground: "var(--foreground)",
