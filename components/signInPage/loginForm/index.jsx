@@ -1,8 +1,16 @@
 import Input from "@/globalElements/FormikForm/Input";
 import Icons from "@/public/assets/icons/Icons";
 import { Form, Formik } from "formik";
+import * as Yup from "yup";
 import React from "react";
 
+const loginFormSchema = Yup.object().shape({
+  email: Yup.string().email("Hatalı Email Adresi").required("Email zorunludur"),
+
+  password: Yup.string()
+    .min(8, "Must be at least 8 characters")
+    .required("Required"),
+});
 function LoginForm() {
   return (
     <div className="flex flex-1 items-center justify-center w-full h-full">
@@ -14,9 +22,9 @@ function LoginForm() {
         <Formik
           initialValues={{
             email: "",
-            firstName: "red",
-            lastName: "",
+            password: "",
           }}
+          validationSchema={loginFormSchema}
           onSubmit={(values, actions) => {
             setTimeout(() => {
               alert(JSON.stringify(values, null, 2));
@@ -65,14 +73,14 @@ function LoginForm() {
               <button
                 type="submit"
                 disabled={!(props.isValid && props.dirty)}
-                className="flex items-center gap-2 cursor-pointer w-full h-[48px] lg:w-[312px] justify-center bg-tertiary400 px-[22px] py-[11px] rounded-[8px] text-white-default font-Inter font-medium text-sm"
+                className="flex items-center gap-2 cursor-pointer w-full h-[48px] lg:w-[312px] justify-center bg-tertiary400 px-[22px] py-[11px] rounded-[8px] text-white-default font-Inter font-medium text-sm disabled:opacity-50"
               >
                 Login
               </button>
 
               <a
                 href="#"
-                className="flex  items-end md:items-center gap-x-1 font-Inter font-medium text-sm text-gray700"
+                className="flex  items-end md:items-center gap-x-1 font-Inter font-medium text-sm text-gray700 "
               >
                 New user? <p className="text-tertiary400">Create an account</p>
               </a>
