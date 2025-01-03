@@ -18,7 +18,7 @@ function SignInPage() {
         className="block md:!hidden"
         height={43.9}
       />
-      <div className="fixed z-50 right-10 bottom-10 flex justify-center items-center rounded-full bg-tertiary-800 w-20 h-20 cursor-pointer">
+      <div className="fixed z-50 right-8 bottom-8 flex justify-center items-center rounded-full bg-tertiary-800 w-20 h-20 cursor-pointer">
         <Icons.MailIcon />
       </div>
     </div>
