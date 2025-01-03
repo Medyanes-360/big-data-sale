@@ -8,7 +8,7 @@ import Image from "next/image";
 
 function SignInPage() {
   return (
-    <div className="flex flex-col-reverse h-full items-center gap-[61px] pt-11 px-4  lg:flex-row lg:justify-between  lg:h-screen lg:p-[24px] lg:pt-[24px] lg:pl-[24px] lg:pb-[20px] lg:pr-[48px]">
+    <div className="flex flex-col-reverse h-full items-center gap-[61px] pt-11 md:px-4  lg:flex-row lg:justify-between  lg:h-screen lg:p-[24px] lg:pt-[24px] lg:pl-[24px] lg:pb-[20px] lg:pr-[48px]">
       <ChooseUs />
       <LoginForm />
       <Image
