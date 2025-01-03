@@ -111,29 +111,26 @@ const RegisterForm = () => {
               </div>
             </div>
             <div className="relative">
-
               <div>
-
-              <Input
-                name="password"
-                label="Password"
-                type={visible ? "text" : "password"}
-                placeholder="8+ characters"
-                labelClassName="text-gray-600 text-xs font-Inter font-normal"
-                errorClassName="text-red-600 text-xs"
-                className="outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[56px]"
-                right={ ()=>(<button
-                  type="button"
-                  onClick={() => setVisible(!visible)}
-                  className="text-gray-500 hover:text-gray-700"
-                >
-                  {visible ? <Icons.EyeIcon /> : <Icons.EyeOffIcon />}
-                </button>)
-                }
-              />
-             
+                <Input
+                  name="password"
+                  label="Password"
+                  type={visible ? "text" : "password"}
+                  placeholder="8+ characters"
+                  labelClassName="text-gray-600 text-xs font-Inter font-normal"
+                  errorClassName="text-red-600 text-xs"
+                  className="outline-0 w-full rounded-md border-[1px] border-[#E6E8EC] p-3 max-h-[56px]"
+                  right={() => (
+                    <button
+                      type="button"
+                      onClick={() => setVisible(!visible)}
+                      className="text-gray-500 hover:text-gray-700"
+                    >
+                      {visible ? <Icons.EyeIcon /> : <Icons.EyeOffIcon />}
+                    </button>
+                  )}
+                />
               </div>
-
             </div>
             <div className="text-right">
               <Link

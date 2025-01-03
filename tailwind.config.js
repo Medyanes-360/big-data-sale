@@ -12,6 +12,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      zIndex: {
+        "-1": "-1",
+      },
       colors: {
         tertiary: {
           50: "#F1EBFF",
@@ -101,10 +104,8 @@ module.exports = {
         custom: "14.8px",
       },
       blur: {
-        custom:"80px"
-      },
-      blur: {
-        custommobile:"50px",
+        "custom": "80px",
+        " custommobile": "50px",
       },
       dropShadow: {
         "custom-combined-1":
