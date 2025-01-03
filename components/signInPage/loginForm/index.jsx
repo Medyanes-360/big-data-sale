@@ -6,6 +6,7 @@ import React from "react";
 function LoginForm() {
   return (
     <div className="flex flex-1 items-center justify-center h-full">
+      <div></div>
       <div className="w-[343px] lg:w-[588px]">
         <Formik
           initialValues={{
