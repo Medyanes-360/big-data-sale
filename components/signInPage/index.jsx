@@ -8,16 +8,16 @@ import Image from "next/image";
 
 function SignInPage() {
   return (
-    <div className="flex flex-col-reverse items-center gap-[61px] pt-11 px-4  lg:flex-row lg:justify-between  h-screen lg:p-[24px] lg:pt-[24px] lg:pl-[24px] lg:pb-[20px] lg:pr-[48px]">
+    <div className="flex flex-col-reverse h-full items-center gap-[61px] pt-11 px-4  lg:flex-row lg:justify-between  lg:h-screen lg:p-[24px] lg:pt-[24px] lg:pl-[24px] lg:pb-[20px] lg:pr-[48px]">
+      <ChooseUs />
+      <LoginForm />
       <Image
         src={wellnes}
         alt="Welness"
         width={110}
-        className="block md:!hidden "
+        className="block md:!hidden"
         height={43.9}
       />
-      <ChooseUs />
-      <LoginForm />
       <div className="fixed z-50 right-10 bottom-10 flex justify-center items-center rounded-full bg-tertiary-800 w-20 h-20 cursor-pointer">
         <Icons.MailIcon />
       </div>
