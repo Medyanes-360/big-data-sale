@@ -5,10 +5,10 @@ import React from "react";
 
 function LoginForm() {
   return (
-    <div className="flex flex-1 items-center justify-center h-full">
-      <div className="w-[343px] lg:w-[588px] relative">
+    <div className="flex flex-1 items-center justify-center w-full h-full">
+      <div className="w-[343px] h-[475px] lg:w-[588px] relative">
         {/* Arka plan öğesini burada daha düşük z-index ile ayarlıyoruz */}
-        <span className="bg-[#915DFF52] block blur-custommobile md:blur-custom w-[128px] h-[128px] md:w-[256px] md:h-[256px] md:-top-32 md:-right-20 -top-20 -right-10 rounded-full absolute z-[-10]" />
+        <span className="bg-[#915DFF52] block blur-2xl md:blur-custom w-[87px] h-[87px] md:w-[256px] md:h-[256px] md:-top-32 md:-right-20 -top-20 -right-10 rounded-full absolute z-[-10]" />
         <span className="bg-[#FBF4F5] none md:block blur-custommobile md:blur-custom md:w-[231px] md:h-[231px] md:-bottom-32 md:-left-20 -bottom-20 -left-10 rounded-full absolute z-[-10]" />
 
         <Formik
@@ -25,7 +25,7 @@ function LoginForm() {
           }}
         >
           {(props) => (
-            <Form className="flex flex-col items-center rounded shadow-supportCard rounded-3xl gap-10 p-8 z-50 bg-white-default">
+            <Form className="flex flex-col h-full w-full items-center justify-between rounded shadow-supportCard gap-2 p-3 rounded-3xl md:gap-10 md:p-8 z-50 bg-white-default">
               <h1 className="font-Inter font-bold text-2xl text-tertiary-900">
                 Sign in
               </h1>
@@ -53,6 +53,7 @@ function LoginForm() {
                 <Icons.EyeIcon
                   className="absolute top-[18px] right-[12px]"
                   color="#838E9E"
+                  stroke="#fff"
                 />
               </div>
               <a
@@ -71,7 +72,7 @@ function LoginForm() {
 
               <a
                 href="#"
-                className="flex items-center gap-x-1 font-Inter font-medium text-sm text-gray700"
+                className="flex  items-end md:items-center gap-x-1 font-Inter font-medium text-sm text-gray700"
               >
                 New user? <p className="text-tertiary400">Create an account</p>
               </a>
