@@ -13,10 +13,10 @@ const loginFormSchema = Yup.object().shape({
 });
 function LoginForm() {
   return (
-    <div className="flex flex-1 items-center justify-center w-full h-full">
-      <div className="w-[343px] h-[475px] lg:w-[588px] relative">
+    <div className="flex flex-1 items-center justify-center w-full h-full px-4 lg:px-0">
+      <div className="w-full h-[475px] lg:w-[588px] relative">
         {/* Arka plan öğesini burada daha düşük z-index ile ayarlıyoruz */}
-        <span className="bg-[#915DFF52] block blur-2xl md:blur-custom w-[87px] h-[87px] md:w-[256px] md:h-[256px] md:-top-32 md:-right-20 -top-20 -right-10 rounded-full absolute z-[-10]" />
+        <span className="bg-[#915DFF52] block blur-2xl md:blur-custom w-[87px] h-[87px] md:w-[256px] md:h-[256px] md:-top-32 md:-right-20 -top-20 right-0 rounded-full absolute z-[-10]" />
         <span className="bg-[#FBF4F5] none md:block blur-custommobile md:blur-custom md:w-[231px] md:h-[231px] md:-bottom-32 md:-left-20 -bottom-20 -left-10 rounded-full absolute z-[-10]" />
 
         <Formik
