@@ -27,7 +27,7 @@ function Input({
         <input
           {...field}
           {...props}
-          className={`${props.className} transition-all duration-500 ${
+          className={`${props.className} w-full transition-all duration-500 ${
             meta.touched && meta.error ? "!border-red-500" : "border-gray-300"
           }${Icon ? "pr-12" : ""}`}
         />
