@@ -6,6 +6,7 @@ import React from "react";
 function LoginForm() {
   return (
     <div className="flex flex-1 items-center justify-center h-full">
+      <div></div>
       <div className="w-[343px] lg:w-[588px]">
         <Formik
           initialValues={{
@@ -29,7 +30,7 @@ function LoginForm() {
                 <Input
                   name="email"
                   className="w-full h-[56px] rounded-lg flex gap-2 border border-loginInputBorder placeholder:text-tertiary-900 py-4 px-[14px]"
-                  labelClassName="font-Inter font-normal text-xs text-raven-700 absolute top-[-7px] left-[10px] bg-white-default px-1"
+                  labelClassName="font-Inter font-normal text-xs text-raven-700 absolute top-[-7px] left-[10px] bg-white-default px-1 z-10"
                   errorClassName="form-error"
                   type="email"
                   placeholder="demo@minimals.cc"
